@@ -1,16 +1,11 @@
 import React from "react";
 import AppTheme from "../theme/AppTheme";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import NavBar from "./UI/components/NavBar";
-import PostsLayout from "./post/pages/PostsLayout";
+import PostsPage from "./post/pages/PostsPage";
 
 const MainApp = () => {
   return (
     <AppTheme>
-        <PostsLayout>
-            <h1>Content</h1>
-        </PostsLayout>
+      <PostsPage />
     </AppTheme>
   );
 };
