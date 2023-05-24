@@ -3,24 +3,53 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Toolbar from "@mui/material/Toolbar";
 import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+
+import data from "../../../public/data.json";
+import CategoriesList from "../../post/components/CategoriesList";
 
 type Props = {
   drawerWidth: number;
 };
 
 const Sidebar = ({ drawerWidth }: Props) => {
+  const categories = data.items.filter(
+    (item) => item.sys.contentType.sys.id === "category"
+  );
+
+  console.log(categories);
+
   return (
-    <Box component="nav" sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}>
+    <Box
+      component="nav"
+      sx={{
+        width: { sm: drawerWidth },
+        flexShrink: { sm: 0 },
+      }}
+    >
       <Drawer
-        variant="permanent"
-        open
         sx={{
+          width: drawerWidth,
+          flexShrink: 0,
           display: { xs: "block" },
           "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
         }}
+        PaperProps={{
+          sx: {
+            backgroundColor: "secondary.main",
+            alignItems: "center",
+          },
+        }}
+        variant="permanent"
+        anchor="right"
       >
-        <Toolbar>{"Something"}</Toolbar>
+        <Toolbar>
+          <Typography variant="h6" align="right" sx={{ fontWeight: "bold" }}>
+            {"Categories"}
+          </Typography>
+        </Toolbar>
         <Divider />
+        <CategoriesList categories={categories} />
       </Drawer>
     </Box>
   );
