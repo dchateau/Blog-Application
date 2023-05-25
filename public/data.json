@@ -2,10 +2,1152 @@
   "sys": {
     "type": "Array"
   },
-  "total": 26,
+  "total": 29,
   "skip": 0,
   "limit": 100,
   "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xcawcketyif2"
+          }
+        },
+        "id": "3XQj1jp5PvPfG6Jq695nc5",
+        "type": "Entry",
+        "createdAt": "2023-05-25T17:37:54.829Z",
+        "updatedAt": "2023-05-25T17:37:54.829Z",
+        "environment": {
+          "sys": {
+            "id": "Sandbox",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Big Data in education enhancement"
+        },
+        "slug": {
+          "en-US": "big-data-education-enhacement"
+        },
+        "creationDate": {
+          "en-US": "2020-02-15T15:34-06:00"
+        },
+        "metaDescription": {
+          "en-US": "Big data might be a great enhancement in educative techniques"
+        },
+        "metaKeywords": {
+          "en-US": [
+            "big-data",
+            "education"
+          ]
+        },
+        "featuredImage": {
+          "en-US": {
+            "metadata": {
+              "tags": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xcawcketyif2"
+                }
+              },
+              "id": "6pULK4XUlfE2Y2r7ySD3zE",
+              "type": "Asset",
+              "createdAt": "2023-05-25T17:37:16.243Z",
+              "updatedAt": "2023-05-25T17:37:16.243Z",
+              "environment": {
+                "sys": {
+                  "id": "Sandbox",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "revision": 1
+            },
+            "fields": {
+              "title": {
+                "en-US": "Big Data featured"
+              },
+              "description": {
+                "en-US": "This is Big Data featured image"
+              },
+              "file": {
+                "en-US": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/6pULK4XUlfE2Y2r7ySD3zE/16026d48d03626f1a13d104ebef9a25d/BD-featured.jpg",
+                  "details": {
+                    "size": 914338,
+                    "image": {
+                      "width": 6488,
+                      "height": 4326
+                    }
+                  },
+                  "fileName": "BD-featured.jpg",
+                  "contentType": "image/jpeg"
+                }
+              }
+            }
+          }
+        },
+        "thumbnail": {
+          "en-US": {
+            "metadata": {
+              "tags": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xcawcketyif2"
+                }
+              },
+              "id": "2E7DuLRrOKBNePR2XqjTBo",
+              "type": "Asset",
+              "createdAt": "2023-05-25T17:37:48.253Z",
+              "updatedAt": "2023-05-25T17:37:48.253Z",
+              "environment": {
+                "sys": {
+                  "id": "Sandbox",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "revision": 1
+            },
+            "fields": {
+              "title": {
+                "en-US": "Big Data thumbnail"
+              },
+              "description": {
+                "en-US": "This is Big Data thumbnail image"
+              },
+              "file": {
+                "en-US": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/2E7DuLRrOKBNePR2XqjTBo/24b2895897175beb0b4ff31b4621a7ed/BD-thumbnail.jpg",
+                  "details": {
+                    "size": 255495,
+                    "image": {
+                      "width": 2000,
+                      "height": 2000
+                    }
+                  },
+                  "fileName": "BD-thumbnail.jpg",
+                  "contentType": "image/jpeg"
+                }
+              }
+            }
+          }
+        },
+        "excerpt": {
+          "en-US": "Sed nec arcu porta, convallis quam in, convallis erat. Aliquam tempus, risus sed blandit feugiat, nibh justo blandit turpis, pulvinar mattis urna."
+        },
+        "body": {
+          "en-US": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Proin nec mollis turpis. Nullam consequat enim vel lorem varius \nhendrerit. Ut sodales ipsum vitae vestibulum elementum. Ut dictum \neuismod justo, ac mattis lacus tempus in. Quisque velit mauris, finibus \nelementum luctus posuere, mollis sed mi. Curabitur turpis arcu, eleifend\n sit amet nisi at, eleifend sollicitudin velit. Donec sed sapien eu \nmauris venenatis dignissim. Phasellus massa lacus, euismod quis eros \nvel, egestas cursus risus.\n\n\n",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "author": {
+          "en-US": [
+            {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
+                  }
+                },
+                "id": "5XGvE8t9I1v9v1ExCbzYar",
+                "type": "Entry",
+                "createdAt": "2023-05-25T17:31:18.419Z",
+                "updatedAt": "2023-05-25T17:31:18.419Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "author"
+                  }
+                }
+              },
+              "fields": {
+                "fullName": {
+                  "en-US": "Richard Roe"
+                },
+                "biography": {
+                  "en-US": {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "About me",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "Ut blandit dui ut velit semper porttitor. Maecenas interdum quam vel \nelementum scelerisque. Vestibulum ante ipsum primis in faucibus orci \nluctus et ultrices posuere cubilia curae; Phasellus commodo neque vitae \nmattis gravida. Aenean accumsan a est a malesuada. Ut ornare justo eros,\n a sodales ante cursus gravida.\n\nMorbi ultrices nunc posuere, laoreet quam vestibulum, feugiat elit. \nProin ac iaculis odio. Pellentesque efficitur gravida augue eget \nimperdiet.\n",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "My favourite quote",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "content": [
+                              {
+                                "data": {},
+                                "marks": [],
+                                "value": "Sed tempus lectus non dolor fermentum, vel rhoncus lectus venenatis.",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "blockquote"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "document"
+                  }
+                },
+                "slug": {
+                  "en-US": "richard-roe"
+                },
+                "photo": {
+                  "en-US": {
+                    "metadata": {
+                      "tags": []
+                    },
+                    "sys": {
+                      "space": {
+                        "sys": {
+                          "type": "Link",
+                          "linkType": "Space",
+                          "id": "xcawcketyif2"
+                        }
+                      },
+                      "id": "6X4NuIxQu3We2zNc3Y6KU8",
+                      "type": "Asset",
+                      "createdAt": "2023-05-25T17:31:08.145Z",
+                      "updatedAt": "2023-05-25T17:31:08.145Z",
+                      "environment": {
+                        "sys": {
+                          "id": "Sandbox",
+                          "type": "Link",
+                          "linkType": "Environment"
+                        }
+                      },
+                      "revision": 1
+                    },
+                    "fields": {
+                      "title": {
+                        "en-US": "Richard Roe's photo"
+                      },
+                      "description": {
+                        "en-US": "This is Richard Roe's profile photo"
+                      },
+                      "file": {
+                        "en-US": {
+                          "url": "//images.ctfassets.net/xcawcketyif2/6X4NuIxQu3We2zNc3Y6KU8/b48eaeacce3fbbe01223279f67680ca9/richard-roe.jpg",
+                          "details": {
+                            "size": 630666,
+                            "image": {
+                              "width": 3782,
+                              "height": 5673
+                            }
+                          },
+                          "fileName": "richard-roe.jpg",
+                          "contentType": "image/jpeg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "readingTime": {
+          "en-US": 10
+        },
+        "categories": {
+          "en-US": [
+            {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
+                  }
+                },
+                "id": "4CO6yOtFPyFG5fWWEwoduL",
+                "type": "Entry",
+                "createdAt": "2023-05-24T19:01:57.465Z",
+                "updatedAt": "2023-05-24T19:01:57.465Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "category"
+                  }
+                }
+              },
+              "fields": {
+                "title": {
+                  "en-US": "Big Data"
+                },
+                "slug": {
+                  "en-US": "big-data"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xcawcketyif2"
+          }
+        },
+        "id": "5XGvE8t9I1v9v1ExCbzYar",
+        "type": "Entry",
+        "createdAt": "2023-05-25T17:31:18.419Z",
+        "updatedAt": "2023-05-25T17:31:18.419Z",
+        "environment": {
+          "sys": {
+            "id": "Sandbox",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        }
+      },
+      "fields": {
+        "fullName": {
+          "en-US": "Richard Roe"
+        },
+        "biography": {
+          "en-US": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "About me",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Ut blandit dui ut velit semper porttitor. Maecenas interdum quam vel \nelementum scelerisque. Vestibulum ante ipsum primis in faucibus orci \nluctus et ultrices posuere cubilia curae; Phasellus commodo neque vitae \nmattis gravida. Aenean accumsan a est a malesuada. Ut ornare justo eros,\n a sodales ante cursus gravida.\n\nMorbi ultrices nunc posuere, laoreet quam vestibulum, feugiat elit. \nProin ac iaculis odio. Pellentesque efficitur gravida augue eget \nimperdiet.\n",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "My favourite quote",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "Sed tempus lectus non dolor fermentum, vel rhoncus lectus venenatis.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "blockquote"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "slug": {
+          "en-US": "richard-roe"
+        },
+        "photo": {
+          "en-US": {
+            "metadata": {
+              "tags": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xcawcketyif2"
+                }
+              },
+              "id": "6X4NuIxQu3We2zNc3Y6KU8",
+              "type": "Asset",
+              "createdAt": "2023-05-25T17:31:08.145Z",
+              "updatedAt": "2023-05-25T17:31:08.145Z",
+              "environment": {
+                "sys": {
+                  "id": "Sandbox",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "revision": 1
+            },
+            "fields": {
+              "title": {
+                "en-US": "Richard Roe's photo"
+              },
+              "description": {
+                "en-US": "This is Richard Roe's profile photo"
+              },
+              "file": {
+                "en-US": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/6X4NuIxQu3We2zNc3Y6KU8/b48eaeacce3fbbe01223279f67680ca9/richard-roe.jpg",
+                  "details": {
+                    "size": 630666,
+                    "image": {
+                      "width": 3782,
+                      "height": 5673
+                    }
+                  },
+                  "fileName": "richard-roe.jpg",
+                  "contentType": "image/jpeg"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xcawcketyif2"
+          }
+        },
+        "id": "3pzAvboK97nCNTq6tN5dvt",
+        "type": "Entry",
+        "createdAt": "2023-05-25T17:02:38.447Z",
+        "updatedAt": "2023-05-25T17:02:38.447Z",
+        "environment": {
+          "sys": {
+            "id": "Sandbox",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Self-caring while working at home"
+        },
+        "slug": {
+          "en-US": "self-caring-home-office"
+        },
+        "creationDate": {
+          "en-US": "2021-05-13T00:55-06:00"
+        },
+        "metaDescription": {
+          "en-US": "It is important to have healthy habits while doing home-office working"
+        },
+        "metaKeywords": {
+          "en-US": [
+            "home-office",
+            "self-care"
+          ]
+        },
+        "featuredImage": {
+          "en-US": {
+            "metadata": {
+              "tags": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xcawcketyif2"
+                }
+              },
+              "id": "EB73pIQqZkCghtImv297E",
+              "type": "Asset",
+              "createdAt": "2023-05-25T17:01:57.879Z",
+              "updatedAt": "2023-05-25T17:01:57.879Z",
+              "environment": {
+                "sys": {
+                  "id": "Sandbox",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "revision": 1
+            },
+            "fields": {
+              "title": {
+                "en-US": "Self-care featured"
+              },
+              "description": {
+                "en-US": "This is Self-care featured image"
+              },
+              "file": {
+                "en-US": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/EB73pIQqZkCghtImv297E/c7ee203f38a879b02b2597ea4d82aebb/SelfCare-featured.jpg",
+                  "details": {
+                    "size": 644587,
+                    "image": {
+                      "width": 7000,
+                      "height": 4667
+                    }
+                  },
+                  "fileName": "SelfCare-featured.jpg",
+                  "contentType": "image/jpeg"
+                }
+              }
+            }
+          }
+        },
+        "thumbnail": {
+          "en-US": {
+            "metadata": {
+              "tags": []
+            },
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xcawcketyif2"
+                }
+              },
+              "id": "35imsNJoCqJ7nBYQtNgRBr",
+              "type": "Asset",
+              "createdAt": "2023-05-25T17:02:29.770Z",
+              "updatedAt": "2023-05-25T17:02:29.770Z",
+              "environment": {
+                "sys": {
+                  "id": "Sandbox",
+                  "type": "Link",
+                  "linkType": "Environment"
+                }
+              },
+              "revision": 1
+            },
+            "fields": {
+              "title": {
+                "en-US": "Self-care thumbnail"
+              },
+              "description": {
+                "en-US": "This is Self-care thumbnail image"
+              },
+              "file": {
+                "en-US": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/35imsNJoCqJ7nBYQtNgRBr/bcf4a015dcf601b614eee005a8ba2630/SelfCare-thumbnail.jpg",
+                  "details": {
+                    "size": 627773,
+                    "image": {
+                      "width": 3000,
+                      "height": 2000
+                    }
+                  },
+                  "fileName": "SelfCare-thumbnail.jpg",
+                  "contentType": "image/jpeg"
+                }
+              }
+            }
+          }
+        },
+        "excerpt": {
+          "en-US": "Aenean efficitur viverra pretium. Vestibulum luctus diam eros, non vestibulum augue gravida vel. Aenean in dolor cursus, accumsan tortor sagittis."
+        },
+        "body": {
+          "en-US": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Proin aliquet est non nisl sodales, at ultricies nunc molestie. Nulla \njusto libero, consequat eu lacus id, scelerisque laoreet metus. \nCurabitur ac tincidunt metus. Duis sed est vehicula lectus semper \ncommodo. Class aptent taciti sociosqu ad litora torquent per conubia \nnostra, per inceptos himenaeos. Etiam accumsan, lorem ac vulputate \nultricies, leo leo fringilla quam, at bibendum quam felis vel ante. \nDonec sit amet tincidunt ligula. Nam justo purus, semper a libero eu, \nmolestie iaculis enim. Aliquam sodales ornare fringilla. Nullam non \ntempus felis, ac egestas metus. Morbi dui metus, cursus nec enim in, \nfacilisis ullamcorper odio.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "author": {
+          "en-US": [
+            {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
+                  }
+                },
+                "id": "7zdUEgrB1uLxjxtYqBXVhN",
+                "type": "Entry",
+                "createdAt": "2023-05-23T16:49:09.443Z",
+                "updatedAt": "2023-05-23T16:49:09.443Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "author"
+                  }
+                }
+              },
+              "fields": {
+                "fullName": {
+                  "en-US": "Jane Doe"
+                },
+                "biography": {
+                  "en-US": {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "About me",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "Integer eu auctor est. Pellentesque iaculis iaculis purus, ut laoreet \nnulla consequat ac. Donec venenatis tincidunt elit, at gravida ex. \nCurabitur ut blandit justo. Duis egestas semper vulputate. Fusce euismod\n nibh ut semper ultricies. Curabitur venenatis, justo vitae sodales \ndignissim, purus augue dapibus dolor, non dignissim leo sem nec mauris. \nNullam nec elit sapien. Morbi blandit aliquam ultrices. In sed porttitor\n nibh, sit amet varius sapien.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "My favourite quote",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "content": [
+                              {
+                                "data": {},
+                                "marks": [],
+                                "value": "Nullam ullamcorper tincidunt justo, vel consequat elit malesuada in.",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "blockquote"
+                      },
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "document"
+                  }
+                },
+                "slug": {
+                  "en-US": "jane-doe"
+                },
+                "photo": {
+                  "en-US": {
+                    "metadata": {
+                      "tags": []
+                    },
+                    "sys": {
+                      "space": {
+                        "sys": {
+                          "type": "Link",
+                          "linkType": "Space",
+                          "id": "xcawcketyif2"
+                        }
+                      },
+                      "id": "181pVWoodUVmggN3dszkYr",
+                      "type": "Asset",
+                      "createdAt": "2023-05-23T16:48:54.617Z",
+                      "updatedAt": "2023-05-23T16:48:54.617Z",
+                      "environment": {
+                        "sys": {
+                          "id": "Sandbox",
+                          "type": "Link",
+                          "linkType": "Environment"
+                        }
+                      },
+                      "revision": 1
+                    },
+                    "fields": {
+                      "title": {
+                        "en-US": "Jane Doe"
+                      },
+                      "description": {
+                        "en-US": "This is Jane Doe's profile picture"
+                      },
+                      "file": {
+                        "en-US": {
+                          "url": "//images.ctfassets.net/xcawcketyif2/181pVWoodUVmggN3dszkYr/283287c96f871d4deee07e11794eff72/jane-doe.jpg",
+                          "details": {
+                            "size": 766690,
+                            "image": {
+                              "width": 5472,
+                              "height": 3648
+                            }
+                          },
+                          "fileName": "jane-doe.jpg",
+                          "contentType": "image/jpeg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
+                  }
+                },
+                "id": "6FQeokqOlz9z8Cy015Wniy",
+                "type": "Entry",
+                "createdAt": "2023-05-23T16:44:22.755Z",
+                "updatedAt": "2023-05-23T16:44:22.755Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "author"
+                  }
+                }
+              },
+              "fields": {
+                "fullName": {
+                  "en-US": "John Doe"
+                },
+                "biography": {
+                  "en-US": {
+                    "nodeType": "document",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {},
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "About me",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {},
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.\n\n\n",
+                            "marks": [],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": "My favourite quote",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "blockquote",
+                        "data": {},
+                        "content": [
+                          {
+                            "nodeType": "paragraph",
+                            "data": {},
+                            "content": [
+                              {
+                                "nodeType": "text",
+                                "value": "Nam eu tristique ante, a pellentesque nisi\n",
+                                "marks": [],
+                                "data": {}
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {},
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "slug": {
+                  "en-US": "john-doe"
+                },
+                "photo": {
+                  "en-US": {
+                    "metadata": {
+                      "tags": []
+                    },
+                    "sys": {
+                      "space": {
+                        "sys": {
+                          "type": "Link",
+                          "linkType": "Space",
+                          "id": "xcawcketyif2"
+                        }
+                      },
+                      "id": "73Wi6LFyJTWXmYXDANOOQQ",
+                      "type": "Asset",
+                      "createdAt": "2023-05-23T16:42:30.670Z",
+                      "updatedAt": "2023-05-23T16:42:30.670Z",
+                      "environment": {
+                        "sys": {
+                          "id": "Sandbox",
+                          "type": "Link",
+                          "linkType": "Environment"
+                        }
+                      },
+                      "revision": 1
+                    },
+                    "fields": {
+                      "title": {
+                        "en-US": "John Doe"
+                      },
+                      "description": {
+                        "en-US": "This is John Doe's profile picture"
+                      },
+                      "file": {
+                        "en-US": {
+                          "url": "//images.ctfassets.net/xcawcketyif2/73Wi6LFyJTWXmYXDANOOQQ/10dc1d1cfeb84e00c308a596dbda9189/john-doe2.jpg",
+                          "details": {
+                            "size": 1126724,
+                            "image": {
+                              "width": 4950,
+                              "height": 3852
+                            }
+                          },
+                          "fileName": "john-doe2.jpg",
+                          "contentType": "image/jpeg"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "readingTime": {
+          "en-US": 8
+        },
+        "categories": {
+          "en-US": [
+            {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
+                  }
+                },
+                "id": "24sUUFOMRJstrYscp4Dn5s",
+                "type": "Entry",
+                "createdAt": "2023-05-23T16:31:31.902Z",
+                "updatedAt": "2023-05-23T16:31:31.902Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "category"
+                  }
+                }
+              },
+              "fields": {
+                "title": {
+                  "en-US": "Home office"
+                },
+                "slug": {
+                  "en-US": "home-office"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
     {
       "metadata": {
         "tags": []
@@ -8694,6 +9836,102 @@
               "id": "xcawcketyif2"
             }
           },
+          "id": "2E7DuLRrOKBNePR2XqjTBo",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:37:48.253Z",
+          "updatedAt": "2023-05-25T17:37:48.253Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1
+        },
+        "fields": {
+          "title": {
+            "en-US": "Big Data thumbnail"
+          },
+          "description": {
+            "en-US": "This is Big Data thumbnail image"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/xcawcketyif2/2E7DuLRrOKBNePR2XqjTBo/24b2895897175beb0b4ff31b4621a7ed/BD-thumbnail.jpg",
+              "details": {
+                "size": 255495,
+                "image": {
+                  "width": 2000,
+                  "height": 2000
+                }
+              },
+              "fileName": "BD-thumbnail.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "35imsNJoCqJ7nBYQtNgRBr",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:02:29.770Z",
+          "updatedAt": "2023-05-25T17:02:29.770Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1
+        },
+        "fields": {
+          "title": {
+            "en-US": "Self-care thumbnail"
+          },
+          "description": {
+            "en-US": "This is Self-care thumbnail image"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/xcawcketyif2/35imsNJoCqJ7nBYQtNgRBr/bcf4a015dcf601b614eee005a8ba2630/SelfCare-thumbnail.jpg",
+              "details": {
+                "size": 627773,
+                "image": {
+                  "width": 3000,
+                  "height": 2000
+                }
+              },
+              "fileName": "SelfCare-thumbnail.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
           "id": "3Sebjd4cZU1taFW4ChVf8u",
           "type": "Asset",
           "createdAt": "2023-05-20T14:13:29.491Z",
@@ -9027,6 +10265,102 @@
               "id": "xcawcketyif2"
             }
           },
+          "id": "6X4NuIxQu3We2zNc3Y6KU8",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:31:08.145Z",
+          "updatedAt": "2023-05-25T17:31:08.145Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1
+        },
+        "fields": {
+          "title": {
+            "en-US": "Richard Roe's photo"
+          },
+          "description": {
+            "en-US": "This is Richard Roe's profile photo"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/xcawcketyif2/6X4NuIxQu3We2zNc3Y6KU8/b48eaeacce3fbbe01223279f67680ca9/richard-roe.jpg",
+              "details": {
+                "size": 630666,
+                "image": {
+                  "width": 3782,
+                  "height": 5673
+                }
+              },
+              "fileName": "richard-roe.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "6pULK4XUlfE2Y2r7ySD3zE",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:37:16.243Z",
+          "updatedAt": "2023-05-25T17:37:16.243Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1
+        },
+        "fields": {
+          "title": {
+            "en-US": "Big Data featured"
+          },
+          "description": {
+            "en-US": "This is Big Data featured image"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/xcawcketyif2/6pULK4XUlfE2Y2r7ySD3zE/16026d48d03626f1a13d104ebef9a25d/BD-featured.jpg",
+              "details": {
+                "size": 914338,
+                "image": {
+                  "width": 6488,
+                  "height": 4326
+                }
+              },
+              "fileName": "BD-featured.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
           "id": "6qxr370lhoteWbSZ97u0z6",
           "type": "Asset",
           "createdAt": "2023-05-23T17:20:40.362Z",
@@ -9168,6 +10502,54 @@
                 }
               },
               "fileName": "john-doe2.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "EB73pIQqZkCghtImv297E",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:01:57.879Z",
+          "updatedAt": "2023-05-25T17:01:57.879Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1
+        },
+        "fields": {
+          "title": {
+            "en-US": "Self-care featured"
+          },
+          "description": {
+            "en-US": "This is Self-care featured image"
+          },
+          "file": {
+            "en-US": {
+              "url": "//images.ctfassets.net/xcawcketyif2/EB73pIQqZkCghtImv297E/c7ee203f38a879b02b2597ea4d82aebb/SelfCare-featured.jpg",
+              "details": {
+                "size": 644587,
+                "image": {
+                  "width": 7000,
+                  "height": 4667
+                }
+              },
+              "fileName": "SelfCare-featured.jpg",
               "contentType": "image/jpeg"
             }
           }

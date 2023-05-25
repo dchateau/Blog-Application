@@ -19,7 +19,7 @@ const CategoriesList = ({ categories }: Props) => {
         title = title["en-US"];
         // console.log(slug, title);
         return (
-          <ListItem key={slug} sx={{padding: 1.4}}>
+          <ListItem key={slug} sx={{padding: 1.2}}>
             <ListItemButton>
                 <ListItemIcon>
                     <FeedIcon/>
