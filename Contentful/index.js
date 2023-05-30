@@ -2,15 +2,19 @@ const contentful = require("contentful");
 const fs = require("fs");
 require("dotenv").config();
 
-const { CONTENTFUL_MANAGEMENT_API_ACCESS_TOKEN, CONTENTFUL_SPACE_ID, CONTENTFUL_ENVIRONMENT } = process.env
+const {
+  CONTENTFUL_DELIVERY_API_ACCESS_TOKEN,
+  CONTENTFUL_SPACE_ID,
+  CONTENTFUL_ENVIRONMENT,
+} = process.env;
 
 const client = contentful.createClient({
   space: CONTENTFUL_SPACE_ID,
   environment: CONTENTFUL_ENVIRONMENT, // defaults to 'master' if not set
-  accessToken: CONTENTFUL_MANAGEMENT_API_ACCESS_TOKEN,
+  accessToken: CONTENTFUL_DELIVERY_API_ACCESS_TOKEN,
 });
 
-const entries = client.withAllLocales
+const entries = client
   .getEntries()
   .then((data) => {
     // console.log(data.items[10].fields);
@@ -20,7 +24,11 @@ const entries = client.withAllLocales
     // });
     // console.log(siteEntry);
     // // console.log(siteEntry.sys.contentType);
-    const siteEntry = data.items.filter(entry => entry.sys.contentType.sys.id === "post")
+    const siteEntry = data.items.filter(
+      (entry) =>
+        entry.sys.contentType.sys.id === "post" ||
+        entry.sys.contentType.sys.id === "category"
+    );
 
     const jsonString = JSON.stringify(siteEntry, null, 2);
     const filePath = "./public/data.json";
