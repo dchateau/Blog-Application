@@ -15,7 +15,7 @@ type Route = {
   title: string;
 };
 
-const ROUTES: Array<Route> = [
+const ROUTES: Route[] = [
   {
     id: "blog",
     title: "Blog",

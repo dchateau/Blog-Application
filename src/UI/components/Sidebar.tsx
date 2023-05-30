@@ -7,16 +7,18 @@ import Typography from "@mui/material/Typography";
 
 import data from "../../../public/data.json";
 import CategoriesList from "../../post/components/CategoriesList";
+import { CategoryFields } from "@typings/contentful";
 
 type Props = {
+  categories: CategoryFields[];
   drawerWidth: number;
 };
 
-const Sidebar = ({ drawerWidth }: Props) => {
-  const categories = data.filter(
-    (item) => item.sys.contentType.sys.id === "category"
-  );
-
+const Sidebar = ({ categories, drawerWidth }: Props) => {
+  // const categories = data.filter(
+  //   (item) => item.sys.contentType.sys.id === "category"
+  // );
+  // item.sys.contentType.sys.id
   // console.log("Categories: ", categories);
 
   return (
