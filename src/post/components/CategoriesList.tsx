@@ -6,15 +6,16 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import FeedIcon from "@mui/icons-material/Feed";
+import { CategoryFields } from "@typings/contentful";
 
 type Props = {
-  categories: Array<any>;
+  categories: CategoryFields[];
 };
 
 const CategoriesList = ({ categories }: Props) => {
   const router = useRouter();
 
-  const onClickCategory = (slug: string) => {
+  const onClickCategory = (slug: string):void => {
     // console.log("Clicked category", slug);
     if (slug !== "")
       router.push({
@@ -23,8 +24,7 @@ const CategoriesList = ({ categories }: Props) => {
           category: slug,
         },
       });
-    else 
-      router.replace("/", undefined, {shallow: true})
+    else router.replace("/", undefined, { shallow: true });
   };
 
   return (
@@ -37,15 +37,13 @@ const CategoriesList = ({ categories }: Props) => {
           <ListItemText primary="All categories" />
         </ListItemButton>
       </ListItem>
-      {categories.map((category) => {
-        let { slug, title } = category.fields;
-        slug = slug["en-US"];
-        title = title["en-US"];
+      {categories.map((category: CategoryFields) => {
+        const { slug, title } = category;
         // console.log(slug, title);
         return (
           <ListItem
             key={slug}
-            sx={{ padding: 1.2 }}
+            sx={{ padding: 1.2, width: "100%" }}
             onClick={onClickCategory.bind(null, slug)}
           >
             <ListItemButton>

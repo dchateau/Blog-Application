@@ -4,11 +4,16 @@ import Typography from "@mui/material/Typography";
 import PostsLayout from "../layout/PostsLayout";
 import EntriesGrid from "../components/EntriesGrid";
 import AppTheme from "../../../theme/AppTheme";
+import { CategoryFields, PostFields } from "@typings/contentful";
 
-const PostsPage = () => {
+type Props = {
+  posts: PostFields[],
+  categories: CategoryFields[]
+}
+const PostsPage = ({categories, posts}: Props) => {
   return (
     <AppTheme>
-      <PostsLayout>
+      <PostsLayout categories={categories} >
         <Grid
           container
           spacing={0}
@@ -18,7 +23,7 @@ const PostsPage = () => {
           sx={{ minHeight: "calc(100vh - 110px)" }}
         >
           {/* <Typography variant="h5">More content coming soon</Typography> */}
-          <EntriesGrid />
+          <EntriesGrid posts={posts}/>
         </Grid>
       </PostsLayout>
     </AppTheme>

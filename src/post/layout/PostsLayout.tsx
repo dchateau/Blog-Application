@@ -3,14 +3,16 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import NavBar from "../../UI/components/NavBar";
 import Sidebar from "../../UI/components/Sidebar";
+import { CategoryFields } from "@typings/contentful";
 
 const DRAWER_WIDTH = 250;
 
 type Props = {
+  categories: CategoryFields[];
   children: React.ReactNode;
 };
 
-const PostsLayout = ({ children }: Props) => {
+const PostsLayout = ({ categories, children }: Props) => {
   return (
     <Box sx={{ display: "flex" }}>
       <NavBar drawerWidth={DRAWER_WIDTH} needSidebar />
@@ -21,7 +23,7 @@ const PostsLayout = ({ children }: Props) => {
         <Toolbar />
         {children}
       </Box>
-      <Sidebar drawerWidth={DRAWER_WIDTH} />
+      <Sidebar categories={categories} drawerWidth={DRAWER_WIDTH} />
     </Box>
   );
 };
