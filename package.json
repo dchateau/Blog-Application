@@ -7,7 +7,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test-sh": "dotenv cross-var echo %CONTENTFUL_SPACE_ID%",
+    "cf-export": "contentful space export --config Contentful/config.json --management-token $MGMT_TOKEN --space-id $SPACE_ID  --environment-id Sandbox",
+    "generate-types": "cf-content-types-generator Contentful/export.json --out types/contentful",
+    "contentful-typescript-codegen": "contentful-typescript-codegen --output @types/generated/contentful.d.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -24,6 +28,10 @@
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "cf-content-types-generator": "^2.12.2",
+    "contentful-cli": "^2.6.13",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.2.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "typescript": "5.0.4"
