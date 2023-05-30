@@ -2,10 +2,12 @@ const contentful = require("contentful");
 const fs = require("fs");
 require("dotenv").config();
 
+const { CONTENTFUL_MANAGEMENT_API_ACCESS_TOKEN, CONTENTFUL_SPACE_ID, CONTENTFUL_ENVIRONMENT } = process.env
+
 const client = contentful.createClient({
-  space: process.env.SPACE_ID,
-  environment: "Sandbox", // defaults to 'master' if not set
-  accessToken: process.env.CDA_KEY,
+  space: CONTENTFUL_SPACE_ID,
+  environment: CONTENTFUL_ENVIRONMENT, // defaults to 'master' if not set
+  accessToken: CONTENTFUL_MANAGEMENT_API_ACCESS_TOKEN,
 });
 
 const entries = client.withAllLocales
@@ -18,8 +20,9 @@ const entries = client.withAllLocales
     // });
     // console.log(siteEntry);
     // // console.log(siteEntry.sys.contentType);
+    const siteEntry = data.items.filter(entry => entry.sys.contentType.sys.id === "post")
 
-    const jsonString = JSON.stringify(data, null, 2);
+    const jsonString = JSON.stringify(siteEntry, null, 2);
     const filePath = "./public/data.json";
 
     fs.writeFileSync(filePath, jsonString, (error) => {
