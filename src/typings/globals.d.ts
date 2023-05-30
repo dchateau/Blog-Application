@@ -1,5 +1,11 @@
 import { Asset, Entry } from "contentful";
 import { Document } from "@contentful/rich-text-types";
+import { Asset } from "contentful";
+import { ParsedUrlQuery } from "querystring";
+
+export interface PathType extends ParsedUrlQuery {
+  slug: string;
+}
 
 export interface EntryProps {
   title: string;
@@ -19,4 +25,3 @@ export interface EntryItemProps {
   slug: string;
   title: string;
 }
-

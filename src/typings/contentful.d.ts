@@ -1,3 +1,6 @@
+import { Asset, Entry } from "contentful";
+import { Document } from "@contentful/rich-text-types";
+
 export interface AuthorFields {
   /** Full name */
   fullName: string;
@@ -10,6 +13,22 @@ export interface AuthorFields {
 
   /** Photo */
   photo?: Asset | undefined;
+}
+
+export interface Author extends Entry<AuthorFields> {
+  sys: {
+    id: string;
+    type: string;
+    createdAt: string;
+    updatedAt: string;
+    contentType: {
+      sys: {
+        id: "author" | string;
+        linkType: "ContentType" | string;
+        type: "Link" | string;
+      };
+    };
+  };
 }
 
 export interface CategoryFields {
@@ -31,15 +50,19 @@ export interface Category extends Entry<CategoryFields> {
     locale: string;
     contentType: {
       sys: {
-        id: "category";
-        linkType: "ContentType";
-        type: "Link";
+        id: "category" | string;
+        linkType: "ContentType" | string;
+        type: "Link" | string;
       };
     };
   };
+  fields: CategoryFields;
 }
 
 export interface PostFields {
+  /** Entry ID  */
+  entryId?: string;
+
   /** Title */
   title: string;
 
@@ -55,26 +78,26 @@ export interface PostFields {
   /** Meta keywords */
   metaKeywords?: string[] | undefined;
 
-  /** Featured image */
-  featuredImage?: Asset | undefined;
+  //   /** Featured image */
+  //   featuredImage?: Asset | undefined;
 
   /** Thumbnail */
-  thumbnail: Asset;
+  thumbnail: Asset | undefined;
 
   /** Excerpt */
   excerpt: string;
 
-  /** Body */
-  body: Document;
+  //   /** Body */
+  //   body: Document;
 
-  /** Author */
+  //   /** Author */
   author: Author[];
 
-  /** Reading time */
+  //   /** Reading time */
   readingTime: number;
 
-  /** Categories */
-  categories?: Category[] | undefined;
+  //   /** Categories */
+  //   categories?: Category[] | undefined;
 }
 
 /** This model includes the main structure for a post entry including: title, creation date, meta-information, excerpt, body, author and reading time. */
@@ -88,12 +111,13 @@ export interface Post extends Entry<PostFields> {
     locale: string;
     contentType: {
       sys: {
-        id: "post";
-        linkType: "ContentType";
-        type: "Link";
+        id: "post" | string;
+        linkType: "ContentType" | string;
+        type: "Link" | string;
       };
     };
   };
+  fields: PostFields;
 }
 
 export type CONTENT_TYPE =
