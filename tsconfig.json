@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@typings/*" : ["src/typings/*"]
+      "@typings/*" : ["src/typings/*"],
+      "@post/helpers" : ["src/post/helpers"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
