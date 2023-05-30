@@ -29,79 +29,125 @@
           "linkType": "ContentType",
           "id": "post"
         }
-      }
+      },
+      "locale": "en-US"
     },
     "fields": {
-      "title": {
-        "en-US": "Big Data in education enhancement"
-      },
-      "slug": {
-        "en-US": "big-data-education-enhacement"
-      },
-      "creationDate": {
-        "en-US": "2020-02-15T15:34-06:00"
-      },
-      "metaDescription": {
-        "en-US": "Big data might be a great enhancement in educative techniques"
-      },
-      "metaKeywords": {
-        "en-US": [
-          "big-data",
-          "education"
-        ]
-      },
+      "title": "Big Data in education enhancement",
+      "slug": "big-data-education-enhacement",
+      "creationDate": "2020-02-15T15:34-06:00",
+      "metaDescription": "Big data might be a great enhancement in educative techniques",
+      "metaKeywords": [
+        "big-data",
+        "education"
+      ],
       "featuredImage": {
-        "en-US": {
-          "metadata": {
-            "tags": []
-          },
-          "sys": {
-            "space": {
-              "sys": {
-                "type": "Link",
-                "linkType": "Space",
-                "id": "xcawcketyif2"
-              }
-            },
-            "id": "6pULK4XUlfE2Y2r7ySD3zE",
-            "type": "Asset",
-            "createdAt": "2023-05-25T17:37:16.243Z",
-            "updatedAt": "2023-05-25T17:37:16.243Z",
-            "environment": {
-              "sys": {
-                "id": "Sandbox",
-                "type": "Link",
-                "linkType": "Environment"
-              }
-            },
-            "revision": 1
-          },
-          "fields": {
-            "title": {
-              "en-US": "Big Data featured"
-            },
-            "description": {
-              "en-US": "This is Big Data featured image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/6pULK4XUlfE2Y2r7ySD3zE/16026d48d03626f1a13d104ebef9a25d/BD-featured.jpg",
-                "details": {
-                  "size": 914338,
-                  "image": {
-                    "width": 6488,
-                    "height": 4326
-                  }
-                },
-                "fileName": "BD-featured.jpg",
-                "contentType": "image/jpeg"
-              }
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
             }
+          },
+          "id": "6pULK4XUlfE2Y2r7ySD3zE",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:37:16.243Z",
+          "updatedAt": "2023-05-25T17:37:16.243Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Big Data featured",
+          "description": "This is Big Data featured image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/6pULK4XUlfE2Y2r7ySD3zE/16026d48d03626f1a13d104ebef9a25d/BD-featured.jpg",
+            "details": {
+              "size": 914338,
+              "image": {
+                "width": 6488,
+                "height": 4326
+              }
+            },
+            "fileName": "BD-featured.jpg",
+            "contentType": "image/jpeg"
           }
         }
       },
       "thumbnail": {
-        "en-US": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "2E7DuLRrOKBNePR2XqjTBo",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:37:48.253Z",
+          "updatedAt": "2023-05-25T17:37:48.253Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Big Data thumbnail",
+          "description": "This is Big Data thumbnail image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/2E7DuLRrOKBNePR2XqjTBo/24b2895897175beb0b4ff31b4621a7ed/BD-thumbnail.jpg",
+            "details": {
+              "size": 255495,
+              "image": {
+                "width": 2000,
+                "height": 2000
+              }
+            },
+            "fileName": "BD-thumbnail.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "excerpt": "Sed nec arcu porta, convallis quam in, convallis erat. Aliquam tempus, risus sed blandit feugiat, nibh justo blandit turpis, pulvinar mattis urna.",
+      "body": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Proin nec mollis turpis. Nullam consequat enim vel lorem varius \nhendrerit. Ut sodales ipsum vitae vestibulum elementum. Ut dictum \neuismod justo, ac mattis lacus tempus in. Quisque velit mauris, finibus \nelementum luctus posuere, mollis sed mi. Curabitur turpis arcu, eleifend\n sit amet nisi at, eleifend sollicitudin velit. Donec sed sapien eu \nmauris venenatis dignissim. Phasellus massa lacus, euismod quis eros \nvel, egestas cursus risus.\n\n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "author": [
+        {
           "metadata": {
             "tags": []
           },
@@ -113,10 +159,10 @@
                 "id": "xcawcketyif2"
               }
             },
-            "id": "2E7DuLRrOKBNePR2XqjTBo",
-            "type": "Asset",
-            "createdAt": "2023-05-25T17:37:48.253Z",
-            "updatedAt": "2023-05-25T17:37:48.253Z",
+            "id": "5XGvE8t9I1v9v1ExCbzYar",
+            "type": "Entry",
+            "createdAt": "2023-05-25T17:31:18.419Z",
+            "updatedAt": "2023-05-25T17:31:18.419Z",
             "environment": {
               "sys": {
                 "id": "Sandbox",
@@ -124,95 +170,66 @@
                 "linkType": "Environment"
               }
             },
-            "revision": 1
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "author"
+              }
+            },
+            "locale": "en-US"
           },
           "fields": {
-            "title": {
-              "en-US": "Big Data thumbnail"
-            },
-            "description": {
-              "en-US": "This is Big Data thumbnail image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/2E7DuLRrOKBNePR2XqjTBo/24b2895897175beb0b4ff31b4621a7ed/BD-thumbnail.jpg",
-                "details": {
-                  "size": 255495,
-                  "image": {
-                    "width": 2000,
-                    "height": 2000
-                  }
-                },
-                "fileName": "BD-thumbnail.jpg",
-                "contentType": "image/jpeg"
-              }
-            }
-          }
-        }
-      },
-      "excerpt": {
-        "en-US": "Sed nec arcu porta, convallis quam in, convallis erat. Aliquam tempus, risus sed blandit feugiat, nibh justo blandit turpis, pulvinar mattis urna."
-      },
-      "body": {
-        "en-US": {
-          "data": {},
-          "content": [
-            {
+            "fullName": "Richard Roe",
+            "biography": {
               "data": {},
               "content": [
                 {
                   "data": {},
-                  "marks": [],
-                  "value": "Proin nec mollis turpis. Nullam consequat enim vel lorem varius \nhendrerit. Ut sodales ipsum vitae vestibulum elementum. Ut dictum \neuismod justo, ac mattis lacus tempus in. Quisque velit mauris, finibus \nelementum luctus posuere, mollis sed mi. Curabitur turpis arcu, eleifend\n sit amet nisi at, eleifend sollicitudin velit. Donec sed sapien eu \nmauris venenatis dignissim. Phasellus massa lacus, euismod quis eros \nvel, egestas cursus risus.\n\n\n",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            }
-          ],
-          "nodeType": "document"
-        }
-      },
-      "author": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "5XGvE8t9I1v9v1ExCbzYar",
-              "type": "Entry",
-              "createdAt": "2023-05-25T17:31:18.419Z",
-              "updatedAt": "2023-05-25T17:31:18.419Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "author"
-                }
-              }
-            },
-            "fields": {
-              "fullName": {
-                "en-US": "Richard Roe"
-              },
-              "biography": {
-                "en-US": {
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "About me",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Ut blandit dui ut velit semper porttitor. Maecenas interdum quam vel \nelementum scelerisque. Vestibulum ante ipsum primis in faucibus orci \nluctus et ultrices posuere cubilia curae; Phasellus commodo neque vitae \nmattis gravida. Aenean accumsan a est a malesuada. Ut ornare justo eros,\n a sodales ante cursus gravida.\n\nMorbi ultrices nunc posuere, laoreet quam vestibulum, feugiat elit. \nProin ac iaculis odio. Pellentesque efficitur gravida augue eget \nimperdiet.\n",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "My favourite quote",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
                   "data": {},
                   "content": [
                     {
@@ -220,184 +237,119 @@
                       "content": [
                         {
                           "data": {},
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "value": "About me",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
                           "marks": [],
-                          "value": "Ut blandit dui ut velit semper porttitor. Maecenas interdum quam vel \nelementum scelerisque. Vestibulum ante ipsum primis in faucibus orci \nluctus et ultrices posuere cubilia curae; Phasellus commodo neque vitae \nmattis gravida. Aenean accumsan a est a malesuada. Ut ornare justo eros,\n a sodales ante cursus gravida.\n\nMorbi ultrices nunc posuere, laoreet quam vestibulum, feugiat elit. \nProin ac iaculis odio. Pellentesque efficitur gravida augue eget \nimperdiet.\n",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "value": "My favourite quote",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "content": [
-                            {
-                              "data": {},
-                              "marks": [],
-                              "value": "Sed tempus lectus non dolor fermentum, vel rhoncus lectus venenatis.",
-                              "nodeType": "text"
-                            }
-                          ],
-                          "nodeType": "paragraph"
-                        }
-                      ],
-                      "nodeType": "blockquote"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "marks": [],
-                          "value": "",
+                          "value": "Sed tempus lectus non dolor fermentum, vel rhoncus lectus venenatis.",
                           "nodeType": "text"
                         }
                       ],
                       "nodeType": "paragraph"
                     }
                   ],
-                  "nodeType": "document"
-                }
-              },
-              "slug": {
-                "en-US": "richard-roe"
-              },
-              "photo": {
-                "en-US": {
-                  "metadata": {
-                    "tags": []
-                  },
-                  "sys": {
-                    "space": {
-                      "sys": {
-                        "type": "Link",
-                        "linkType": "Space",
-                        "id": "xcawcketyif2"
-                      }
-                    },
-                    "id": "6X4NuIxQu3We2zNc3Y6KU8",
-                    "type": "Asset",
-                    "createdAt": "2023-05-25T17:31:08.145Z",
-                    "updatedAt": "2023-05-25T17:31:08.145Z",
-                    "environment": {
-                      "sys": {
-                        "id": "Sandbox",
-                        "type": "Link",
-                        "linkType": "Environment"
-                      }
-                    },
-                    "revision": 1
-                  },
-                  "fields": {
-                    "title": {
-                      "en-US": "Richard Roe's photo"
-                    },
-                    "description": {
-                      "en-US": "This is Richard Roe's profile photo"
-                    },
-                    "file": {
-                      "en-US": {
-                        "url": "//images.ctfassets.net/xcawcketyif2/6X4NuIxQu3We2zNc3Y6KU8/b48eaeacce3fbbe01223279f67680ca9/richard-roe.jpg",
-                        "details": {
-                          "size": 630666,
-                          "image": {
-                            "width": 3782,
-                            "height": 5673
-                          }
-                        },
-                        "fileName": "richard-roe.jpg",
-                        "contentType": "image/jpeg"
-                      }
+                  "nodeType": "blockquote"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "",
+                      "nodeType": "text"
                     }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            },
+            "slug": "richard-roe",
+            "photo": {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
                   }
+                },
+                "id": "6X4NuIxQu3We2zNc3Y6KU8",
+                "type": "Asset",
+                "createdAt": "2023-05-25T17:31:08.145Z",
+                "updatedAt": "2023-05-25T17:31:08.145Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "Richard Roe's photo",
+                "description": "This is Richard Roe's profile photo",
+                "file": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/6X4NuIxQu3We2zNc3Y6KU8/b48eaeacce3fbbe01223279f67680ca9/richard-roe.jpg",
+                  "details": {
+                    "size": 630666,
+                    "image": {
+                      "width": 3782,
+                      "height": 5673
+                    }
+                  },
+                  "fileName": "richard-roe.jpg",
+                  "contentType": "image/jpeg"
                 }
               }
             }
           }
-        ]
-      },
-      "readingTime": {
-        "en-US": 10
-      },
-      "categories": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "4CO6yOtFPyFG5fWWEwoduL",
-              "type": "Entry",
-              "createdAt": "2023-05-24T19:01:57.465Z",
-              "updatedAt": "2023-05-24T19:01:57.465Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "category"
-                }
+        }
+      ],
+      "readingTime": 10,
+      "categories": [
+        {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "xcawcketyif2"
               }
             },
-            "fields": {
-              "title": {
-                "en-US": "Big Data"
-              },
-              "slug": {
-                "en-US": "big-data"
+            "id": "4CO6yOtFPyFG5fWWEwoduL",
+            "type": "Entry",
+            "createdAt": "2023-05-24T19:01:57.465Z",
+            "updatedAt": "2023-05-24T19:01:57.465Z",
+            "environment": {
+              "sys": {
+                "id": "Sandbox",
+                "type": "Link",
+                "linkType": "Environment"
               }
-            }
+            },
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Big Data",
+            "slug": "big-data"
           }
-        ]
-      }
+        }
+      ]
     }
   },
   {
@@ -430,79 +382,125 @@
           "linkType": "ContentType",
           "id": "post"
         }
-      }
+      },
+      "locale": "en-US"
     },
     "fields": {
-      "title": {
-        "en-US": "Self-caring while working at home"
-      },
-      "slug": {
-        "en-US": "self-caring-home-office"
-      },
-      "creationDate": {
-        "en-US": "2021-05-13T00:55-06:00"
-      },
-      "metaDescription": {
-        "en-US": "It is important to have healthy habits while doing home-office working"
-      },
-      "metaKeywords": {
-        "en-US": [
-          "home-office",
-          "self-care"
-        ]
-      },
+      "title": "Self-caring while working at home",
+      "slug": "self-caring-home-office",
+      "creationDate": "2021-05-13T00:55-06:00",
+      "metaDescription": "It is important to have healthy habits while doing home-office working",
+      "metaKeywords": [
+        "home-office",
+        "self-care"
+      ],
       "featuredImage": {
-        "en-US": {
-          "metadata": {
-            "tags": []
-          },
-          "sys": {
-            "space": {
-              "sys": {
-                "type": "Link",
-                "linkType": "Space",
-                "id": "xcawcketyif2"
-              }
-            },
-            "id": "EB73pIQqZkCghtImv297E",
-            "type": "Asset",
-            "createdAt": "2023-05-25T17:01:57.879Z",
-            "updatedAt": "2023-05-25T17:01:57.879Z",
-            "environment": {
-              "sys": {
-                "id": "Sandbox",
-                "type": "Link",
-                "linkType": "Environment"
-              }
-            },
-            "revision": 1
-          },
-          "fields": {
-            "title": {
-              "en-US": "Self-care featured"
-            },
-            "description": {
-              "en-US": "This is Self-care featured image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/EB73pIQqZkCghtImv297E/c7ee203f38a879b02b2597ea4d82aebb/SelfCare-featured.jpg",
-                "details": {
-                  "size": 644587,
-                  "image": {
-                    "width": 7000,
-                    "height": 4667
-                  }
-                },
-                "fileName": "SelfCare-featured.jpg",
-                "contentType": "image/jpeg"
-              }
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
             }
+          },
+          "id": "EB73pIQqZkCghtImv297E",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:01:57.879Z",
+          "updatedAt": "2023-05-25T17:01:57.879Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Self-care featured",
+          "description": "This is Self-care featured image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/EB73pIQqZkCghtImv297E/c7ee203f38a879b02b2597ea4d82aebb/SelfCare-featured.jpg",
+            "details": {
+              "size": 644587,
+              "image": {
+                "width": 7000,
+                "height": 4667
+              }
+            },
+            "fileName": "SelfCare-featured.jpg",
+            "contentType": "image/jpeg"
           }
         }
       },
       "thumbnail": {
-        "en-US": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "35imsNJoCqJ7nBYQtNgRBr",
+          "type": "Asset",
+          "createdAt": "2023-05-25T17:02:29.770Z",
+          "updatedAt": "2023-05-25T17:02:29.770Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Self-care thumbnail",
+          "description": "This is Self-care thumbnail image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/35imsNJoCqJ7nBYQtNgRBr/bcf4a015dcf601b614eee005a8ba2630/SelfCare-thumbnail.jpg",
+            "details": {
+              "size": 627773,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "SelfCare-thumbnail.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "excerpt": "Aenean efficitur viverra pretium. Vestibulum luctus diam eros, non vestibulum augue gravida vel. Aenean in dolor cursus, accumsan tortor sagittis.",
+      "body": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Proin aliquet est non nisl sodales, at ultricies nunc molestie. Nulla \njusto libero, consequat eu lacus id, scelerisque laoreet metus. \nCurabitur ac tincidunt metus. Duis sed est vehicula lectus semper \ncommodo. Class aptent taciti sociosqu ad litora torquent per conubia \nnostra, per inceptos himenaeos. Etiam accumsan, lorem ac vulputate \nultricies, leo leo fringilla quam, at bibendum quam felis vel ante. \nDonec sit amet tincidunt ligula. Nam justo purus, semper a libero eu, \nmolestie iaculis enim. Aliquam sodales ornare fringilla. Nullam non \ntempus felis, ac egestas metus. Morbi dui metus, cursus nec enim in, \nfacilisis ullamcorper odio.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "author": [
+        {
           "metadata": {
             "tags": []
           },
@@ -514,10 +512,10 @@
                 "id": "xcawcketyif2"
               }
             },
-            "id": "35imsNJoCqJ7nBYQtNgRBr",
-            "type": "Asset",
-            "createdAt": "2023-05-25T17:02:29.770Z",
-            "updatedAt": "2023-05-25T17:02:29.770Z",
+            "id": "7zdUEgrB1uLxjxtYqBXVhN",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:49:09.443Z",
+            "updatedAt": "2023-05-23T16:49:09.443Z",
             "environment": {
               "sys": {
                 "id": "Sandbox",
@@ -525,95 +523,66 @@
                 "linkType": "Environment"
               }
             },
-            "revision": 1
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "author"
+              }
+            },
+            "locale": "en-US"
           },
           "fields": {
-            "title": {
-              "en-US": "Self-care thumbnail"
-            },
-            "description": {
-              "en-US": "This is Self-care thumbnail image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/35imsNJoCqJ7nBYQtNgRBr/bcf4a015dcf601b614eee005a8ba2630/SelfCare-thumbnail.jpg",
-                "details": {
-                  "size": 627773,
-                  "image": {
-                    "width": 3000,
-                    "height": 2000
-                  }
-                },
-                "fileName": "SelfCare-thumbnail.jpg",
-                "contentType": "image/jpeg"
-              }
-            }
-          }
-        }
-      },
-      "excerpt": {
-        "en-US": "Aenean efficitur viverra pretium. Vestibulum luctus diam eros, non vestibulum augue gravida vel. Aenean in dolor cursus, accumsan tortor sagittis."
-      },
-      "body": {
-        "en-US": {
-          "data": {},
-          "content": [
-            {
+            "fullName": "Jane Doe",
+            "biography": {
               "data": {},
               "content": [
                 {
                   "data": {},
-                  "marks": [],
-                  "value": "Proin aliquet est non nisl sodales, at ultricies nunc molestie. Nulla \njusto libero, consequat eu lacus id, scelerisque laoreet metus. \nCurabitur ac tincidunt metus. Duis sed est vehicula lectus semper \ncommodo. Class aptent taciti sociosqu ad litora torquent per conubia \nnostra, per inceptos himenaeos. Etiam accumsan, lorem ac vulputate \nultricies, leo leo fringilla quam, at bibendum quam felis vel ante. \nDonec sit amet tincidunt ligula. Nam justo purus, semper a libero eu, \nmolestie iaculis enim. Aliquam sodales ornare fringilla. Nullam non \ntempus felis, ac egestas metus. Morbi dui metus, cursus nec enim in, \nfacilisis ullamcorper odio.",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            }
-          ],
-          "nodeType": "document"
-        }
-      },
-      "author": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "7zdUEgrB1uLxjxtYqBXVhN",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:49:09.443Z",
-              "updatedAt": "2023-05-23T16:49:09.443Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "author"
-                }
-              }
-            },
-            "fields": {
-              "fullName": {
-                "en-US": "Jane Doe"
-              },
-              "biography": {
-                "en-US": {
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "About me",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Integer eu auctor est. Pellentesque iaculis iaculis purus, ut laoreet \nnulla consequat ac. Donec venenatis tincidunt elit, at gravida ex. \nCurabitur ut blandit justo. Duis egestas semper vulputate. Fusce euismod\n nibh ut semper ultricies. Curabitur venenatis, justo vitae sodales \ndignissim, purus augue dapibus dolor, non dignissim leo sem nec mauris. \nNullam nec elit sapien. Morbi blandit aliquam ultrices. In sed porttitor\n nibh, sit amet varius sapien.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "My favourite quote",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
                   "data": {},
                   "content": [
                     {
@@ -621,173 +590,156 @@
                       "content": [
                         {
                           "data": {},
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "value": "About me",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
                           "marks": [],
-                          "value": "Integer eu auctor est. Pellentesque iaculis iaculis purus, ut laoreet \nnulla consequat ac. Donec venenatis tincidunt elit, at gravida ex. \nCurabitur ut blandit justo. Duis egestas semper vulputate. Fusce euismod\n nibh ut semper ultricies. Curabitur venenatis, justo vitae sodales \ndignissim, purus augue dapibus dolor, non dignissim leo sem nec mauris. \nNullam nec elit sapien. Morbi blandit aliquam ultrices. In sed porttitor\n nibh, sit amet varius sapien.",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "value": "My favourite quote",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "content": [
-                            {
-                              "data": {},
-                              "marks": [],
-                              "value": "Nullam ullamcorper tincidunt justo, vel consequat elit malesuada in.",
-                              "nodeType": "text"
-                            }
-                          ],
-                          "nodeType": "paragraph"
-                        }
-                      ],
-                      "nodeType": "blockquote"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "marks": [],
-                          "value": "",
+                          "value": "Nullam ullamcorper tincidunt justo, vel consequat elit malesuada in.",
                           "nodeType": "text"
                         }
                       ],
                       "nodeType": "paragraph"
                     }
                   ],
-                  "nodeType": "document"
-                }
-              },
-              "slug": {
-                "en-US": "jane-doe"
-              },
-              "photo": {
-                "en-US": {
-                  "metadata": {
-                    "tags": []
-                  },
-                  "sys": {
-                    "space": {
-                      "sys": {
-                        "type": "Link",
-                        "linkType": "Space",
-                        "id": "xcawcketyif2"
-                      }
-                    },
-                    "id": "181pVWoodUVmggN3dszkYr",
-                    "type": "Asset",
-                    "createdAt": "2023-05-23T16:48:54.617Z",
-                    "updatedAt": "2023-05-23T16:48:54.617Z",
-                    "environment": {
-                      "sys": {
-                        "id": "Sandbox",
-                        "type": "Link",
-                        "linkType": "Environment"
-                      }
-                    },
-                    "revision": 1
-                  },
-                  "fields": {
-                    "title": {
-                      "en-US": "Jane Doe"
-                    },
-                    "description": {
-                      "en-US": "This is Jane Doe's profile picture"
-                    },
-                    "file": {
-                      "en-US": {
-                        "url": "//images.ctfassets.net/xcawcketyif2/181pVWoodUVmggN3dszkYr/283287c96f871d4deee07e11794eff72/jane-doe.jpg",
-                        "details": {
-                          "size": 766690,
-                          "image": {
-                            "width": 5472,
-                            "height": 3648
-                          }
-                        },
-                        "fileName": "jane-doe.jpg",
-                        "contentType": "image/jpeg"
-                      }
+                  "nodeType": "blockquote"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "",
+                      "nodeType": "text"
                     }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            },
+            "slug": "jane-doe",
+            "photo": {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
                   }
+                },
+                "id": "181pVWoodUVmggN3dszkYr",
+                "type": "Asset",
+                "createdAt": "2023-05-23T16:48:54.617Z",
+                "updatedAt": "2023-05-23T16:48:54.617Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "Jane Doe",
+                "description": "This is Jane Doe's profile picture",
+                "file": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/181pVWoodUVmggN3dszkYr/283287c96f871d4deee07e11794eff72/jane-doe.jpg",
+                  "details": {
+                    "size": 766690,
+                    "image": {
+                      "width": 5472,
+                      "height": 3648
+                    }
+                  },
+                  "fileName": "jane-doe.jpg",
+                  "contentType": "image/jpeg"
                 }
               }
             }
+          }
+        },
+        {
+          "metadata": {
+            "tags": []
           },
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "6FQeokqOlz9z8Cy015Wniy",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:44:22.755Z",
-              "updatedAt": "2023-05-23T16:44:22.755Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "author"
-                }
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "xcawcketyif2"
               }
             },
-            "fields": {
-              "fullName": {
-                "en-US": "John Doe"
-              },
-              "biography": {
-                "en-US": {
-                  "nodeType": "document",
+            "id": "6FQeokqOlz9z8Cy015Wniy",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:44:22.755Z",
+            "updatedAt": "2023-05-23T16:44:22.755Z",
+            "environment": {
+              "sys": {
+                "id": "Sandbox",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "author"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "fullName": "John Doe",
+            "biography": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "About me",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.\n\n\n",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "My favourite quote",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "blockquote",
                   "data": {},
                   "content": [
                     {
@@ -796,176 +748,154 @@
                       "content": [
                         {
                           "nodeType": "text",
-                          "value": "About me",
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "data": {}
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "paragraph",
-                      "data": {},
-                      "content": [
-                        {
-                          "nodeType": "text",
-                          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.\n\n\n",
-                          "marks": [],
-                          "data": {}
-                        },
-                        {
-                          "nodeType": "text",
-                          "value": "My favourite quote",
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "data": {}
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "blockquote",
-                      "data": {},
-                      "content": [
-                        {
-                          "nodeType": "paragraph",
-                          "data": {},
-                          "content": [
-                            {
-                              "nodeType": "text",
-                              "value": "Nam eu tristique ante, a pellentesque nisi\n",
-                              "marks": [],
-                              "data": {}
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "paragraph",
-                      "data": {},
-                      "content": [
-                        {
-                          "nodeType": "text",
-                          "value": "",
+                          "value": "Nam eu tristique ante, a pellentesque nisi\n",
                           "marks": [],
                           "data": {}
                         }
                       ]
                     }
                   ]
-                }
-              },
-              "slug": {
-                "en-US": "john-doe"
-              },
-              "photo": {
-                "en-US": {
-                  "metadata": {
-                    "tags": []
-                  },
-                  "sys": {
-                    "space": {
-                      "sys": {
-                        "type": "Link",
-                        "linkType": "Space",
-                        "id": "xcawcketyif2"
-                      }
-                    },
-                    "id": "73Wi6LFyJTWXmYXDANOOQQ",
-                    "type": "Asset",
-                    "createdAt": "2023-05-23T16:42:30.670Z",
-                    "updatedAt": "2023-05-23T16:42:30.670Z",
-                    "environment": {
-                      "sys": {
-                        "id": "Sandbox",
-                        "type": "Link",
-                        "linkType": "Environment"
-                      }
-                    },
-                    "revision": 1
-                  },
-                  "fields": {
-                    "title": {
-                      "en-US": "John Doe"
-                    },
-                    "description": {
-                      "en-US": "This is John Doe's profile picture"
-                    },
-                    "file": {
-                      "en-US": {
-                        "url": "//images.ctfassets.net/xcawcketyif2/73Wi6LFyJTWXmYXDANOOQQ/10dc1d1cfeb84e00c308a596dbda9189/john-doe2.jpg",
-                        "details": {
-                          "size": 1126724,
-                          "image": {
-                            "width": 4950,
-                            "height": 3852
-                          }
-                        },
-                        "fileName": "john-doe2.jpg",
-                        "contentType": "image/jpeg"
-                      }
+                },
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "",
+                      "marks": [],
+                      "data": {}
                     }
+                  ]
+                }
+              ]
+            },
+            "slug": "john-doe",
+            "photo": {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
                   }
+                },
+                "id": "73Wi6LFyJTWXmYXDANOOQQ",
+                "type": "Asset",
+                "createdAt": "2023-05-23T16:42:30.670Z",
+                "updatedAt": "2023-05-23T16:42:30.670Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "John Doe",
+                "description": "This is John Doe's profile picture",
+                "file": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/73Wi6LFyJTWXmYXDANOOQQ/10dc1d1cfeb84e00c308a596dbda9189/john-doe2.jpg",
+                  "details": {
+                    "size": 1126724,
+                    "image": {
+                      "width": 4950,
+                      "height": 3852
+                    }
+                  },
+                  "fileName": "john-doe2.jpg",
+                  "contentType": "image/jpeg"
                 }
               }
             }
           }
-        ]
-      },
-      "readingTime": {
-        "en-US": 8
-      },
-      "categories": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "24sUUFOMRJstrYscp4Dn5s",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:31:31.902Z",
-              "updatedAt": "2023-05-23T16:31:31.902Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "category"
-                }
+        }
+      ],
+      "readingTime": 8,
+      "categories": [
+        {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "xcawcketyif2"
               }
             },
-            "fields": {
-              "title": {
-                "en-US": "Home office"
-              },
-              "slug": {
-                "en-US": "home-office"
+            "id": "24sUUFOMRJstrYscp4Dn5s",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:31:31.902Z",
+            "updatedAt": "2023-05-23T16:31:31.902Z",
+            "environment": {
+              "sys": {
+                "id": "Sandbox",
+                "type": "Link",
+                "linkType": "Environment"
               }
-            }
+            },
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Home office",
+            "slug": "home-office"
           }
-        ]
-      }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "xcawcketyif2"
+        }
+      },
+      "id": "4CO6yOtFPyFG5fWWEwoduL",
+      "type": "Entry",
+      "createdAt": "2023-05-24T19:01:57.465Z",
+      "updatedAt": "2023-05-24T19:01:57.465Z",
+      "environment": {
+        "sys": {
+          "id": "Sandbox",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "category"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Big Data",
+      "slug": "big-data"
     }
   },
   {
@@ -998,79 +928,186 @@
           "linkType": "ContentType",
           "id": "post"
         }
-      }
+      },
+      "locale": "en-US"
     },
     "fields": {
-      "title": {
-        "en-US": "More than 60 years of AI evolution"
-      },
-      "slug": {
-        "en-US": "60-years-ai-evolution"
-      },
-      "creationDate": {
-        "en-US": "2022-06-13T13:45-06:00"
-      },
-      "metaDescription": {
-        "en-US": "In the summer of 1956 AI was first introduced. This 2022 summer we remember its origins."
-      },
-      "metaKeywords": {
-        "en-US": [
-          "Artificial Intelligence",
-          "Darthmouth College"
-        ]
-      },
+      "title": "More than 60 years of AI evolution",
+      "slug": "60-years-ai-evolution",
+      "creationDate": "2022-06-13T13:45-06:00",
+      "metaDescription": "In the summer of 1956 AI was first introduced. This 2022 summer we remember its origins.",
+      "metaKeywords": [
+        "Artificial Intelligence",
+        "Darthmouth College"
+      ],
       "featuredImage": {
-        "en-US": {
-          "metadata": {
-            "tags": []
-          },
-          "sys": {
-            "space": {
-              "sys": {
-                "type": "Link",
-                "linkType": "Space",
-                "id": "xcawcketyif2"
-              }
-            },
-            "id": "6FJ01aXpe3L5x8jV3uDX7Z",
-            "type": "Asset",
-            "createdAt": "2023-05-23T16:59:18.449Z",
-            "updatedAt": "2023-05-23T16:59:18.449Z",
-            "environment": {
-              "sys": {
-                "id": "Sandbox",
-                "type": "Link",
-                "linkType": "Environment"
-              }
-            },
-            "revision": 1
-          },
-          "fields": {
-            "title": {
-              "en-US": "AI featured image"
-            },
-            "description": {
-              "en-US": "This is an AI featured image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/6FJ01aXpe3L5x8jV3uDX7Z/7ed40ab348732a55df10ed5063065055/AI-featured.jpg",
-                "details": {
-                  "size": 135900,
-                  "image": {
-                    "width": 870,
-                    "height": 290
-                  }
-                },
-                "fileName": "AI-featured.jpg",
-                "contentType": "image/jpeg"
-              }
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
             }
+          },
+          "id": "6FJ01aXpe3L5x8jV3uDX7Z",
+          "type": "Asset",
+          "createdAt": "2023-05-23T16:59:18.449Z",
+          "updatedAt": "2023-05-23T16:59:18.449Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "AI featured image",
+          "description": "This is an AI featured image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/6FJ01aXpe3L5x8jV3uDX7Z/7ed40ab348732a55df10ed5063065055/AI-featured.jpg",
+            "details": {
+              "size": 135900,
+              "image": {
+                "width": 870,
+                "height": 290
+              }
+            },
+            "fileName": "AI-featured.jpg",
+            "contentType": "image/jpeg"
           }
         }
       },
       "thumbnail": {
-        "en-US": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "4IvxQ0Kt6pk975Ss0WcJ6Q",
+          "type": "Asset",
+          "createdAt": "2023-05-23T17:00:18.502Z",
+          "updatedAt": "2023-05-23T17:00:18.502Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "AI thumbnail image",
+          "description": "This is the AI post thumbnail image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/4IvxQ0Kt6pk975Ss0WcJ6Q/d63009af7ddd88047576bcd82d29e2c0/AI-thumbnail.jpg",
+            "details": {
+              "size": 187603,
+              "image": {
+                "width": 1000,
+                "height": 667
+              }
+            },
+            "fileName": "AI-thumbnail.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "excerpt": "Sed quis congue erat, quis sagittis lacus. Pellentesque dictum magna eget tempus egestas. Cras sed sapien justo. Nulla ut viverra diam. ",
+      "body": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Pellentesque vestibulum posuere leo, viverra finibus purus venenatis id.\n Duis nec consectetur lacus, sodales tempor lectus. Cras viverra \ndignissim dignissim. Duis semper hendrerit consequat. Donec libero \nipsum, hendrerit sit amet enim quis, dictum sagittis turpis. In faucibus\n pharetra nunc id aliquet. Donec fermentum gravida nisl, vel laoreet \nneque interdum a. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {
+              "target": {
+                "metadata": {
+                  "tags": []
+                },
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xcawcketyif2"
+                    }
+                  },
+                  "id": "52XBNsKRffikSUQLyVDa1X",
+                  "type": "Asset",
+                  "createdAt": "2023-05-23T17:04:17.739Z",
+                  "updatedAt": "2023-05-23T17:04:17.739Z",
+                  "environment": {
+                    "sys": {
+                      "id": "Sandbox",
+                      "type": "Link",
+                      "linkType": "Environment"
+                    }
+                  },
+                  "revision": 1,
+                  "locale": "en-US"
+                },
+                "fields": {
+                  "title": "AI post media",
+                  "description": "This is an AI post media",
+                  "file": {
+                    "url": "//images.ctfassets.net/xcawcketyif2/52XBNsKRffikSUQLyVDa1X/4eddef504435831e9376eabee031f8e3/AI-media.jpg",
+                    "details": {
+                      "size": 1612639,
+                      "image": {
+                        "width": 7900,
+                        "height": 3702
+                      }
+                    },
+                    "fileName": "AI-media.jpg",
+                    "contentType": "image/jpeg"
+                  }
+                }
+              }
+            },
+            "content": [],
+            "nodeType": "embedded-asset-block"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Morbi ullamcorper fringilla scelerisque. Aenean lectus\n tellus, suscipit eget dolor quis, molestie dignissim erat. Duis \nporttitor pellentesque justo ut dictum. Nullam et tellus quis mauris \npretium mattis ut et mi. Suspendisse varius id lectus et malesuada. \nFusce malesuada nisl arcu, vitae vestibulum nunc malesuada non. Etiam \nmolestie luctus velit pretium molestie.\n\n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "author": [
+        {
           "metadata": {
             "tags": []
           },
@@ -1082,10 +1119,10 @@
                 "id": "xcawcketyif2"
               }
             },
-            "id": "4IvxQ0Kt6pk975Ss0WcJ6Q",
-            "type": "Asset",
-            "createdAt": "2023-05-23T17:00:18.502Z",
-            "updatedAt": "2023-05-23T17:00:18.502Z",
+            "id": "6FQeokqOlz9z8Cy015Wniy",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:44:22.755Z",
+            "updatedAt": "2023-05-23T16:44:22.755Z",
             "environment": {
               "sys": {
                 "id": "Sandbox",
@@ -1093,162 +1130,62 @@
                 "linkType": "Environment"
               }
             },
-            "revision": 1
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "author"
+              }
+            },
+            "locale": "en-US"
           },
           "fields": {
-            "title": {
-              "en-US": "AI thumbnail image"
-            },
-            "description": {
-              "en-US": "This is the AI post thumbnail image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/4IvxQ0Kt6pk975Ss0WcJ6Q/d63009af7ddd88047576bcd82d29e2c0/AI-thumbnail.jpg",
-                "details": {
-                  "size": 187603,
-                  "image": {
-                    "width": 1000,
-                    "height": 667
-                  }
-                },
-                "fileName": "AI-thumbnail.jpg",
-                "contentType": "image/jpeg"
-              }
-            }
-          }
-        }
-      },
-      "excerpt": {
-        "en-US": "Sed quis congue erat, quis sagittis lacus. Pellentesque dictum magna eget tempus egestas. Cras sed sapien justo. Nulla ut viverra diam. "
-      },
-      "body": {
-        "en-US": {
-          "data": {},
-          "content": [
-            {
+            "fullName": "John Doe",
+            "biography": {
+              "nodeType": "document",
               "data": {},
               "content": [
                 {
+                  "nodeType": "paragraph",
                   "data": {},
-                  "marks": [],
-                  "value": "Pellentesque vestibulum posuere leo, viverra finibus purus venenatis id.\n Duis nec consectetur lacus, sodales tempor lectus. Cras viverra \ndignissim dignissim. Duis semper hendrerit consequat. Donec libero \nipsum, hendrerit sit amet enim quis, dictum sagittis turpis. In faucibus\n pharetra nunc id aliquet. Donec fermentum gravida nisl, vel laoreet \nneque interdum a. ",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            },
-            {
-              "data": {
-                "target": {
-                  "metadata": {
-                    "tags": []
-                  },
-                  "sys": {
-                    "space": {
-                      "sys": {
-                        "type": "Link",
-                        "linkType": "Space",
-                        "id": "xcawcketyif2"
-                      }
-                    },
-                    "id": "52XBNsKRffikSUQLyVDa1X",
-                    "type": "Asset",
-                    "createdAt": "2023-05-23T17:04:17.739Z",
-                    "updatedAt": "2023-05-23T17:04:17.739Z",
-                    "environment": {
-                      "sys": {
-                        "id": "Sandbox",
-                        "type": "Link",
-                        "linkType": "Environment"
-                      }
-                    },
-                    "revision": 1
-                  },
-                  "fields": {
-                    "title": {
-                      "en-US": "AI post media"
-                    },
-                    "description": {
-                      "en-US": "This is an AI post media"
-                    },
-                    "file": {
-                      "en-US": {
-                        "url": "//images.ctfassets.net/xcawcketyif2/52XBNsKRffikSUQLyVDa1X/4eddef504435831e9376eabee031f8e3/AI-media.jpg",
-                        "details": {
-                          "size": 1612639,
-                          "image": {
-                            "width": 7900,
-                            "height": 3702
-                          }
-                        },
-                        "fileName": "AI-media.jpg",
-                        "contentType": "image/jpeg"
-                      }
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "About me",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
                     }
-                  }
-                }
-              },
-              "content": [],
-              "nodeType": "embedded-asset-block"
-            },
-            {
-              "data": {},
-              "content": [
+                  ]
+                },
                 {
+                  "nodeType": "paragraph",
                   "data": {},
-                  "marks": [],
-                  "value": "Morbi ullamcorper fringilla scelerisque. Aenean lectus\n tellus, suscipit eget dolor quis, molestie dignissim erat. Duis \nporttitor pellentesque justo ut dictum. Nullam et tellus quis mauris \npretium mattis ut et mi. Suspendisse varius id lectus et malesuada. \nFusce malesuada nisl arcu, vitae vestibulum nunc malesuada non. Etiam \nmolestie luctus velit pretium molestie.\n\n\n",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            }
-          ],
-          "nodeType": "document"
-        }
-      },
-      "author": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "6FQeokqOlz9z8Cy015Wniy",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:44:22.755Z",
-              "updatedAt": "2023-05-23T16:44:22.755Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "author"
-                }
-              }
-            },
-            "fields": {
-              "fullName": {
-                "en-US": "John Doe"
-              },
-              "biography": {
-                "en-US": {
-                  "nodeType": "document",
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.\n\n\n",
+                      "marks": [],
+                      "data": {}
+                    },
+                    {
+                      "nodeType": "text",
+                      "value": "My favourite quote",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "data": {}
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "blockquote",
                   "data": {},
                   "content": [
                     {
@@ -1257,176 +1194,116 @@
                       "content": [
                         {
                           "nodeType": "text",
-                          "value": "About me",
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "data": {}
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "paragraph",
-                      "data": {},
-                      "content": [
-                        {
-                          "nodeType": "text",
-                          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.\n\n\n",
-                          "marks": [],
-                          "data": {}
-                        },
-                        {
-                          "nodeType": "text",
-                          "value": "My favourite quote",
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "data": {}
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "blockquote",
-                      "data": {},
-                      "content": [
-                        {
-                          "nodeType": "paragraph",
-                          "data": {},
-                          "content": [
-                            {
-                              "nodeType": "text",
-                              "value": "Nam eu tristique ante, a pellentesque nisi\n",
-                              "marks": [],
-                              "data": {}
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "paragraph",
-                      "data": {},
-                      "content": [
-                        {
-                          "nodeType": "text",
-                          "value": "",
+                          "value": "Nam eu tristique ante, a pellentesque nisi\n",
                           "marks": [],
                           "data": {}
                         }
                       ]
                     }
                   ]
-                }
-              },
-              "slug": {
-                "en-US": "john-doe"
-              },
-              "photo": {
-                "en-US": {
-                  "metadata": {
-                    "tags": []
-                  },
-                  "sys": {
-                    "space": {
-                      "sys": {
-                        "type": "Link",
-                        "linkType": "Space",
-                        "id": "xcawcketyif2"
-                      }
-                    },
-                    "id": "73Wi6LFyJTWXmYXDANOOQQ",
-                    "type": "Asset",
-                    "createdAt": "2023-05-23T16:42:30.670Z",
-                    "updatedAt": "2023-05-23T16:42:30.670Z",
-                    "environment": {
-                      "sys": {
-                        "id": "Sandbox",
-                        "type": "Link",
-                        "linkType": "Environment"
-                      }
-                    },
-                    "revision": 1
-                  },
-                  "fields": {
-                    "title": {
-                      "en-US": "John Doe"
-                    },
-                    "description": {
-                      "en-US": "This is John Doe's profile picture"
-                    },
-                    "file": {
-                      "en-US": {
-                        "url": "//images.ctfassets.net/xcawcketyif2/73Wi6LFyJTWXmYXDANOOQQ/10dc1d1cfeb84e00c308a596dbda9189/john-doe2.jpg",
-                        "details": {
-                          "size": 1126724,
-                          "image": {
-                            "width": 4950,
-                            "height": 3852
-                          }
-                        },
-                        "fileName": "john-doe2.jpg",
-                        "contentType": "image/jpeg"
-                      }
+                },
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "",
+                      "marks": [],
+                      "data": {}
                     }
+                  ]
+                }
+              ]
+            },
+            "slug": "john-doe",
+            "photo": {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
                   }
+                },
+                "id": "73Wi6LFyJTWXmYXDANOOQQ",
+                "type": "Asset",
+                "createdAt": "2023-05-23T16:42:30.670Z",
+                "updatedAt": "2023-05-23T16:42:30.670Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "John Doe",
+                "description": "This is John Doe's profile picture",
+                "file": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/73Wi6LFyJTWXmYXDANOOQQ/10dc1d1cfeb84e00c308a596dbda9189/john-doe2.jpg",
+                  "details": {
+                    "size": 1126724,
+                    "image": {
+                      "width": 4950,
+                      "height": 3852
+                    }
+                  },
+                  "fileName": "john-doe2.jpg",
+                  "contentType": "image/jpeg"
                 }
               }
             }
           }
-        ]
-      },
-      "readingTime": {
-        "en-US": 5
-      },
-      "categories": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "2nrLO4StTUivREfsCyn5wm",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:30:43.445Z",
-              "updatedAt": "2023-05-23T16:31:46.920Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 2,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "category"
-                }
+        }
+      ],
+      "readingTime": 5,
+      "categories": [
+        {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "xcawcketyif2"
               }
             },
-            "fields": {
-              "title": {
-                "en-US": "Artifical Intelligence"
-              },
-              "slug": {
-                "en-US": "AI"
+            "id": "2nrLO4StTUivREfsCyn5wm",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:30:43.445Z",
+            "updatedAt": "2023-05-23T16:31:46.920Z",
+            "environment": {
+              "sys": {
+                "id": "Sandbox",
+                "type": "Link",
+                "linkType": "Environment"
               }
-            }
+            },
+            "revision": 2,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Artifical Intelligence",
+            "slug": "AI"
           }
-        ]
-      }
+        }
+      ]
     }
   },
   {
@@ -1459,79 +1336,163 @@
           "linkType": "ContentType",
           "id": "post"
         }
-      }
+      },
+      "locale": "en-US"
     },
     "fields": {
-      "title": {
-        "en-US": "Machine Learning will be future health-care assistance"
-      },
-      "slug": {
-        "en-US": "machine-learning-future-health-care"
-      },
-      "creationDate": {
-        "en-US": "2023-01-27T19:30-06:00"
-      },
-      "metaDescription": {
-        "en-US": "Machine Learning proved during COVID pandemic to be greatfully helpful in caring patients. It might possibly be part of our future lifes."
-      },
-      "metaKeywords": {
-        "en-US": [
-          "Machine Learning",
-          "Health-care"
-        ]
-      },
+      "title": "Machine Learning will be future health-care assistance",
+      "slug": "machine-learning-future-health-care",
+      "creationDate": "2023-01-27T19:30-06:00",
+      "metaDescription": "Machine Learning proved during COVID pandemic to be greatfully helpful in caring patients. It might possibly be part of our future lifes.",
+      "metaKeywords": [
+        "Machine Learning",
+        "Health-care"
+      ],
       "featuredImage": {
-        "en-US": {
-          "metadata": {
-            "tags": []
-          },
-          "sys": {
-            "space": {
-              "sys": {
-                "type": "Link",
-                "linkType": "Space",
-                "id": "xcawcketyif2"
-              }
-            },
-            "id": "6qxr370lhoteWbSZ97u0z6",
-            "type": "Asset",
-            "createdAt": "2023-05-23T17:20:40.362Z",
-            "updatedAt": "2023-05-23T17:20:40.362Z",
-            "environment": {
-              "sys": {
-                "id": "Sandbox",
-                "type": "Link",
-                "linkType": "Environment"
-              }
-            },
-            "revision": 1
-          },
-          "fields": {
-            "title": {
-              "en-US": "ML-featured image"
-            },
-            "description": {
-              "en-US": "This is ML-featured image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/6qxr370lhoteWbSZ97u0z6/64a8ce11130d34476ce0c987d1121d0e/ML-featured.jpg",
-                "details": {
-                  "size": 310173,
-                  "image": {
-                    "width": 3309,
-                    "height": 2206
-                  }
-                },
-                "fileName": "ML-featured.jpg",
-                "contentType": "image/jpeg"
-              }
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
             }
+          },
+          "id": "6qxr370lhoteWbSZ97u0z6",
+          "type": "Asset",
+          "createdAt": "2023-05-23T17:20:40.362Z",
+          "updatedAt": "2023-05-23T17:20:40.362Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "ML-featured image",
+          "description": "This is ML-featured image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/6qxr370lhoteWbSZ97u0z6/64a8ce11130d34476ce0c987d1121d0e/ML-featured.jpg",
+            "details": {
+              "size": 310173,
+              "image": {
+                "width": 3309,
+                "height": 2206
+              }
+            },
+            "fileName": "ML-featured.jpg",
+            "contentType": "image/jpeg"
           }
         }
       },
       "thumbnail": {
-        "en-US": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "xcawcketyif2"
+            }
+          },
+          "id": "3YMiXmh5NE5b4SeRy1lZSO",
+          "type": "Asset",
+          "createdAt": "2023-05-23T17:22:49.078Z",
+          "updatedAt": "2023-05-23T17:22:49.078Z",
+          "environment": {
+            "sys": {
+              "id": "Sandbox",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "ML thumbnail image",
+          "description": "This is ML thumbnail image",
+          "file": {
+            "url": "//images.ctfassets.net/xcawcketyif2/3YMiXmh5NE5b4SeRy1lZSO/33b7326d4aafa800ea0df725263af053/ML-thumbnail.jpg",
+            "details": {
+              "size": 424705,
+              "image": {
+                "width": 7730,
+                "height": 7730
+              }
+            },
+            "fileName": "ML-thumbnail.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "excerpt": "Cras gravida neque semper mauris aliquet facilisis. Morbi non feugiat quam. Vestibulum sollicitudin augue vitae tincidunt porta. Cras et dui in odio.",
+      "body": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "What is it Machine learning?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur \nridiculus mus. Quisque iaculis leo in nulla mattis porttitor. Nullam \nerat nisl, interdum id sem et, dictum rhoncus enim. In diam dolor, \nvarius non vehicula vitae, lacinia quis nisi. Nullam et convallis nulla,\n sed maximus sem. Donec maximus tincidunt lorem, eu accumsan nibh congue\n a. Proin velit mauris, vehicula a posuere condimentum, dictum ac dui.\n\n",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "How was it helpful during COVID pandemic?",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          },
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Etiam malesuada congue augue vitae suscipit. Mauris semper felis ac mi \nfringilla vulputate. Pellentesque vel blandit enim, quis fermentum \nsapien. Integer sit amet ultrices neque. Sed sit amet imperdiet velit. \nFusce vitae tellus nisi. Curabitur eget aliquet ante, at sodales dui. \nAenean rutrum, est et pellentesque laoreet, ligula eros fermentum nunc, a\n vestibulum massa leo eu enim. Sed imperdiet mauris ut urna tincidunt \nultricies. In rutrum non nunc eget rutrum. \n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "author": [
+        {
           "metadata": {
             "tags": []
           },
@@ -1543,10 +1504,10 @@
                 "id": "xcawcketyif2"
               }
             },
-            "id": "3YMiXmh5NE5b4SeRy1lZSO",
-            "type": "Asset",
-            "createdAt": "2023-05-23T17:22:49.078Z",
-            "updatedAt": "2023-05-23T17:22:49.078Z",
+            "id": "7zdUEgrB1uLxjxtYqBXVhN",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:49:09.443Z",
+            "updatedAt": "2023-05-23T16:49:09.443Z",
             "environment": {
               "sys": {
                 "id": "Sandbox",
@@ -1554,133 +1515,66 @@
                 "linkType": "Environment"
               }
             },
-            "revision": 1
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "author"
+              }
+            },
+            "locale": "en-US"
           },
           "fields": {
-            "title": {
-              "en-US": "ML thumbnail image"
-            },
-            "description": {
-              "en-US": "This is ML thumbnail image"
-            },
-            "file": {
-              "en-US": {
-                "url": "//images.ctfassets.net/xcawcketyif2/3YMiXmh5NE5b4SeRy1lZSO/33b7326d4aafa800ea0df725263af053/ML-thumbnail.jpg",
-                "details": {
-                  "size": 424705,
-                  "image": {
-                    "width": 7730,
-                    "height": 7730
-                  }
-                },
-                "fileName": "ML-thumbnail.jpg",
-                "contentType": "image/jpeg"
-              }
-            }
-          }
-        }
-      },
-      "excerpt": {
-        "en-US": "Cras gravida neque semper mauris aliquet facilisis. Morbi non feugiat quam. Vestibulum sollicitudin augue vitae tincidunt porta. Cras et dui in odio."
-      },
-      "body": {
-        "en-US": {
-          "data": {},
-          "content": [
-            {
+            "fullName": "Jane Doe",
+            "biography": {
               "data": {},
               "content": [
                 {
                   "data": {},
-                  "marks": [
+                  "content": [
                     {
-                      "type": "bold"
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "About me",
+                      "nodeType": "text"
                     }
                   ],
-                  "value": "What is it Machine learning?",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            },
-            {
-              "data": {},
-              "content": [
-                {
-                  "data": {},
-                  "marks": [],
-                  "value": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur \nridiculus mus. Quisque iaculis leo in nulla mattis porttitor. Nullam \nerat nisl, interdum id sem et, dictum rhoncus enim. In diam dolor, \nvarius non vehicula vitae, lacinia quis nisi. Nullam et convallis nulla,\n sed maximus sem. Donec maximus tincidunt lorem, eu accumsan nibh congue\n a. Proin velit mauris, vehicula a posuere condimentum, dictum ac dui.\n\n",
-                  "nodeType": "text"
+                  "nodeType": "paragraph"
                 },
                 {
                   "data": {},
-                  "marks": [
+                  "content": [
                     {
-                      "type": "bold"
+                      "data": {},
+                      "marks": [],
+                      "value": "Integer eu auctor est. Pellentesque iaculis iaculis purus, ut laoreet \nnulla consequat ac. Donec venenatis tincidunt elit, at gravida ex. \nCurabitur ut blandit justo. Duis egestas semper vulputate. Fusce euismod\n nibh ut semper ultricies. Curabitur venenatis, justo vitae sodales \ndignissim, purus augue dapibus dolor, non dignissim leo sem nec mauris. \nNullam nec elit sapien. Morbi blandit aliquam ultrices. In sed porttitor\n nibh, sit amet varius sapien.",
+                      "nodeType": "text"
                     }
                   ],
-                  "value": "How was it helpful during COVID pandemic?",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            },
-            {
-              "data": {},
-              "content": [
+                  "nodeType": "paragraph"
+                },
                 {
                   "data": {},
-                  "marks": [],
-                  "value": "Etiam malesuada congue augue vitae suscipit. Mauris semper felis ac mi \nfringilla vulputate. Pellentesque vel blandit enim, quis fermentum \nsapien. Integer sit amet ultrices neque. Sed sit amet imperdiet velit. \nFusce vitae tellus nisi. Curabitur eget aliquet ante, at sodales dui. \nAenean rutrum, est et pellentesque laoreet, ligula eros fermentum nunc, a\n vestibulum massa leo eu enim. Sed imperdiet mauris ut urna tincidunt \nultricies. In rutrum non nunc eget rutrum. \n\n",
-                  "nodeType": "text"
-                }
-              ],
-              "nodeType": "paragraph"
-            }
-          ],
-          "nodeType": "document"
-        }
-      },
-      "author": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "7zdUEgrB1uLxjxtYqBXVhN",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:49:09.443Z",
-              "updatedAt": "2023-05-23T16:49:09.443Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "author"
-                }
-              }
-            },
-            "fields": {
-              "fullName": {
-                "en-US": "Jane Doe"
-              },
-              "biography": {
-                "en-US": {
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "My favourite quote",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
                   "data": {},
                   "content": [
                     {
@@ -1688,225 +1582,271 @@
                       "content": [
                         {
                           "data": {},
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "value": "About me",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
                           "marks": [],
-                          "value": "Integer eu auctor est. Pellentesque iaculis iaculis purus, ut laoreet \nnulla consequat ac. Donec venenatis tincidunt elit, at gravida ex. \nCurabitur ut blandit justo. Duis egestas semper vulputate. Fusce euismod\n nibh ut semper ultricies. Curabitur venenatis, justo vitae sodales \ndignissim, purus augue dapibus dolor, non dignissim leo sem nec mauris. \nNullam nec elit sapien. Morbi blandit aliquam ultrices. In sed porttitor\n nibh, sit amet varius sapien.",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "marks": [
-                            {
-                              "type": "bold"
-                            }
-                          ],
-                          "value": "My favourite quote",
-                          "nodeType": "text"
-                        }
-                      ],
-                      "nodeType": "paragraph"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "content": [
-                            {
-                              "data": {},
-                              "marks": [],
-                              "value": "Nullam ullamcorper tincidunt justo, vel consequat elit malesuada in.",
-                              "nodeType": "text"
-                            }
-                          ],
-                          "nodeType": "paragraph"
-                        }
-                      ],
-                      "nodeType": "blockquote"
-                    },
-                    {
-                      "data": {},
-                      "content": [
-                        {
-                          "data": {},
-                          "marks": [],
-                          "value": "",
+                          "value": "Nullam ullamcorper tincidunt justo, vel consequat elit malesuada in.",
                           "nodeType": "text"
                         }
                       ],
                       "nodeType": "paragraph"
                     }
                   ],
-                  "nodeType": "document"
-                }
-              },
-              "slug": {
-                "en-US": "jane-doe"
-              },
-              "photo": {
-                "en-US": {
-                  "metadata": {
-                    "tags": []
-                  },
-                  "sys": {
-                    "space": {
-                      "sys": {
-                        "type": "Link",
-                        "linkType": "Space",
-                        "id": "xcawcketyif2"
-                      }
-                    },
-                    "id": "181pVWoodUVmggN3dszkYr",
-                    "type": "Asset",
-                    "createdAt": "2023-05-23T16:48:54.617Z",
-                    "updatedAt": "2023-05-23T16:48:54.617Z",
-                    "environment": {
-                      "sys": {
-                        "id": "Sandbox",
-                        "type": "Link",
-                        "linkType": "Environment"
-                      }
-                    },
-                    "revision": 1
-                  },
-                  "fields": {
-                    "title": {
-                      "en-US": "Jane Doe"
-                    },
-                    "description": {
-                      "en-US": "This is Jane Doe's profile picture"
-                    },
-                    "file": {
-                      "en-US": {
-                        "url": "//images.ctfassets.net/xcawcketyif2/181pVWoodUVmggN3dszkYr/283287c96f871d4deee07e11794eff72/jane-doe.jpg",
-                        "details": {
-                          "size": 766690,
-                          "image": {
-                            "width": 5472,
-                            "height": 3648
-                          }
-                        },
-                        "fileName": "jane-doe.jpg",
-                        "contentType": "image/jpeg"
-                      }
+                  "nodeType": "blockquote"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "",
+                      "nodeType": "text"
                     }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            },
+            "slug": "jane-doe",
+            "photo": {
+              "metadata": {
+                "tags": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "xcawcketyif2"
                   }
+                },
+                "id": "181pVWoodUVmggN3dszkYr",
+                "type": "Asset",
+                "createdAt": "2023-05-23T16:48:54.617Z",
+                "updatedAt": "2023-05-23T16:48:54.617Z",
+                "environment": {
+                  "sys": {
+                    "id": "Sandbox",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "Jane Doe",
+                "description": "This is Jane Doe's profile picture",
+                "file": {
+                  "url": "//images.ctfassets.net/xcawcketyif2/181pVWoodUVmggN3dszkYr/283287c96f871d4deee07e11794eff72/jane-doe.jpg",
+                  "details": {
+                    "size": 766690,
+                    "image": {
+                      "width": 5472,
+                      "height": 3648
+                    }
+                  },
+                  "fileName": "jane-doe.jpg",
+                  "contentType": "image/jpeg"
                 }
               }
             }
           }
-        ]
-      },
-      "readingTime": {
-        "en-US": 10
-      },
-      "categories": {
-        "en-US": [
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "2nrLO4StTUivREfsCyn5wm",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:30:43.445Z",
-              "updatedAt": "2023-05-23T16:31:46.920Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 2,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "category"
-                }
-              }
-            },
-            "fields": {
-              "title": {
-                "en-US": "Artifical Intelligence"
-              },
-              "slug": {
-                "en-US": "AI"
-              }
-            }
+        }
+      ],
+      "readingTime": 10,
+      "categories": [
+        {
+          "metadata": {
+            "tags": []
           },
-          {
-            "metadata": {
-              "tags": []
-            },
-            "sys": {
-              "space": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "Space",
-                  "id": "xcawcketyif2"
-                }
-              },
-              "id": "EcRmNB7YBTVECxLisHoQL",
-              "type": "Entry",
-              "createdAt": "2023-05-23T16:31:08.084Z",
-              "updatedAt": "2023-05-23T16:31:08.084Z",
-              "environment": {
-                "sys": {
-                  "id": "Sandbox",
-                  "type": "Link",
-                  "linkType": "Environment"
-                }
-              },
-              "revision": 1,
-              "contentType": {
-                "sys": {
-                  "type": "Link",
-                  "linkType": "ContentType",
-                  "id": "category"
-                }
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "xcawcketyif2"
               }
             },
-            "fields": {
-              "title": {
-                "en-US": "Machine Learning"
-              },
-              "slug": {
-                "en-US": "ML"
+            "id": "2nrLO4StTUivREfsCyn5wm",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:30:43.445Z",
+            "updatedAt": "2023-05-23T16:31:46.920Z",
+            "environment": {
+              "sys": {
+                "id": "Sandbox",
+                "type": "Link",
+                "linkType": "Environment"
               }
-            }
+            },
+            "revision": 2,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Artifical Intelligence",
+            "slug": "AI"
           }
-        ]
-      }
+        },
+        {
+          "metadata": {
+            "tags": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "xcawcketyif2"
+              }
+            },
+            "id": "EcRmNB7YBTVECxLisHoQL",
+            "type": "Entry",
+            "createdAt": "2023-05-23T16:31:08.084Z",
+            "updatedAt": "2023-05-23T16:31:08.084Z",
+            "environment": {
+              "sys": {
+                "id": "Sandbox",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Machine Learning",
+            "slug": "ML"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "xcawcketyif2"
+        }
+      },
+      "id": "2nrLO4StTUivREfsCyn5wm",
+      "type": "Entry",
+      "createdAt": "2023-05-23T16:30:43.445Z",
+      "updatedAt": "2023-05-23T16:31:46.920Z",
+      "environment": {
+        "sys": {
+          "id": "Sandbox",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "category"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Artifical Intelligence",
+      "slug": "AI"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "xcawcketyif2"
+        }
+      },
+      "id": "24sUUFOMRJstrYscp4Dn5s",
+      "type": "Entry",
+      "createdAt": "2023-05-23T16:31:31.902Z",
+      "updatedAt": "2023-05-23T16:31:31.902Z",
+      "environment": {
+        "sys": {
+          "id": "Sandbox",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "category"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Home office",
+      "slug": "home-office"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "xcawcketyif2"
+        }
+      },
+      "id": "EcRmNB7YBTVECxLisHoQL",
+      "type": "Entry",
+      "createdAt": "2023-05-23T16:31:08.084Z",
+      "updatedAt": "2023-05-23T16:31:08.084Z",
+      "environment": {
+        "sys": {
+          "id": "Sandbox",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "category"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Machine Learning",
+      "slug": "ML"
     }
   }
 ]
