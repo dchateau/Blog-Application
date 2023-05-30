@@ -13,11 +13,11 @@ type Props = {
 };
 
 const Sidebar = ({ drawerWidth }: Props) => {
-  const categories = data.items.filter(
+  const categories = data.filter(
     (item) => item.sys.contentType.sys.id === "category"
   );
 
-  console.log(categories);
+  // console.log("Categories: ", categories);
 
   return (
     <Box
