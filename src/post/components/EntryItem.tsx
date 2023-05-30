@@ -1,29 +1,46 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { useRouter } from "next/router";
 
-type Props = {
-  authors: Array<string>;
-  date: Date;
-  excerpt: string;
-  imageUrl: string;
-  readingTime: number;
-  title: string;
-};
+import type {EntryItemProps} from "@typings/globals";
+
+// type Props = {
+//   authors: Array<string>;
+//   date: Date;
+//   entryId: string;
+//   excerpt: string;
+//   imageUrl: string;
+//   readingTime: number;
+//   slug: string;
+//   title: string;
+// };
 
 const EntryItem = ({
   date,
+  entryId,
   excerpt,
   authors,
   imageUrl,
   readingTime,
+  slug,
   title,
-}: Props) => {
+}: EntryItemProps) => {
+  const router = useRouter();
+
+  const onClickCard = () => {
+    console.log("Card clicked, navigate to: ", slug);
+    const route = `/${slug}`;
+    router.push({
+      pathname: route,
+      query: { entryId }
+    }, route);
+  };
+
   return (
     <Grid
       item
@@ -32,8 +49,8 @@ const EntryItem = ({
       lg={4}
       sx={{
         height: {
-            lg: "calc(55vh - 4px)",
-            md: "calc(55vh - 4px)"
+          lg: "calc(55vh - 4px)",
+          md: "calc(55vh - 4px)",
         },
       }}
     >
@@ -46,7 +63,7 @@ const EntryItem = ({
           },
         }}
       >
-        <CardActionArea sx={{ height: "100%" }}>
+        <CardActionArea sx={{ height: "100%" }} onClick={onClickCard}>
           <CardMedia
             component="img"
             sx={{ objectFit: "cover", height: "140px" }}
