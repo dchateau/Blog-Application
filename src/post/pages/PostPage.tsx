@@ -58,7 +58,7 @@ const PostPage = ({
         console.log("Hyperlink", node.data.uri, label);
         return (
           <Link
-          underline="hover"
+            underline="hover"
             sx={{
               color: "black",
               textDecoration: "none",
