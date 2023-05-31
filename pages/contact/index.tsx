@@ -8,7 +8,7 @@ const index = () => {
       <Head>
         <title>Contact</title>
         <meta name="description" content="Contact Gluo blogging" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/gluo.ico" />
       </Head>
       <ContactPage />
     </div>
