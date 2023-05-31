@@ -60,6 +60,7 @@ const NavBar = ({ drawerWidth, needSidebar }: Props) => {
             variant="h5"
             noWrap
             component="div"
+            sx={{":hover": {cursor: "default"}}}
           >
             Gluo blogging
           </Typography>
