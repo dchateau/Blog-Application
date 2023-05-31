@@ -15,7 +15,7 @@ const PostLayout = ({ children }: Props) => {
       <NavBar drawerWidth={DRAWER_WIDTH} needSidebar={false} />
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, backgroundColor: "primary.main" }}
+        sx={{ flexGrow: 1, p: 0, backgroundColor: "primary.main" }}
       >
         <Toolbar />
         {children}
