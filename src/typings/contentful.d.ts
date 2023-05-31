@@ -6,7 +6,7 @@ export interface AuthorFields {
   fullName: string;
 
   /** Biography */
-  biography?: Document | undefined;
+  biography?: Document;
 
   /** Slug */
   slug: string;
@@ -29,6 +29,7 @@ export interface Author extends Entry<AuthorFields> {
       };
     };
   };
+  fields: AuthorFields;
 }
 
 export interface CategoryFields {
@@ -78,7 +79,7 @@ export interface PostFields {
   /** Meta keywords */
   metaKeywords?: string[] | undefined;
 
-  //   /** Featured image */
+  /** Featured image */
   featuredImage?: Asset | undefined;
 
   /** Thumbnail */
@@ -87,17 +88,17 @@ export interface PostFields {
   /** Excerpt */
   excerpt: string;
 
-  //   /** Body */
-  //   body: Document;
+  /** Body */
+  body?: Document;
 
-  //   /** Author */
+  /** Author */
   author: Author[];
 
-  //   /** Reading time */
+  /** Reading time */
   readingTime: number;
 
-  //   /** Categories */
-  //   categories?: Category[] | undefined;
+  /** Categories */
+  categories?: Category[] | undefined;
 }
 
 /** This model includes the main structure for a post entry including: title, creation date, meta-information, excerpt, body, author and reading time. */

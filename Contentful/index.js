@@ -32,6 +32,7 @@ const entries = client
 
     const jsonString = JSON.stringify(siteEntry, null, 2);
     const filePath = "./public/data.json";
+    console.log("Data to be saved into a file");
 
     fs.writeFileSync(filePath, jsonString, (error) => {
       if (error) console.error("Failed to save JSON", error);
