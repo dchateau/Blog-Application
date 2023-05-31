@@ -1,5 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import type { NextRouter } from "next/router";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -13,9 +15,27 @@ type Props = {
 };
 
 const CategoriesList = ({ categories }: Props) => {
-  const router = useRouter();
+  const router: NextRouter = useRouter();
+  const [activeCategory, setActiveCategory] = useState<string>("");
 
-  const onClickCategory = (slug: string):void => {
+  useEffect(() => {
+    const onRouteChange = (url: string): void => {
+      // console.log("Category selected: ", url);
+      let category: string[] | string = url.split("?");
+
+      if (category.length === 1) {
+        setActiveCategory("");
+        return;
+      }
+      category = category[1].split("=");
+      category = category[1];
+      setActiveCategory(category);
+    };
+
+    router.events.on("routeChangeComplete", onRouteChange);
+  }, [router.events]);
+
+  const onClickCategory = (slug: string): void => {
     // console.log("Clicked category", slug);
     if (slug !== "")
       router.push({
@@ -39,6 +59,7 @@ const CategoriesList = ({ categories }: Props) => {
       </ListItem>
       {categories.map((category: CategoryFields) => {
         const { slug, title } = category;
+        // console.log("CategoryItem: ", slug, activeCategory);
         // console.log(slug, title);
         return (
           <ListItem
@@ -46,7 +67,7 @@ const CategoriesList = ({ categories }: Props) => {
             sx={{ padding: 1.2, width: "100%" }}
             onClick={onClickCategory.bind(null, slug)}
           >
-            <ListItemButton>
+            <ListItemButton selected={slug === activeCategory} sx={{"&.Mui-selected": { backgroundColor: "primary.main"}}}>
               <ListItemIcon>
                 <FeedIcon />
               </ListItemIcon>
