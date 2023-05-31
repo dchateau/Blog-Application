@@ -3,13 +3,15 @@ import data from "../../../public/data.json";
 
 const getPostBySlug = (filterSlug: string): PostFields => {
   //   console.log("PostBy: ", filterSlug);
-  const [post] = data.filter((item: any) => item.fields.slug === filterSlug);
+  let post: any;
+  [post] = data.filter((item: any) => item.fields.slug === filterSlug);
   //   console.log("Filteres post: ", post);
 
   const {
     author,
     creationDate,
     excerpt,
+    featuredImage,
     metaDescription,
     metaKeywords,
     readingTime,
@@ -28,6 +30,9 @@ const getPostBySlug = (filterSlug: string): PostFields => {
   const thumbnailAsAsset: any = { ...thumbnail };
   delete thumbnailAsAsset.metadata;
 
+  const featuredImageAsAsset: any = { ...featuredImage };
+  delete featuredImageAsAsset.metadata;
+
   const formattedPost: PostFields = {
     author: authorContent,
     creationDate: creationDate || "",
@@ -37,6 +42,7 @@ const getPostBySlug = (filterSlug: string): PostFields => {
     readingTime: readingTime || 1,
     slug: slug || "",
     thumbnail: thumbnailAsAsset,
+    featuredImage: featuredImageAsAsset,
     title: title,
   };
 
