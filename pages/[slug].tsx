@@ -31,12 +31,13 @@ const EntryPage = ({
     query: { entryId },
   } = router;
   // console.log("Router: ", entryId);
-  console.log("The post: ", post);
+  // console.log("The post: ", post);
   return (
     <>
       <Head>
         <meta name="description" content={post?.metaDescription} />
         <meta name="keywords" content={post?.metaKeywords?.join(", ")} />
+        <link rel="icon" href="/gluo.ico" />
         <title>{post?.title}</title>
       </Head>
       <PostPage post={post} />
