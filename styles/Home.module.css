@@ -131,3 +131,10 @@
 .customLink:hover {
   color: "#8C0303";
 }
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
