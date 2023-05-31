@@ -30,16 +30,16 @@ const EntryPage = ({
   const {
     query: { entryId },
   } = router;
-  console.log("Router: ", entryId);
-  console.log(post);
+  // console.log("Router: ", entryId);
+  console.log("The post: ", post);
   return (
     <>
       <Head>
-        <meta name="description" content={post.metaDescription} />
-        <meta name="keywords" content={post.metaKeywords?.join(", ")} />
-        <title>{post.title}</title>
+        <meta name="description" content={post?.metaDescription} />
+        <meta name="keywords" content={post?.metaKeywords?.join(", ")} />
+        <title>{post?.title}</title>
       </Head>
-      {/* <PostPage {...entry}/> */}
+      <PostPage post={post} />
       {/* <h1>{entry.title}</h1>
       <p>{entry.readingTime}</p>
       <h4>Entry Id: {entryId}</h4> */}
@@ -52,8 +52,10 @@ export default EntryPage;
 export const getStaticProps: GetStaticProps<{ post: PostFields }> = async (
   props
 ) => {
-  console.log("Slug props: ", props.params);
+  // console.log("Slug props: ", props.params);
   const post: PostFields = getPostBySlug(props.params?.slug?.toString() || "");
+  // console.log("getPost on slug: ", post);
+
   // const [entry] = posts.filter(
   //   (post) => post.fields.slug?.["en-US"] === props.params?.slug
   // );
@@ -77,9 +79,9 @@ export const getStaticProps: GetStaticProps<{ post: PostFields }> = async (
   };
 };
 
-export const getStaticPaths: GetStaticPaths<PathType> = async (props) => {
+export const getStaticPaths: GetStaticPaths = async (props) => {
   console.log("Slug path props: ", props);
-  
+
   // const paths = definedPages.map((page) => {
   //   // console.log(page);
   //   return {
