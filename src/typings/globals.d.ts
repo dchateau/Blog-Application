@@ -4,7 +4,9 @@ import { Asset } from "contentful";
 import { ParsedUrlQuery } from "querystring";
 
 export interface PathType extends ParsedUrlQuery {
-  slug: string;
+  params: {
+    slug: string;
+  };
 }
 
 export interface EntryProps {

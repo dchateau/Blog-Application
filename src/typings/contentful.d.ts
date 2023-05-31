@@ -79,7 +79,7 @@ export interface PostFields {
   metaKeywords?: string[] | undefined;
 
   //   /** Featured image */
-  //   featuredImage?: Asset | undefined;
+  featuredImage?: Asset | undefined;
 
   /** Thumbnail */
   thumbnail: Asset | undefined;
