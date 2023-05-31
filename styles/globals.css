@@ -24,3 +24,17 @@ a {
     background: black;
   }
 } */
+table {
+  width: calc(100vw - 4rem);  
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+p > a{
+  color: "#8C0303";
+}
