@@ -1,14 +1,21 @@
-import { Author, PostFields } from "@typings/contentful";
-import data from "../../../public/data.json";
+import {
+  Author,
+  Category,
+  PostFields,
+} from "@typings/contentful";
+import { Document } from "@contentful/rich-text-types";
+import fileData from "../../../public/data.json";
 
 const getPostBySlug = (filterSlug: string): PostFields => {
   //   console.log("PostBy: ", filterSlug);
-  let post: any;
-  [post] = data.filter((item: any) => item.fields.slug === filterSlug);
+  let post:any;
+  [post] = fileData.filter((item) => item.fields.slug === filterSlug);
   //   console.log("Filteres post: ", post);
 
   const {
     author,
+    body,
+    categories,
     creationDate,
     excerpt,
     featuredImage,
@@ -33,8 +40,16 @@ const getPostBySlug = (filterSlug: string): PostFields => {
   const featuredImageAsAsset: any = { ...featuredImage };
   delete featuredImageAsAsset.metadata;
 
+  const categoriesWithType: Category[] = categories.map((category:any) => ({ ...category }));
+
+  
+  // delete body.data;
+  const bodyWithType: Document = body;
+
   const formattedPost: PostFields = {
     author: authorContent,
+    body: bodyWithType,
+    categories: categoriesWithType,
     creationDate: creationDate || "",
     excerpt: excerpt || "",
     metaDescription: metaDescription || "",
