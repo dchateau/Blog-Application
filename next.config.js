@@ -8,6 +8,9 @@ const nextConfig = {
     locales: [language.en.route],
     defaultLocale: language.en.route,
   },
+  images: {
+    domains: ["images.ctfassets.net"],
+  },
 };
 
 module.exports = nextConfig;
