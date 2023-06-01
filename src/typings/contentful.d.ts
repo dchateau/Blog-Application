@@ -13,6 +13,9 @@ export interface AuthorFields {
 
   /** Photo */
   photo?: Asset | undefined;
+  
+  /** Resume */
+  resume: string;
 }
 
 export interface Author extends Entry<AuthorFields> {

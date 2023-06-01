@@ -3,10 +3,8 @@ import { Document } from "@contentful/rich-text-types";
 import { Asset } from "contentful";
 import { ParsedUrlQuery } from "querystring";
 
-export interface PathType extends ParsedUrlQuery {
-  params: {
-    slug: string;
-  };
+export interface Params extends ParsedUrlQuery {
+  slug: string;
 }
 
 export interface EntryProps {
