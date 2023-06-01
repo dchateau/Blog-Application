@@ -27,7 +27,8 @@ const entries = client
     const siteEntry = data.items.filter(
       (entry) =>
         entry.sys.contentType.sys.id === "post" ||
-        entry.sys.contentType.sys.id === "category"
+        entry.sys.contentType.sys.id === "category" ||
+        entry.sys.contentType.sys.id === "author"
     );
 
     const jsonString = JSON.stringify(siteEntry, null, 2);

@@ -1027,7 +1027,7 @@
         "id": "author",
         "type": "ContentType",
         "createdAt": "2023-05-23T16:16:18.913Z",
-        "updatedAt": "2023-05-29T05:29:46.690Z",
+        "updatedAt": "2023-06-01T19:35:09.732Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -1035,8 +1035,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2023-05-29T05:29:46.690Z",
+        "publishedVersion": 7,
+        "publishedAt": "2023-06-01T19:35:09.732Z",
         "firstPublishedAt": "2023-05-23T16:16:19.318Z",
         "createdBy": {
           "sys": {
@@ -1052,8 +1052,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 4,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1156,6 +1156,22 @@
           "disabled": false,
           "omitted": false,
           "linkType": "Asset"
+        },
+        {
+          "id": "resume",
+          "name": "Resume",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "max": 200
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
         }
       ]
     },
@@ -1739,7 +1755,7 @@
             "linkType": "Space"
           }
         },
-        "version": 4,
+        "version": 8,
         "createdAt": "2023-05-23T16:16:19.445Z",
         "createdBy": {
           "sys": {
@@ -1748,7 +1764,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-05-29T05:29:47.454Z",
+        "updatedAt": "2023-06-01T19:35:10.311Z",
         "updatedBy": {
           "sys": {
             "id": "12lw9A0giFSkL7PyESuBcK",
@@ -1790,6 +1806,11 @@
         {
           "fieldId": "photo",
           "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "resume",
+          "widgetId": "markdown",
           "widgetNamespace": "builtin"
         }
       ]
@@ -3174,22 +3195,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Hello world",
-          "fr-FR": "Salut au monde"
+          "en-US": "Hello world"
         },
         "slug": {
-          "en-US": "hello-world",
-          "fr-FR": "salut-monde"
+          "en-US": "hello-world"
         },
         "banner": {
           "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "70qP5TRt1aonxST1H4ZpeA"
-            }
-          },
-          "fr-FR": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -3521,338 +3533,6 @@
               }
             ],
             "nodeType": "document"
-          },
-          "fr-FR": {
-            "data": {
-            },
-            "content": [
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le primer paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum vel dolor tempor, efficitur nibh nec, pharetra orci. Etiam \naliquet eu ligula ac tincidunt. Nullam rhoncus imperdiet nulla et porta.\n Suspendisse tincidunt leo vitae erat gravida ornare. Praesent eu nisi a\n neque rutrum auctor. Aliquam consectetur massa ac massa semper, non \nultricies eros tempus. Ut maximus condimentum tincidunt. Curabitur \ntristique nisl nibh, vitae vestibulum neque luctus sed. In sit amet \nauctor eros, in lacinia nisl. Etiam eu ante sed ipsum auctor tempor. \nDonec fermentum nisi id semper vulputate. Nam ac sapien vitae augue \nsagittis finibus.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le deuxième paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Morbi tincidunt lacinia ultrices. Aenean fringilla justo ex, quis dictum\n nisl tincidunt nec. Nullam ut lectus ex. Nullam convallis interdum \nmaximus. Morbi elementum neque id nulla dignissim, vel posuere odio \nsodales. Vestibulum ante ipsum primis in faucibus orci luctus et \nultrices posuere cubilia curae; Vivamus viverra turpis quis rutrum \naccumsan.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le dernière paragraph",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "e",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum urna urna, consequat vitae ante sit amet, suscipit luctus \nturpis. Mauris sed venenatis nunc. Cras et ipsum ac diam iaculis \ntincidunt. Nunc vehicula tellus odio, non auctor diam luctus a. Cras \nmauris urna, blandit vitae pulvinar at, gravida non arcu. Nam vehicula \nlacinia blandit. Etiam quis ex in ex scelerisque fermentum in vel sem. \nVestibulum sed varius nibh. Donec suscipit eleifend eros elementum \nsollicitudin. Sed sagittis eleifend orci sit amet fringilla. Phasellus a\n pretium tellus. Aenean non gravida felis. Nam leo tortor, euismod \nplacerat congue eget, ultricies eu tortor. Aenean sodales quam nec \nligula elementum tincidunt. Proin euismod dolor dui, vitae hendrerit \nelit dapibus non. Maecenas vel tellus ut justo lobortis finibus eget \nviverra justo.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                ],
-                "nodeType": "hr"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "# This is a hello world from Python",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "print(\"Hello world\")",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Column 1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-header-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Column 2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-header-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 1.1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 1.2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 2.1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 2.2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  }
-                ],
-                "nodeType": "table"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "\n",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              }
-            ],
-            "nodeType": "document"
           }
         }
       }
@@ -3919,22 +3599,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "About us",
-          "fr-FR": "À propos de nous"
+          "en-US": "About us"
         },
         "slug": {
-          "en-US": "about-us",
-          "fr-FR": "a-propos"
+          "en-US": "about-us"
         },
         "banner": {
           "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "70qP5TRt1aonxST1H4ZpeA"
-            }
-          },
-          "fr-FR": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -4259,338 +3930,6 @@
                     "marks": [
                     ],
                     "value": "\n\n",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              }
-            ],
-            "nodeType": "document"
-          },
-          "fr-FR": {
-            "data": {
-            },
-            "content": [
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le primer paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum vel dolor tempor, efficitur nibh nec, pharetra orci. Etiam \naliquet eu ligula ac tincidunt. Nullam rhoncus imperdiet nulla et porta.\n Suspendisse tincidunt leo vitae erat gravida ornare. Praesent eu nisi a\n neque rutrum auctor. Aliquam consectetur massa ac massa semper, non \nultricies eros tempus. Ut maximus condimentum tincidunt. Curabitur \ntristique nisl nibh, vitae vestibulum neque luctus sed. In sit amet \nauctor eros, in lacinia nisl. Etiam eu ante sed ipsum auctor tempor. \nDonec fermentum nisi id semper vulputate. Nam ac sapien vitae augue \nsagittis finibus.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le deuxième paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Morbi tincidunt lacinia ultrices. Aenean fringilla justo ex, quis dictum\n nisl tincidunt nec. Nullam ut lectus ex. Nullam convallis interdum \nmaximus. Morbi elementum neque id nulla dignissim, vel posuere odio \nsodales. Vestibulum ante ipsum primis in faucibus orci luctus et \nultrices posuere cubilia curae; Vivamus viverra turpis quis rutrum \naccumsan.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le dernière paragraph",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "e",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum urna urna, consequat vitae ante sit amet, suscipit luctus \nturpis. Mauris sed venenatis nunc. Cras et ipsum ac diam iaculis \ntincidunt. Nunc vehicula tellus odio, non auctor diam luctus a. Cras \nmauris urna, blandit vitae pulvinar at, gravida non arcu. Nam vehicula \nlacinia blandit. Etiam quis ex in ex scelerisque fermentum in vel sem. \nVestibulum sed varius nibh. Donec suscipit eleifend eros elementum \nsollicitudin. Sed sagittis eleifend orci sit amet fringilla. Phasellus a\n pretium tellus. Aenean non gravida felis. Nam leo tortor, euismod \nplacerat congue eget, ultricies eu tortor. Aenean sodales quam nec \nligula elementum tincidunt. Proin euismod dolor dui, vitae hendrerit \nelit dapibus non. Maecenas vel tellus ut justo lobortis finibus eget \nviverra justo.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                ],
-                "nodeType": "hr"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "# This is a hello world from Python",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "print(\"Hello world\")",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Column 1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-header-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Column 2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-header-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 1.1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 1.2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 2.1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 2.2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  }
-                ],
-                "nodeType": "table"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "\n",
                     "nodeType": "text"
                   }
                 ],
@@ -4664,22 +4003,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Our work",
-          "fr-FR": "Notre travail"
+          "en-US": "Our work"
         },
         "slug": {
-          "en-US": "our-work",
-          "fr-FR": "notre-travail"
+          "en-US": "our-work"
         },
         "banner": {
           "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "70qP5TRt1aonxST1H4ZpeA"
-            }
-          },
-          "fr-FR": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -4771,338 +4101,6 @@
                       }
                     ],
                     "value": "The last paragraph",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum urna urna, consequat vitae ante sit amet, suscipit luctus \nturpis. Mauris sed venenatis nunc. Cras et ipsum ac diam iaculis \ntincidunt. Nunc vehicula tellus odio, non auctor diam luctus a. Cras \nmauris urna, blandit vitae pulvinar at, gravida non arcu. Nam vehicula \nlacinia blandit. Etiam quis ex in ex scelerisque fermentum in vel sem. \nVestibulum sed varius nibh. Donec suscipit eleifend eros elementum \nsollicitudin. Sed sagittis eleifend orci sit amet fringilla. Phasellus a\n pretium tellus. Aenean non gravida felis. Nam leo tortor, euismod \nplacerat congue eget, ultricies eu tortor. Aenean sodales quam nec \nligula elementum tincidunt. Proin euismod dolor dui, vitae hendrerit \nelit dapibus non. Maecenas vel tellus ut justo lobortis finibus eget \nviverra justo.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                ],
-                "nodeType": "hr"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "# This is a hello world from Python",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "print(\"Hello world\")",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Column 1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-header-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Column 2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-header-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 1.1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 1.2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 2.1",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      },
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Row 2.2",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "paragraph"
-                          }
-                        ],
-                        "nodeType": "table-cell"
-                      }
-                    ],
-                    "nodeType": "table-row"
-                  }
-                ],
-                "nodeType": "table"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "\n\n",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              }
-            ],
-            "nodeType": "document"
-          },
-          "fr-FR": {
-            "data": {
-            },
-            "content": [
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le primer paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum vel dolor tempor, efficitur nibh nec, pharetra orci. Etiam \naliquet eu ligula ac tincidunt. Nullam rhoncus imperdiet nulla et porta.\n Suspendisse tincidunt leo vitae erat gravida ornare. Praesent eu nisi a\n neque rutrum auctor. Aliquam consectetur massa ac massa semper, non \nultricies eros tempus. Ut maximus condimentum tincidunt. Curabitur \ntristique nisl nibh, vitae vestibulum neque luctus sed. In sit amet \nauctor eros, in lacinia nisl. Etiam eu ante sed ipsum auctor tempor. \nDonec fermentum nisi id semper vulputate. Nam ac sapien vitae augue \nsagittis finibus.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le deuxième paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Morbi tincidunt lacinia ultrices. Aenean fringilla justo ex, quis dictum\n nisl tincidunt nec. Nullam ut lectus ex. Nullam convallis interdum \nmaximus. Morbi elementum neque id nulla dignissim, vel posuere odio \nsodales. Vestibulum ante ipsum primis in faucibus orci luctus et \nultrices posuere cubilia curae; Vivamus viverra turpis quis rutrum \naccumsan.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le dernière paragraph",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "e",
                     "nodeType": "text"
                   }
                 ],
@@ -5409,8 +4407,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "Welcome to this site",
-          "fr-FR": "Bienvenu(e)s à ce site"
+          "en-US": "Welcome to this site"
         },
         "body": {
           "en-US": {
@@ -5687,274 +4684,6 @@
               }
             ],
             "nodeType": "document"
-          },
-          "fr-FR": {
-            "data": {
-            },
-            "content": [
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le primer paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum vel dolor tempor, efficitur nibh nec, pharetra orci. Etiam \naliquet eu ligula ac tincidunt. Nullam rhoncus imperdiet nulla et porta.\n Suspendisse tincidunt leo vitae erat gravida ornare. Praesent eu nisi a\n neque rutrum auctor. Aliquam consectetur massa ac massa semper, non \nultricies eros tempus. Ut maximus condimentum tincidunt. Curabitur \ntristique nisl nibh, vitae vestibulum neque luctus sed. In sit amet \nauctor eros, in lacinia nisl. Etiam eu ante sed ipsum auctor tempor. \nDonec fermentum nisi id semper vulputate. Nam ac sapien vitae augue \nsagittis finibus.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le deuxième paragraphe",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Morbi tincidunt lacinia ultrices. Aenean fringilla justo ex, quis dictum\n nisl tincidunt nec. Nullam ut lectus ex. Nullam convallis interdum \nmaximus. Morbi elementum neque id nulla dignissim, vel posuere odio \nsodales. Vestibulum ante ipsum primis in faucibus orci luctus et \nultrices posuere cubilia curae; Vivamus viverra turpis quis rutrum \naccumsan.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "Le dernière paragraph",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "e",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Vestibulum urna urna, consequat vitae ante sit amet, suscipit luctus \nturpis. Mauris sed venenatis nunc. Cras et ipsum ac diam iaculis \ntincidunt. Nunc vehicula tellus odio, non auctor diam luctus a. Cras \nmauris urna, blandit vitae pulvinar at, gravida non arcu. Nam vehicula \nlacinia blandit. Etiam quis ex in ex scelerisque fermentum in vel sem. \nVestibulum sed varius nibh. Donec suscipit eleifend eros elementum \nsollicitudin. Sed sagittis eleifend orci sit amet fringilla. Phasellus a\n pretium tellus. Aenean non gravida felis. Nam leo tortor, euismod \nplacerat congue eget, ultricies eu tortor. Aenean sodales quam nec \nligula elementum tincidunt. Proin euismod dolor dui, vitae hendrerit \nelit dapibus non. Maecenas vel tellus ut justo lobortis finibus eget \nviverra justo.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "italic"
-                      },
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "#include",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": " <iostream>",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "italic"
-                      },
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "#include",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": " <string>",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "using namespace std;\n",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "int main(){",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "cout << \"Hello world\" << endl;",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "return 0;",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "}",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              }
-            ],
-            "nodeType": "document"
           }
         },
         "pages": {
@@ -6207,7 +4936,7 @@
         "id": "6FQeokqOlz9z8Cy015Wniy",
         "type": "Entry",
         "createdAt": "2023-05-23T16:31:58.418Z",
-        "updatedAt": "2023-05-23T16:44:22.755Z",
+        "updatedAt": "2023-06-01T19:36:29.121Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -6215,8 +4944,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 10,
-        "publishedAt": "2023-05-23T16:44:22.755Z",
+        "publishedVersion": 21,
+        "publishedAt": "2023-06-01T19:36:29.121Z",
         "firstPublishedAt": "2023-05-23T16:44:22.755Z",
         "createdBy": {
           "sys": {
@@ -6232,8 +4961,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 1,
-        "version": 11,
+        "publishedCounter": 4,
+        "version": 22,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -6286,12 +5015,110 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.\n\n\n",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec quam \ntincidunt dolor euismod bibendum. In et orci euismod, tincidunt mi \ncursus, auctor est. Vestibulum ullamcorper velit in leo aliquam, in \naliquet lectus auctor. Suspendisse euismod sodales neque, id posuere \nligula sollicitudin sed. Nam finibus tristique maximus. Etiam mollis \nfacilisis vestibulum. Nam eu elementum orci, et hendrerit dui. Curabitur\n ac blandit metus. Sed dapibus volutpat magna a tempor. Phasellus eu \neros eget metus feugiat pharetra nec at tortor. Vivamus mi orci, feugiat\n nec lacinia et, placerat id orci. Praesent a pellentesque dolor.",
                     "marks": [
                     ],
                     "data": {
                     }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Education",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "ordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Donec nec felis velit. ",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
                   },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "In gravida risus at nibh luctus.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Eget egestas lorem vestibulum.\n\n",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
                   {
                     "nodeType": "text",
                     "value": "My favourite quote",
@@ -6356,6 +5183,9 @@
               "id": "73Wi6LFyJTWXmYXDANOOQQ"
             }
           }
+        },
+        "resume": {
+          "en-US": "Suspendisse vitae quam ut orci dignissim condimentum eu sed risus. Mauris elementum lectus vel pretium mattis. Suspendisse maximus tincidunt augue vitae suscipit. Ut facilisis tortor eget sapien."
         }
       }
     },
@@ -6375,7 +5205,7 @@
         "id": "7zdUEgrB1uLxjxtYqBXVhN",
         "type": "Entry",
         "createdAt": "2023-05-23T16:44:30.465Z",
-        "updatedAt": "2023-05-23T16:49:09.443Z",
+        "updatedAt": "2023-06-01T19:37:32.440Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -6383,8 +5213,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 10,
-        "publishedAt": "2023-05-23T16:49:09.443Z",
+        "publishedVersion": 18,
+        "publishedAt": "2023-06-01T19:37:32.440Z",
         "firstPublishedAt": "2023-05-23T16:49:09.443Z",
         "createdBy": {
           "sys": {
@@ -6400,8 +5230,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 1,
-        "version": 11,
+        "publishedCounter": 2,
+        "version": 19,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -6473,6 +5303,97 @@
                         "type": "bold"
                       }
                     ],
+                    "value": "Education",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Quisque vitae dolor ante. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Duis vel lectus et enim ultrices posuere. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Nulla vitae risus sapien. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "ordered-list"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
                     "value": "My favourite quote",
                     "nodeType": "text"
                   }
@@ -6531,6 +5452,9 @@
               "id": "181pVWoodUVmggN3dszkYr"
             }
           }
+        },
+        "resume": {
+          "en-US": "Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam et accumsan ligula. Nunc elementum lorem id venenatis bibendum. Proin eu malesuada lectus, et auctor erat. Vivamus quis purus."
         }
       }
     },
@@ -6550,7 +5474,7 @@
         "id": "4b1Js12xyzvd7Vc1sCCbiT",
         "type": "Entry",
         "createdAt": "2023-05-23T16:49:26.688Z",
-        "updatedAt": "2023-05-23T17:49:43.675Z",
+        "updatedAt": "2023-05-31T17:21:00.497Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -6558,8 +5482,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 37,
-        "publishedAt": "2023-05-23T17:49:43.675Z",
+        "publishedVersion": 41,
+        "publishedAt": "2023-05-31T17:21:00.497Z",
         "firstPublishedAt": "2023-05-23T17:06:35.503Z",
         "createdBy": {
           "sys": {
@@ -6575,8 +5499,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 4,
-        "version": 38,
+        "publishedCounter": 5,
+        "version": 42,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -6730,7 +5654,7 @@
         "id": "5XGvE8t9I1v9v1ExCbzYar",
         "type": "Entry",
         "createdAt": "2023-05-23T17:04:32.083Z",
-        "updatedAt": "2023-05-25T17:31:18.419Z",
+        "updatedAt": "2023-06-01T19:35:26.920Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -6738,8 +5662,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 8,
-        "publishedAt": "2023-05-25T17:31:18.419Z",
+        "publishedVersion": 21,
+        "publishedAt": "2023-06-01T19:35:26.920Z",
         "firstPublishedAt": "2023-05-25T17:31:18.419Z",
         "createdBy": {
           "sys": {
@@ -6755,8 +5679,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 1,
-        "version": 9,
+        "publishedCounter": 4,
+        "version": 22,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -6810,11 +5734,110 @@
                     },
                     "marks": [
                     ],
-                    "value": "Ut blandit dui ut velit semper porttitor. Maecenas interdum quam vel \nelementum scelerisque. Vestibulum ante ipsum primis in faucibus orci \nluctus et ultrices posuere cubilia curae; Phasellus commodo neque vitae \nmattis gravida. Aenean accumsan a est a malesuada. Ut ornare justo eros,\n a sodales ante cursus gravida.\n\nMorbi ultrices nunc posuere, laoreet quam vestibulum, feugiat elit. \nProin ac iaculis odio. Pellentesque efficitur gravida augue eget \nimperdiet.\n",
+                    "value": "Ut blandit dui ut velit semper porttitor. Maecenas interdum quam vel \nelementum scelerisque. Vestibulum ante ipsum primis in faucibus orci \nluctus et ultrices posuere cubilia curae; Phasellus commodo neque vitae \nmattis gravida. Aenean accumsan a est a malesuada. Ut ornare justo eros,\n a sodales ante cursus gravida.\n\nMorbi ultrices nunc posuere, laoreet quam vestibulum, feugiat elit. \nProin ac iaculis odio. Pellentesque efficitur gravida augue eget \nimperdiet.",
                     "nodeType": "text"
                   }
                 ],
                 "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Education",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Pellentesque rutrum, nibh ac tincidunt tincidunt, ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Velit odio suscipit, quis imperdiet sem dolor ut sem. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Curabitur vel tristique neque.",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "\n",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "ordered-list"
               },
               {
                 "data": {
@@ -6886,6 +5909,9 @@
               "id": "6X4NuIxQu3We2zNc3Y6KU8"
             }
           }
+        },
+        "resume": {
+          "en-US": "Nulla a rutrum nisl, id ullamcorper dui. Donec eget justo a quam volutpat accumsan. Quisque accumsan odio dolor, in mollis arcu malesuada in. Maecenas eu sem tempus, pulvinar dui pretium sapien."
         }
       }
     },
@@ -6974,7 +6000,7 @@
         "id": "54vTXImBDaZsA63NoQCjQK",
         "type": "Entry",
         "createdAt": "2023-05-23T17:06:58.069Z",
-        "updatedAt": "2023-05-23T17:49:25.502Z",
+        "updatedAt": "2023-05-31T18:45:05.447Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -6982,8 +6008,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 45,
-        "publishedAt": "2023-05-23T17:49:25.502Z",
+        "publishedVersion": 52,
+        "publishedAt": "2023-05-31T18:45:05.447Z",
         "firstPublishedAt": "2023-05-23T17:25:50.410Z",
         "createdBy": {
           "sys": {
@@ -6999,8 +6025,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 3,
-        "version": 46,
+        "publishedCounter": 6,
+        "version": 53,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -7090,9 +6116,16 @@
                     },
                     "marks": [
                     ],
-                    "value": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur \nridiculus mus. Quisque iaculis leo in nulla mattis porttitor. Nullam \nerat nisl, interdum id sem et, dictum rhoncus enim. In diam dolor, \nvarius non vehicula vitae, lacinia quis nisi. Nullam et convallis nulla,\n sed maximus sem. Donec maximus tincidunt lorem, eu accumsan nibh congue\n a. Proin velit mauris, vehicula a posuere condimentum, dictum ac dui.\n\n",
+                    "value": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur \nridiculus mus. Quisque iaculis leo in nulla mattis porttitor. Nullam \nerat nisl, interdum id sem et, dictum rhoncus enim. In diam dolor, \nvarius non vehicula vitae, lacinia quis nisi. Nullam et convallis nulla,\n sed maximus sem. Donec maximus tincidunt lorem, eu accumsan nibh congue\n a. Proin velit mauris, vehicula a posuere condimentum, dictum ac dui.\n",
                     "nodeType": "text"
-                  },
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
                   {
                     "data": {
                     },
@@ -7116,7 +6149,60 @@
                     },
                     "marks": [
                     ],
-                    "value": "Etiam malesuada congue augue vitae suscipit. Mauris semper felis ac mi \nfringilla vulputate. Pellentesque vel blandit enim, quis fermentum \nsapien. Integer sit amet ultrices neque. Sed sit amet imperdiet velit. \nFusce vitae tellus nisi. Curabitur eget aliquet ante, at sodales dui. \nAenean rutrum, est et pellentesque laoreet, ligula eros fermentum nunc, a\n vestibulum massa leo eu enim. Sed imperdiet mauris ut urna tincidunt \nultricies. In rutrum non nunc eget rutrum. \n\n",
+                    "value": "Etiam malesuada congue augue vitae suscipit. Mauris semper felis ac mi \nfringilla vulputate. Pellentesque vel blandit enim, quis fermentum \nsapien. Integer sit amet ultrices neque. Sed sit amet imperdiet velit. \nFusce vitae tellus nisi. Curabitur eget aliquet ante, at sodales dui. \nAenean rutrum, est et pellentesque laoreet, ligula eros fermentum nunc, a\n vestibulum massa leo eu enim. Sed imperdiet mauris ut urna tincidunt \nultricies. In rutrum non nunc eget rutrum. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "6tkB0lxeMnitarK7tnksdf",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-asset-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\n\n",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://youtu.be/5DGwOJXSxqg"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Watch out sequels of not caring of COVID's symptoms",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
                     "nodeType": "text"
                   }
                 ],
@@ -7176,7 +6262,7 @@
         "id": "3pzAvboK97nCNTq6tN5dvt",
         "type": "Entry",
         "createdAt": "2023-05-25T16:32:14.394Z",
-        "updatedAt": "2023-05-25T17:02:38.447Z",
+        "updatedAt": "2023-05-31T18:36:48.089Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -7184,8 +6270,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 18,
-        "publishedAt": "2023-05-25T17:02:38.447Z",
+        "publishedVersion": 49,
+        "publishedAt": "2023-05-31T18:36:48.089Z",
         "firstPublishedAt": "2023-05-25T17:02:38.447Z",
         "createdBy": {
           "sys": {
@@ -7201,8 +6287,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 1,
-        "version": 19,
+        "publishedCounter": 4,
+        "version": 50,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -7279,6 +6365,325 @@
                   }
                 ],
                 "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "The 10 things you should always be aware of:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Sed commodo bibendum mauris, et sollicitudin erat gravida at. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Nam non quam laoreet, molestie tortor a, lacinia nisi. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Nunc a risus id diam eleifend vulputate. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Maecenas malesuada sodales lacus, eu vestibulum nibh luctus eget. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Mauris quis dolor nec sem rutrum viverra quis vitae risus. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Pellentesque aliquam dignissim urna, ac semper est egestas eget. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Vivamus facilisis arcu at felis eleifend, in tristique dolor consectetur. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Cras finibus magna et iaculis egestas, nunc molestie aliquet dolor. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Curabitur sit amet ullamcorper elit. ",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Morbi erat neque, aliquam a lobortis vitae, elementum ac ipsum.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "ordered-list"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Always",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "remember this:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Vivamus fermentum, nunc sed tempor finibus, leo lacus suscipit lacu.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "blockquote"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
               }
             ],
             "nodeType": "document"
@@ -7334,7 +6739,7 @@
         "id": "3XQj1jp5PvPfG6Jq695nc5",
         "type": "Entry",
         "createdAt": "2023-05-25T17:31:38.756Z",
-        "updatedAt": "2023-05-25T17:37:54.829Z",
+        "updatedAt": "2023-05-31T18:04:24.182Z",
         "environment": {
           "sys": {
             "id": "Sandbox",
@@ -7342,8 +6747,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 22,
-        "publishedAt": "2023-05-25T17:37:54.829Z",
+        "publishedVersion": 33,
+        "publishedAt": "2023-05-31T18:04:24.182Z",
         "firstPublishedAt": "2023-05-25T17:37:54.829Z",
         "createdBy": {
           "sys": {
@@ -7359,8 +6764,8 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "publishedCounter": 1,
-        "version": 23,
+        "publishedCounter": 2,
+        "version": 34,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -7432,7 +6837,247 @@
                     },
                     "marks": [
                     ],
-                    "value": "Proin nec mollis turpis. Nullam consequat enim vel lorem varius \nhendrerit. Ut sodales ipsum vitae vestibulum elementum. Ut dictum \neuismod justo, ac mattis lacus tempus in. Quisque velit mauris, finibus \nelementum luctus posuere, mollis sed mi. Curabitur turpis arcu, eleifend\n sit amet nisi at, eleifend sollicitudin velit. Donec sed sapien eu \nmauris venenatis dignissim. Phasellus massa lacus, euismod quis eros \nvel, egestas cursus risus.\n\n\n",
+                    "value": "Proin nec mollis turpis. Nullam consequat enim vel lorem varius \nhendrerit. Ut sodales ipsum vitae vestibulum elementum. Ut dictum \neuismod justo, ac mattis lacus tempus in. Quisque velit mauris, finibus \nelementum luctus posuere, mollis sed mi. Curabitur turpis arcu, eleifend\n sit amet nisi at, eleifend sollicitudin velit. Donec sed sapien eu \nmauris venenatis dignissim. Phasellus massa lacus, euismod quis eros \nvel, egestas cursus risus.\n",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "641LbXT6eRVsaQSzfsFKeO",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-asset-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "Column title",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-header-cell"
+                      },
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "Percentage (%)",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-header-cell"
+                      }
+                    ],
+                    "nodeType": "table-row"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "Row 1",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-cell"
+                      },
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "10%",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-cell"
+                      }
+                    ],
+                    "nodeType": "table-row"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "Row 2",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-cell"
+                      },
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "20%",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-cell"
+                      }
+                    ],
+                    "nodeType": "table-row"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "Row 3",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-cell"
+                      },
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "30%",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "paragraph"
+                          }
+                        ],
+                        "nodeType": "table-cell"
+                      }
+                    ],
+                    "nodeType": "table-row"
+                  }
+                ],
+                "nodeType": "table"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\n\n",
                     "nodeType": "text"
                   }
                 ],
@@ -7894,12 +7539,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Banner",
-          "fr-FR": "Banner"
+          "en-US": "Banner"
         },
         "description": {
-          "en-US": "This is the banner",
-          "fr-FR": "Voici la description d'un Banner"
+          "en-US": "This is the banner"
         },
         "file": {
           "en-US": {
@@ -7912,18 +7555,6 @@
               }
             },
             "fileName": "Ford_GT40_cutaway_by_Shin_Yoshikawa_std.jpg",
-            "contentType": "image/jpeg"
-          },
-          "fr-FR": {
-            "url": "//images.ctfassets.net/xcawcketyif2/70qP5TRt1aonxST1H4ZpeA/2745e16edbe3e13bb27d614161552cbf/banner.jpg",
-            "details": {
-              "size": 33740,
-              "image": {
-                "width": 1081,
-                "height": 360
-              }
-            },
-            "fileName": "banner.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -8816,6 +8447,154 @@
           }
         }
       }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xcawcketyif2"
+          }
+        },
+        "id": "641LbXT6eRVsaQSzfsFKeO",
+        "type": "Asset",
+        "createdAt": "2023-05-31T18:02:58.795Z",
+        "updatedAt": "2023-05-31T18:39:34.863Z",
+        "environment": {
+          "sys": {
+            "id": "Sandbox",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2023-05-31T18:39:34.863Z",
+        "firstPublishedAt": "2023-05-31T18:03:18.062Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "12lw9A0giFSkL7PyESuBcK"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "12lw9A0giFSkL7PyESuBcK"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "12lw9A0giFSkL7PyESuBcK"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "BD-media"
+        },
+        "description": {
+          "en-US": "This is BD-media"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xcawcketyif2/641LbXT6eRVsaQSzfsFKeO/fceb7b5f363b98f582f4665985442108/ML-media.jpg",
+            "details": {
+              "size": 269620,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "ML-media.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xcawcketyif2"
+          }
+        },
+        "id": "6tkB0lxeMnitarK7tnksdf",
+        "type": "Asset",
+        "createdAt": "2023-05-31T18:39:06.775Z",
+        "updatedAt": "2023-05-31T18:40:55.929Z",
+        "environment": {
+          "sys": {
+            "id": "Sandbox",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-05-31T18:40:55.929Z",
+        "firstPublishedAt": "2023-05-31T18:40:55.929Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "12lw9A0giFSkL7PyESuBcK"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "12lw9A0giFSkL7PyESuBcK"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "12lw9A0giFSkL7PyESuBcK"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "ML-media"
+        },
+        "description": {
+          "en-US": "This is ML-media"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xcawcketyif2/6tkB0lxeMnitarK7tnksdf/9d771fede08d0044a370d2c6c80df501/ML-media.jpg",
+            "details": {
+              "size": 2588223,
+              "image": {
+                "width": 7900,
+                "height": 5267
+              }
+            },
+            "fileName": "ML-media.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
     }
   ],
   "locales": [
@@ -8869,13 +8648,13 @@
       "code": "fr-FR",
       "fallbackCode": "en-US",
       "default": false,
-      "contentManagementApi": true,
-      "contentDeliveryApi": true,
+      "contentManagementApi": false,
+      "contentDeliveryApi": false,
       "optional": true,
       "sys": {
         "type": "Locale",
         "id": "2SW9yJZPCqG8Sxk1uG2B8m",
-        "version": 1,
+        "version": 3,
         "space": {
           "sys": {
             "type": "Link",
@@ -8906,7 +8685,7 @@
             "id": "12lw9A0giFSkL7PyESuBcK"
           }
         },
-        "updatedAt": "2023-05-23T15:50:39Z"
+        "updatedAt": "2023-05-30T04:45:03Z"
       }
     }
   ]
