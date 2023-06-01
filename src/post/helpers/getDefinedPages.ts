@@ -1,15 +1,16 @@
 import data from "../../../public/data.json";
-import { PathType } from "@typings/globals";
 
-const getDefinedPages = ()=> {
-  const pages: string[] = data.map((item) => item.fields.slug);
-  const formattedPaths = pages.map((page) => {
-    return {
-      params: { slug: page },
-    };
-  });
-
-  return formattedPaths;
+const getDefinedPages = () => {
+  let paths: (string | any)[];
+  const posts: any[] = data.filter(
+    (item: any) => item.sys.contentType.sys.id === "post"
+  );
+  paths = posts.map((item: any) => item.fields.slug);
+  paths = paths.map((page: string) => ({
+    params: { slug: page },
+  }));
+  // console.log("Defined pages: ", paths);
+  return paths;
 };
 
 export default getDefinedPages;
