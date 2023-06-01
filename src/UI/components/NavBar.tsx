@@ -7,7 +7,7 @@ import Link from "@mui/material/Link";
 
 type Props = {
   drawerWidth: number;
-  needSidebar: boolean;
+  needsSidebar: boolean;
 };
 
 type Route = {
@@ -30,9 +30,9 @@ const ROUTES: Route[] = [
   },
 ];
 
-const NavBar = ({ drawerWidth, needSidebar }: Props) => {
-  let widthProperties;
-  if (needSidebar) {
+const NavBar = ({ drawerWidth, needsSidebar }: Props) => {
+  let widthProperties: {};
+  if (needsSidebar) {
     widthProperties = {
       width: `calc(100% - ${drawerWidth}px)`,
       mr: `${drawerWidth}px`,
@@ -60,7 +60,7 @@ const NavBar = ({ drawerWidth, needSidebar }: Props) => {
             variant="h5"
             noWrap
             component="div"
-            sx={{":hover": {cursor: "default"}}}
+            sx={{ ":hover": { cursor: "default" } }}
           >
             Gluo blogging
           </Typography>

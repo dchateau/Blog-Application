@@ -7,7 +7,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
 
-import type {EntryItemProps} from "@typings/globals";
+import { getFormattedDate } from "@post/helpers";
+import type { EntryItemProps } from "@typings/globals";
 
 // type Props = {
 //   authors: Array<string>;
@@ -35,10 +36,13 @@ const EntryItem = ({
   const onClickCard = () => {
     console.log("Card clicked, navigate to: ", slug);
     const route = `/${slug}`;
-    router.push({
-      pathname: route,
-      query: { entryId }
-    }, route);
+    router.push(
+      {
+        pathname: route,
+        query: { entryId },
+      },
+      route
+    );
   };
 
   return (
@@ -90,7 +94,7 @@ const EntryItem = ({
               </Grid>
               <Grid item xs={6}>
                 <Typography variant="subtitle1">
-                  <strong>Published</strong> {date.toLocaleDateString()}
+                  <strong>Published</strong> {getFormattedDate(date)}
                 </Typography>
               </Grid>
               <Grid item xs={8}>
