@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test-sh": "dotenv cross-var echo %CONTENTFUL_SPACE_ID%",
-    "cf-export": "contentful space export --config Contentful/config.json --management-token $MGMT_TOKEN --space-id $SPACE_ID  --environment-id Sandbox",
+    "test-sh": "dotenv -- cross-var \"echo %CONTENTFUL_MANAGEMENT_API_ACCESS_TOKEN%\"",
+    "cf-export": "dotenv -- cross-var \"contentful space export --config Contentful/config.json --management-token %CONTENTFUL_MANAGEMENT_API_ACCESS_TOKEN% --space-id %CONTENTFUL_SPACE_ID%  --environment-id Sandbox\"",
     "generate-types": "cf-content-types-generator Contentful/export.json --out types/contentful",
     "contentful-typescript-codegen": "contentful-typescript-codegen --output @types/generated/contentful.d.ts"
   },
@@ -31,6 +31,7 @@
     "@types/react-dom": "18.2.4",
     "cf-content-types-generator": "^2.12.2",
     "contentful-cli": "^2.6.13",
+    "contentful-typescript-codegen": "^3.4.0",
     "cross-var": "^1.1.0",
     "dotenv-cli": "^7.2.1",
     "eslint": "8.41.0",
