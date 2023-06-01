@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { InferGetStaticPropsType } from "next";
 import type { GetStaticProps, GetStaticPaths } from "next";
 
-import { EntryProps, PathType } from "@typings/globals";
+import { Params } from "@typings/globals";
 import { PostFields } from "@typings/contentful";
 import { getDefinedPages, getPostBySlug } from "@post/helpers";
 import PostPage from "../src/post/pages/PostPage";
@@ -80,8 +80,10 @@ export const getStaticProps: GetStaticProps<{ post: PostFields }> = async (
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async (props) => {
-  console.log("Slug path props: ", props);
+export const getStaticPaths: GetStaticPaths = async (
+  props
+) => {
+  // console.log("Slug path props: ", props);
 
   // const paths = definedPages.map((page) => {
   //   // console.log(page);
