@@ -5,4 +5,6 @@ const language = {
   },
 };
 
-module.exports = { language };
+const DRAWER_WIDTH = 250;
+
+module.exports = { DRAWER_WIDTH, language };
