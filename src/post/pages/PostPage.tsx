@@ -1,17 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Divider from "@mui/material/Divider";
+import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import CategoriesInlineList from "../components/CategoriesInlineList";
 
 import PostLayout from "../layout/PostLayout";
+import CategoriesInlineList from "../components/CategoriesInlineList";
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 
+import { getFormattedDate } from "@post/helpers";
 import { PostFields } from "@typings/contentful";
 
 // interface EntryProps {
@@ -70,19 +75,42 @@ const PostPage = ({
           </Link>
         );
       },
+      [BLOCKS.QUOTE]: (node: any) => {
+        // console.log("Quote: ", node, node.content[0].content[0].value);
+        const quote: string = node.content[0].content[0].value;
+        return (
+          <Card>
+            <CardContent>
+              <blockquote>
+                <Typography color="GrayText" variant="h5">
+                  {quote}
+                </Typography>
+              </blockquote>
+              <Divider sx={{ marginBottom: 2 }} />
+              <Typography
+                variant="h6"
+                textAlign="right"
+                sx={{ marginRight: 2 }}
+              >
+                Author
+              </Typography>
+            </CardContent>
+          </Card>
+        );
+      },
     },
   };
 
-  const formatDate = (date: Date): string => {
-    const day =
-      date.getDay().toString().length < 2 ? "0" + date.getDay() : date.getDay();
-    const month =
-      date.getMonth().toString().length < 2
-        ? `0${date.getMonth() + 1}`
-        : date.getMonth();
+  // const formatDate = (date: Date): string => {
+  //   const day =
+  //     date.getDay().toString().length < 2 ? "0" + date.getDay() : date.getDay();
+  //   const month =
+  //     date.getMonth().toString().length < 2
+  //       ? `0${date.getMonth() + 1}`
+  //       : date.getMonth();
 
-    return `${day}/${month}/${date.getFullYear()}`;
-  };
+  //   return `${day}/${month}/${date.getFullYear()}`;
+  // };
 
   // console.log("body: ", body)
 
@@ -123,10 +151,29 @@ const PostPage = ({
                   Author:
                   <span className={styles.lightFont}>
                     {" "}
-                    {authors.join(", ")}
+                    {author.map((author) => {
+                      const { fullName, slug } = author.fields;
+                      const path = `/author/${slug}`;
+                      return (
+                        <>
+                          <Link
+                            key={slug}
+                            href={path}
+                            underline="hover"
+                            sx={{
+                              color: "black",
+                              textDecoration: "none",
+                              ":hover": { color: "#8C0303", cursor: "pointer" },
+                            }}
+                          >
+                            {fullName}
+                          </Link>{" "}
+                        </>
+                      );
+                    })}
                   </span>
                 </h4>
-                <span>{formatDate(publishingDate)}</span>
+                <span>{getFormattedDate(publishingDate)}</span>
                 <h4>
                   Reading time:
                   <span className={styles.lightFont}>
