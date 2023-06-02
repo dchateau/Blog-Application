@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -14,11 +15,14 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import PostLayout from "../layout/PostLayout";
 import CategoriesInlineList from "../components/CategoriesInlineList";
 import ShareList from "../components/ShareList";
+import { NavLink } from "@ui/components";
+
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 
 import { getFormattedDate } from "@post/helpers";
 import { PostFields } from "@typings/contentful";
+import type { NextRouter } from "next/router";
 
 // interface EntryProps {
 //   title: string;
@@ -42,9 +46,17 @@ const PostPage = ({
     title,
   },
 }: Props) => {
+  const [postUrl, setPostUrl] = useState<string>("");
+  const router: NextRouter = useRouter();
   const altImage: string = featuredImage?.fields.title?.toString() || "";
-  const authors: string[] = author.map((author: any) => author.fields.fullName);
   const publishingDate: Date = new Date(creationDate);
+
+  useEffect(() => {
+    setPostUrl(`${window.location.origin}${router.asPath}`);
+  }, []);
+  // const postUrl = `${window.location.origin}${router.asPath}`;
+
+  console.log(`Post URL: ${postUrl}`);
 
   const renderOption: any = {
     renderNode: {
@@ -63,17 +75,18 @@ const PostPage = ({
         const label = node.content[0].value;
         console.log("Hyperlink", node.data.uri, label);
         return (
-          <Link
-            underline="hover"
-            sx={{
-              color: "black",
-              textDecoration: "none",
-              ":hover": { color: "#8C0303", cursor: "pointer" },
-            }}
-            href={node.data.uri}
-          >
-            {label}
-          </Link>
+          <NavLink fontColor="black" to={node.data.uri} title={label} />
+          // <Link
+          //   underline="hover"
+          //   sx={{
+          //     color: "black",
+          //     textDecoration: "none",
+          //     ":hover": { color: "#8C0303", cursor: "pointer" },
+          //   }}
+          //   href={node.data.uri}
+          // >
+          //   {label}
+          // </Link>
         );
       },
       [BLOCKS.QUOTE]: (node: any) => {
@@ -132,18 +145,18 @@ const PostPage = ({
             spacing={0}
             sx={{
               // width: "100%",
-              height: { md: "calc(38vh)", lg: "calc(37vh)" },
+              height: { sm:"calc(64vh)", md: "calc(46vh)", lg: "calc(42vh)" },
               backgroundColor: "secondary.main",
               p: 0,
             }}
           >
-            <Grid item xs={8} md={7} lg={6} sx={{ p: 2 }}>
+            <Grid item xs={9} sm={8} md={7} lg={6} sx={{ p: 2 }}>
               <h1>{title}</h1>
               {/* <Divider/> */}
               <Grid
                 container
                 // spacing={0}
-                sx={{ p: 0, maxWidth: "95%" }}
+                sx={{ p: 0, maxWidth: "100%" }}
                 direction="row"
                 alignItems="center"
                 justifyContent="space-between"
@@ -157,7 +170,13 @@ const PostPage = ({
                       const path = `/author/${slug}`;
                       return (
                         <>
-                          <Link
+                          <NavLink
+                            key={slug}
+                            to={path}
+                            fontColor="black"
+                            title={fullName}
+                          />{" "}
+                          {/* <Link
                             key={slug}
                             href={path}
                             underline="hover"
@@ -168,7 +187,7 @@ const PostPage = ({
                             }}
                           >
                             {fullName}
-                          </Link>{" "}
+                          </Link>{" "} */}
                         </>
                       );
                     })}
@@ -183,10 +202,10 @@ const PostPage = ({
                   </span>
                 </h4>
                 <CategoriesInlineList categories={categories || []} />
-                <ShareList/>
+                <ShareList postUrl={postUrl} />
               </Grid>
             </Grid>
-            <Grid item xs={4} md={5} lg={6} sx={{ margin: 0, p: 0 }}>
+            <Grid item xs={3}sm={4} md={5} lg={6} sx={{ margin: 0, p: 0 }}>
               <div className={styles.imageContainer}>
                 <Image
                   src={`https:${featuredImage?.fields.file?.url}`}
