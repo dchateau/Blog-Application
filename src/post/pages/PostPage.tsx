@@ -13,6 +13,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import PostLayout from "../layout/PostLayout";
 import CategoriesInlineList from "../components/CategoriesInlineList";
+import ShareList from "../components/ShareList";
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 
@@ -131,7 +132,7 @@ const PostPage = ({
             spacing={0}
             sx={{
               // width: "100%",
-              height: { md: "calc(38vh)", lg: "calc(35vh)" },
+              height: { md: "calc(38vh)", lg: "calc(37vh)" },
               backgroundColor: "secondary.main",
               p: 0,
             }}
@@ -182,6 +183,7 @@ const PostPage = ({
                   </span>
                 </h4>
                 <CategoriesInlineList categories={categories || []} />
+                <ShareList/>
               </Grid>
             </Grid>
             <Grid item xs={4} md={5} lg={6} sx={{ margin: 0, p: 0 }}>
