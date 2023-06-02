@@ -53,8 +53,8 @@ const EntryItem = ({
       lg={4}
       sx={{
         height: {
-          lg: "calc(55vh - 4px)",
-          md: "calc(55vh - 4px)",
+          md: "calc(68vh - 4px)",
+          lg: "calc(64vh - 4px)",
         },
       }}
     >
@@ -62,8 +62,8 @@ const EntryItem = ({
         sx={{
           height: {
             sm: "calc(82vh)",
-            md: "calc(50vh)",
-            lg: "calc(48vh)",
+            md: "calc(60vh)",
+            lg: "calc(58vh)",
           },
         }}
       >
@@ -92,12 +92,12 @@ const EntryItem = ({
                   <strong>Entry by</strong> {authors.join(", ")}
                 </Typography>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={8}>
                 <Typography variant="subtitle1">
                   <strong>Published</strong> {getFormattedDate(date)}
                 </Typography>
               </Grid>
-              <Grid item xs={8}>
+              <Grid item xs={10}>
                 <Typography variant="subtitle1">
                   <strong>Reading time</strong> {readingTime} minutes
                 </Typography>
