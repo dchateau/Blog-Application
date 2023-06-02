@@ -1,24 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
+import ShareList from "../../post/components/ShareList";
 import PageLayout from "../layout/PageLayout";
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 
 import { AuthorFields } from "@typings/contentful";
-import ShareList from "../../post/components/ShareList";
+import type { NextRouter } from "next/router";
 
 type Props = {
   author: AuthorFields;
 };
 
 const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) => {
+  const [postUrl, setPostUrl] = useState<string>("");
+  const router: NextRouter = useRouter();
   const altPhoto: string = photo?.fields.title?.toString() || "";
+
+  useEffect(() => {
+    setPostUrl(`${window.location.origin}${router.asPath}`);
+  }, []);
+
   return (
     <AppTheme>
       <PageLayout>
@@ -36,7 +45,7 @@ const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) =
             spacing={0}
             sx={{
               // width: "100%",
-              height: { xs:"calc(50vh)" ,md: "calc(36vh)", lg: "calc(34vh)" },
+              height: { sm:"calc(55vh)" ,md: "calc(40vh)", lg: "calc(38vh)" },
               backgroundColor: "secondary.main",
               p: 3,
             }}
@@ -68,7 +77,7 @@ const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) =
               <Typography variant="body2" sx={{paddingTop: 1}}>
                 {resume}
               </Typography>
-              <ShareList/>
+              <ShareList postUrl={postUrl}/>
             </Grid>
           </Grid>
         </Grid>
