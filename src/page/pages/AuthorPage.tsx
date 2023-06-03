@@ -19,7 +19,9 @@ type Props = {
   author: AuthorFields;
 };
 
-const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) => {
+const AuthorPage = ({
+  author: { biography, fullName, resume, photo },
+}: Props) => {
   const [postUrl, setPostUrl] = useState<string>("");
   const router: NextRouter = useRouter();
   const altPhoto: string = photo?.fields.title?.toString() || "";
@@ -33,7 +35,7 @@ const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) =
       <PageLayout>
         <Grid
           container
-          spacing={0}
+          // spacing={2}
           direction="column"
           alignItems="center"
           justifyContent="center"
@@ -42,27 +44,28 @@ const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) =
           <Grid
             item
             container
+            columnSpacing={3}
             spacing={0}
             sx={{
               // width: "100%",
-              height: { sm:"calc(55vh)" ,md: "calc(40vh)", lg: "calc(38vh)" },
+              height: { sm: "calc(55vh)", md: "calc(40vh)", lg: "calc(38vh)" },
               backgroundColor: "secondary.main",
-              p: 3,
+              p: 0,
             }}
           >
             <Grid
               item
-              xs={2.1}
-              md={2.1}
-              lg={2.2}
+              xs={4}
+              md={3}
+              lg={3}
               direction="column"
               sx={{
                 margin: 0,
                 p: 0,
-                height: { xs: "calc(15vh)", md: "calc(20vh)", lg: "calc(24vh)" },
+                // height: { xs: "calc(15vh)", md: "calc(20vh)", lg: "calc(24vh)" },
               }}
             >
-              <div className={styles.profileImage}>
+              <div className={styles.imageContainer}>
                 <Image
                   src={`https:${photo?.fields.file?.url}`}
                   alt={altPhoto}
@@ -71,18 +74,22 @@ const AuthorPage = ({ author: { biography, fullName, resume, photo } }: Props) =
                 />
               </div>
             </Grid>
-            <Grid item xs={9} md={8} lg={8} >
-              <Typography variant="h2" >{fullName}</Typography>
-              <Typography variant="h4" gutterBottom>My resume</Typography>
-              <Typography variant="body2" sx={{paddingTop: 1}}>
+            <Grid item xs={8} md={8} lg={8} sx={{ p: 2 }}>
+              <Typography variant="h2" sx={{ color: "white" }}>
+                {fullName}
+              </Typography>
+              <Typography variant="h4" gutterBottom>
+                My resume
+              </Typography>
+              <Typography variant="body2" sx={{ paddingTop: 1 }}>
                 {resume}
               </Typography>
-              <ShareList postUrl={postUrl}/>
+              <ShareList postUrl={postUrl} />
             </Grid>
           </Grid>
         </Grid>
-        <Box sx={{p:3, maxheight: "calc(100%)"}}>
-            {documentToReactComponents(biography)}
+        <Box sx={{ p: 3, maxheight: "calc(100%)" }}>
+          {documentToReactComponents(biography)}
         </Box>
       </PageLayout>
     </AppTheme>
