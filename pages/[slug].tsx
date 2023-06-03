@@ -24,6 +24,7 @@ import PostPage from "../src/post/pages/PostPage";
 // }
 
 const EntryPage = ({
+  disqusSiteName,
   post,
 }: InferGetStaticPropsType<typeof getStaticProps>): ReactElement => {
   const router = useRouter();
@@ -40,7 +41,7 @@ const EntryPage = ({
         <link rel="icon" href="/gluo.ico" />
         <title>{post?.title}</title>
       </Head>
-      <PostPage post={post} />
+      <PostPage disqusSiteName={disqusSiteName} post={post} />
       {/* <h1>{entry.title}</h1>
       <p>{entry.readingTime}</p>
       <h4>Entry Id: {entryId}</h4> */}
@@ -50,10 +51,12 @@ const EntryPage = ({
 
 export default EntryPage;
 
-export const getStaticProps: GetStaticProps<{ post: PostFields }> = async (
-  props
-) => {
+export const getStaticProps: GetStaticProps<{
+  post: PostFields;
+  disqusSiteName: string;
+}> = async (props) => {
   // console.log("Slug props: ", props.params);
+  // console.log(process.env.DISQUS_SITENAME)
   const post: PostFields = getPostBySlug(props.params?.slug?.toString() || "");
   // console.log("getPost on slug: ", post);
 
@@ -76,13 +79,12 @@ export const getStaticProps: GetStaticProps<{ post: PostFields }> = async (
     props: {
       // pages: definedPages,
       post,
+      disqusSiteName: process.env.DISQUS_SITENAME || "",
     },
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async (
-  props
-) => {
+export const getStaticPaths: GetStaticPaths = async (props) => {
   // console.log("Slug path props: ", props);
 
   // const paths = definedPages.map((page) => {
