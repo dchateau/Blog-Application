@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Divider from "@mui/material/Divider";
-import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { DiscussionEmbed } from "disqus-react";
 
-import PostLayout from "../layout/PostLayout";
 import CategoriesInlineList from "../components/CategoriesInlineList";
 import ShareList from "../components/ShareList";
 import { NavLink } from "@ui/components";
 
+import PostLayout from "../layout/PostLayout";
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 
@@ -33,9 +34,11 @@ import type { NextRouter } from "next/router";
 // }
 type Props = {
   post: PostFields;
+  disqusSiteName: string;
 };
 
 const PostPage = ({
+  disqusSiteName,
   post: {
     author,
     body,
@@ -43,6 +46,7 @@ const PostPage = ({
     creationDate,
     featuredImage,
     readingTime,
+    slug,
     title,
   },
 }: Props) => {
@@ -52,11 +56,18 @@ const PostPage = ({
   const publishingDate: Date = new Date(creationDate);
 
   useEffect(() => {
+    // console.log(disqusSiteName);
     setPostUrl(`${window.location.origin}${router.asPath}`);
   }, []);
   // const postUrl = `${window.location.origin}${router.asPath}`;
 
   console.log(`Post URL: ${postUrl}`);
+  const disqusConfig = {
+    url: postUrl,
+    title,
+    identifier: slug,
+    language: "en-US"
+  };
 
   const renderOption: any = {
     renderNode: {
@@ -145,7 +156,7 @@ const PostPage = ({
             spacing={0}
             sx={{
               // width: "100%",
-              height: { sm:"calc(64vh)", md: "calc(46vh)", lg: "calc(42vh)" },
+              height: { sm: "calc(64vh)", md: "calc(46vh)", lg: "calc(42vh)" },
               backgroundColor: "secondary.main",
               p: 0,
             }}
@@ -205,7 +216,7 @@ const PostPage = ({
                 <ShareList postUrl={postUrl} />
               </Grid>
             </Grid>
-            <Grid item xs={3}sm={4} md={5} lg={6} sx={{ margin: 0, p: 0 }}>
+            <Grid item xs={3} sm={4} md={5} lg={6} sx={{ margin: 0, p: 0 }}>
               <div className={styles.imageContainer}>
                 <Image
                   src={`https:${featuredImage?.fields.file?.url}`}
@@ -233,7 +244,12 @@ const PostPage = ({
           </Grid> */}
           <Box sx={{ p: 3, height: "100%" }}>
             {documentToReactComponents(body, renderOption)}
+            <DiscussionEmbed
+              shortname={disqusSiteName}
+              config={disqusConfig}
+            />
           </Box>
+          
         </Grid>
       </PostLayout>
     </AppTheme>
