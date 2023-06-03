@@ -4,9 +4,15 @@ import Chip from "@mui/material/Chip";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import type {SxProps} from "@mui/system"
 
 type Props = {
   postUrl: string;
+};
+
+const chipConfig: SxProps = {
+  marginTop: { xs: 2, md: 0, lg: 0 },
+  backgroundColor: "white",
 };
 
 const ShareList = ({ postUrl }: Props) => {
@@ -24,7 +30,7 @@ const ShareList = ({ postUrl }: Props) => {
         component="a"
         href={twitterURL}
         target="_blank"
-        sx={{ marginTop: { xs: 2, md: 0, lg: 0 } }}
+        sx={chipConfig}
       />
       <Chip
         icon={<FacebookIcon />}
@@ -33,7 +39,7 @@ const ShareList = ({ postUrl }: Props) => {
         component="a"
         href={facebookURL}
         target="_blank"
-        sx={{ marginTop: { xs: 2, md: 0, lg: 0 } }}
+        sx={chipConfig}
       />
       <Chip
         icon={<LinkedInIcon />}
@@ -42,7 +48,7 @@ const ShareList = ({ postUrl }: Props) => {
         component="a"
         href={linkedInURL}
         target="_blank"
-        sx={{ marginTop: { xs: 2, md: 0, lg: 0 } }}
+        sx={chipConfig}
       />
     </Grid>
   );
