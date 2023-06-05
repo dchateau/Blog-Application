@@ -11,7 +11,7 @@ import { CategoryFields } from "@typings/contentful";
 
 type Props = {
   categories: CategoryFields[];
-  drawerWidth: number;
+  drawerWidth: { xs: number; sm: number; md: number; lg: number };
 };
 
 const Sidebar = ({ categories, drawerWidth }: Props) => {
@@ -25,8 +25,8 @@ const Sidebar = ({ categories, drawerWidth }: Props) => {
     <Box
       component="nav"
       sx={{
-        width: { sm: drawerWidth },
-        flexShrink: { sm: 0 },
+        width: drawerWidth,
+        flexShrink: { sm: 1 },
       }}
     >
       <Drawer

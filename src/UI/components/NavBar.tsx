@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 
 type Props = {
-  drawerWidth: number;
   needsSidebar: boolean;
+  drawerWidth?: { xs: number; sm: number; md: number; lg: number };
 };
 
 type Route = {
@@ -34,8 +34,19 @@ const NavBar = ({ drawerWidth, needsSidebar }: Props) => {
   let widthProperties: {};
   if (needsSidebar) {
     widthProperties = {
-      width: `calc(100% - ${drawerWidth}px)`,
-      mr: `${drawerWidth}px`,
+      width: {
+        xs: `calc(100% - ${drawerWidth?.xs}px)`,
+        sm: `calc(100% - ${drawerWidth?.sm}px)`,
+        md: `calc(100% - ${drawerWidth?.md}px)`,
+        lg: `calc(100% - ${drawerWidth?.lg}px)`,
+      },
+      mr: {
+        
+        xs: `${drawerWidth?.xs}px`,
+        sm: `${drawerWidth?.sm}px`,
+        md: `${drawerWidth?.md}px`,
+        lg: `${drawerWidth?.lg}px`,
+      },
       backgroundColor: "primary.dark",
     };
   } else {
