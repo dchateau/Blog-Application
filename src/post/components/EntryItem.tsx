@@ -48,11 +48,14 @@ const EntryItem = ({
   return (
     <Grid
       item
-      xs={4}
+      xs={12}
+      sm={12}
       md={6}
       lg={4}
+      columnSpacing={{sm: 2}}
       sx={{
         height: {
+          sm: "calc(44vh - 4px)",
           md: "calc(68vh - 4px)",
           lg: "calc(64vh - 4px)",
         },
@@ -61,7 +64,7 @@ const EntryItem = ({
       <Card
         sx={{
           height: {
-            sm: "calc(82vh)",
+            sm: "calc(40vh)",
             md: "calc(60vh)",
             lg: "calc(58vh)",
           },
