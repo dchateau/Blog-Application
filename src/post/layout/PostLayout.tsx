@@ -14,7 +14,7 @@ const PostLayout = ({ children }: Props) => {
   return (
     <>
       <Box sx={{ display: "flex" }}>
-        <NavBar drawerWidth={DRAWER_WIDTH} needsSidebar={false} />
+        <NavBar needsSidebar={false} />
         <Box
           component="main"
           sx={{ flexGrow: 1, p: 0, backgroundColor: "primary.main" }}
@@ -23,7 +23,7 @@ const PostLayout = ({ children }: Props) => {
           {children}
         </Box>
       </Box>
-      <Footer hasSidebar={false} drawerWidth={DRAWER_WIDTH} />
+      <Footer hasSidebar={false} />
     </>
   );
 };
