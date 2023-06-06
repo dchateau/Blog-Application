@@ -24,7 +24,7 @@ const PostsLayout = ({ categories, children }: Props) => {
   return (
     <>
       <Box sx={{ display: "flex" }}>
-        <NavBar needsSidebar drawerWidth={DRAWER_WIDTH_PROPS} />
+        <NavBar needsSidebar categories={categories} drawerWidth={DRAWER_WIDTH_PROPS} />
         <Box
           component="main"
           sx={{ flexGrow: 1, p: 3, backgroundColor: "primary.main" }}
