@@ -14,13 +14,13 @@ const Footer = ({ hasSidebar, drawerWidth }: Props) => {
   if (hasSidebar) {
     widthProperties = {
       width: {
-        xs: `calc(100% - ${drawerWidth?.xs}px)`,
+        // xs: `calc(100% - ${drawerWidth?.xs}px)`,
         sm: `calc(100% - ${drawerWidth?.sm}px)`,
         md: `calc(100% - ${drawerWidth?.md}px)`,
         lg: `calc(100% - ${drawerWidth?.lg}px)`,
       },
       mr: {
-        xs: `${drawerWidth?.xs}px`,
+        // xs: `${drawerWidth?.xs}px`,
         sm: `${drawerWidth?.sm}px`,
         md: `${drawerWidth?.md}px`,
         lg: `${drawerWidth?.lg}px`,

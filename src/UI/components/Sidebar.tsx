@@ -25,14 +25,13 @@ const Sidebar = ({ categories, drawerWidth }: Props) => {
     <Box
       component="nav"
       sx={{
-        width: drawerWidth,
-        flexShrink: { sm: 1 },
+        width: drawerWidth, 
+        display: {xs:"none", sm: "block"}
       }}
     >
       <Drawer
         sx={{
           width: drawerWidth,
-          flexShrink: 0,
           display: { xs: "block" },
           "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
         }}
@@ -40,7 +39,10 @@ const Sidebar = ({ categories, drawerWidth }: Props) => {
           sx: {
             backgroundColor: "secondary.main",
             alignItems: "center",
+            padding: 0, 
+            margin: 0
           },
+          
         }}
         variant="permanent"
         anchor="right"

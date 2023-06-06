@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
 import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+import MenuIcon from "@mui/icons-material/Menu";
 
-type Props = {
-  needsSidebar: boolean;
-  drawerWidth?: { xs: number; sm: number; md: number; lg: number };
-};
-
-type Route = {
-  id: string;
-  title: string;
-};
-
+import NavLink from "./NavLink";
+import { CategoryFields } from "@typings/contentful";
+import { Route } from "@typings/globals";
+import CategoriesList from "../../post/components/CategoriesList";
+import NavRoutes from "./NavRoutes";
+import NavRoutesMobile from "./NavRoutesMobile";
 const ROUTES: Route[] = [
   {
     id: "blog",
@@ -30,19 +30,35 @@ const ROUTES: Route[] = [
   },
 ];
 
-const NavBar = ({ drawerWidth, needsSidebar }: Props) => {
+type Props = {
+  categories?: CategoryFields[];
+  needsSidebar: boolean;
+  drawerWidth?: { xs: number; sm: number; md: number; lg: number };
+};
+
+const NavBar = ({ categories, drawerWidth, needsSidebar }: Props) => {
+  const [mobileOpen, setMobileOpen] = useState<boolean>(false);
+  // console.log(drawerWidth);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, []);
+
+  const handleDrawerToggle = (): void => {
+    setMobileOpen(!mobileOpen);
+  };
+
   let widthProperties: {};
   if (needsSidebar) {
     widthProperties = {
       width: {
-        xs: `calc(100% - ${drawerWidth?.xs}px)`,
+        // xs: `calc(100% - ${drawerWidth?.xs}px)`,
         sm: `calc(100% - ${drawerWidth?.sm}px)`,
         md: `calc(100% - ${drawerWidth?.md}px)`,
         lg: `calc(100% - ${drawerWidth?.lg}px)`,
       },
       mr: {
-        
-        xs: `${drawerWidth?.xs}px`,
+        // xs: `${drawerWidth?.xs}px`,
         sm: `${drawerWidth?.sm}px`,
         md: `${drawerWidth?.md}px`,
         lg: `${drawerWidth?.lg}px`,
@@ -71,34 +87,53 @@ const NavBar = ({ drawerWidth, needsSidebar }: Props) => {
             variant="h5"
             noWrap
             component="div"
-            sx={{ ":hover": { cursor: "default" } }}
+            sx={{ ":hover": { cursor: "default" }, ml: 1 }}
           >
             Gluo blogging
           </Typography>
+          <IconButton
+            sx={{ color: "white", display: { sm: "none" }, mr: 1 }}
+            edge="end"
+            onClick={handleDrawerToggle}
+          >
+            <MenuIcon />
+          </IconButton>
         </Grid>
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-around"
-          alignItems="center"
-        >
-          {ROUTES.map((item: Route) => {
-            const route: string = item.id === "blog" ? "" : item.id;
-            return (
-              <Link
-                underline="hover"
-                href={`/${route}`}
-                sx={{
-                  textDecoration: "none",
-                  ":hover": { color: "#8C0303", cursor: "pointer" },
-                }}
-                key={item.id}
-              >
-                {item.title}
-              </Link>
-            );
-          })}
-        </Grid>
+        <Box component="nav" sx={{ width: { sm: drawerWidth?.md } }}>
+          <Drawer
+            variant="temporary"
+            anchor="right"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{ keepMounted: true }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth?.md,      
+              },
+            }}
+          >
+            <NavRoutesMobile
+              onHandleClick={handleDrawerToggle}
+              routes={ROUTES}
+            />
+            {categories && (
+              <>
+                <Typography
+                  variant="h6"
+                  align="center"
+                  sx={{ fontWeight: "bold", padding: "0.5rem 0" }}
+                >
+                  {"Categories"}
+                </Typography>
+                <Divider />
+                <CategoriesList categories={categories} onHandleClick={handleDrawerToggle}/>
+              </>
+            )}
+          </Drawer>
+        </Box>
+        <NavRoutes routes={ROUTES} />
       </Toolbar>
     </AppBar>
   );
