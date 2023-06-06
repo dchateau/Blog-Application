@@ -1,10 +1,12 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
+import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import type {SxProps} from "@mui/system"
+import type { SxProps } from "@mui/system";
 
 type Props = {
   postUrl: string;
@@ -22,35 +24,65 @@ const ShareList = ({ postUrl }: Props) => {
   const linkedInURL = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
 
   return (
-    <Grid container direction="row" justifyContent="space-between" mt={3}>
-      <Chip
-        icon={<TwitterIcon />}
-        label="Share with twitter"
-        clickable
-        component="a"
-        href={twitterURL}
-        target="_blank"
-        sx={chipConfig}
-      />
-      <Chip
-        icon={<FacebookIcon />}
-        label="Share with Facebook"
-        clickable
-        component="a"
-        href={facebookURL}
-        target="_blank"
-        sx={chipConfig}
-      />
-      <Chip
-        icon={<LinkedInIcon />}
-        label="Share with LinkedIn"
-        clickable
-        component="a"
-        href={linkedInURL}
-        target="_blank"
-        sx={chipConfig}
-      />
-    </Grid>
+    <>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        mt={3}
+        sx={{
+          display: { xs: "flex", md: "none" },
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          // margin: "0 1rem"
+        }}
+      >
+        <IconButton href={twitterURL} target="_blank">
+          <TwitterIcon />
+        </IconButton>
+        <IconButton href={facebookURL} target="_blank">
+          <FacebookIcon />
+        </IconButton>
+        <IconButton href={linkedInURL} target="_blank">
+          <LinkedInIcon />
+        </IconButton>
+      </Grid>
+      <Grid
+        sx={{ display: { xs: "none", md: "flex  " } }}
+        container
+        direction="row"
+        justifyContent="space-between"
+        mt={3}
+      >
+        <Chip
+          icon={<TwitterIcon />}
+          label="Share with Twitter"
+          clickable
+          component="a"
+          href={twitterURL}
+          target="_blank"
+          sx={chipConfig}
+        />
+        <Chip
+          icon={<FacebookIcon />}
+          label="Share with Facebook"
+          clickable
+          component="a"
+          href={facebookURL}
+          target="_blank"
+          sx={chipConfig}
+        />
+        <Chip
+          icon={<LinkedInIcon />}
+          label="Share with LinkedIn"
+          clickable
+          component="a"
+          href={linkedInURL}
+          target="_blank"
+          sx={chipConfig}
+        />
+      </Grid>
+    </>
   );
 };
 

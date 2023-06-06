@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
+import type { NextRouter } from "next/router";
 
 import { getFormattedDate } from "@post/helpers";
 import type { EntryItemProps } from "@typings/globals";
@@ -31,9 +32,9 @@ const EntryItem = ({
   slug,
   title,
 }: EntryItemProps) => {
-  const router = useRouter();
+  const router: NextRouter = useRouter();
 
-  const onClickCard = () => {
+  const onClickCard = (): void => {
     console.log("Card clicked, navigate to: ", slug);
     const route = `/${slug}`;
     router.push(
@@ -52,10 +53,11 @@ const EntryItem = ({
       sm={12}
       md={6}
       lg={4}
-      columnSpacing={{sm: 2}}
+      columnSpacing={{ xs:2,sm: 7 }}
       sx={{
         height: {
-          sm: "calc(44vh - 4px)",
+          xs: "calc(54vh - 4px)",
+          sm: "calc(56vh - 4px)",
           md: "calc(68vh - 4px)",
           lg: "calc(64vh - 4px)",
         },
@@ -64,7 +66,8 @@ const EntryItem = ({
       <Card
         sx={{
           height: {
-            sm: "calc(40vh)",
+            xs: "calc(50vh)",
+            sm: "calc(52vh)",
             md: "calc(60vh)",
             lg: "calc(58vh)",
           },

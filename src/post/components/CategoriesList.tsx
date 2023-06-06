@@ -12,9 +12,10 @@ import { CategoryFields } from "@typings/contentful";
 
 type Props = {
   categories: CategoryFields[];
+  onHandleClick?: () => void;
 };
 
-const CategoriesList = ({ categories }: Props) => {
+const CategoriesList = ({ categories, onHandleClick }: Props) => {
   const router: NextRouter = useRouter();
   const [activeCategory, setActiveCategory] = useState<string>("");
 
@@ -37,20 +38,24 @@ const CategoriesList = ({ categories }: Props) => {
 
   const onClickCategory = (slug: string): void => {
     // console.log("Clicked category", slug);
-    if (slug !== "")
+    if (slug !== "") {
       router.push({
         pathname: "/",
         query: {
           category: slug,
         },
       });
-    else router.replace("/", undefined, { shallow: true });
+      if (onHandleClick) onHandleClick();
+    } else {
+      router.replace("/", undefined, { shallow: true });
+      if (onHandleClick) onHandleClick();
+    }
   };
 
   return (
     <List>
-      <ListItem onClick={onClickCategory.bind(null, "")}>
-        <ListItemButton sx={{ padding: 1.2 }}>
+      <ListItem onClick={onClickCategory.bind(null, "")} disablePadding>
+        <ListItemButton>
           <ListItemIcon>
             <FeedIcon />
           </ListItemIcon>
@@ -64,10 +69,14 @@ const CategoriesList = ({ categories }: Props) => {
         return (
           <ListItem
             key={slug}
-            sx={{ padding: 1.2, width: "100%" }}
+            sx={{ mt: 2, width: "100%" }}
             onClick={onClickCategory.bind(null, slug)}
+            disablePadding
           >
-            <ListItemButton selected={slug === activeCategory} sx={{"&.Mui-selected": { backgroundColor: "primary.main"}}}>
+            <ListItemButton
+              selected={slug === activeCategory}
+              sx={{ "&.Mui-selected": { backgroundColor: "primary.main" } }}
+            >
               <ListItemIcon>
                 <FeedIcon />
               </ListItemIcon>
