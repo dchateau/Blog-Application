@@ -172,3 +172,16 @@
 /* .profileImage > img {
   border-radius: 50%;
 } */
+
+.blurBg {
+  background-repeat: no-repeat;
+}
+
+.blurBg::before {
+  opacity: 0;
+}
+
+.disableBlur {
+  /* filter: blur(0); */
+  opacity: 1;
+}

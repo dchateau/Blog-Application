@@ -7,6 +7,11 @@ export interface Params extends ParsedUrlQuery {
   slug: string;
 }
 
+export interface Route {
+  id: string;
+  title: string;
+}
+
 export interface EntryProps {
   title: string;
   creationDate: string;
