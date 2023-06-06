@@ -8,6 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import type { SxProps } from "@mui/system";
 
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -66,7 +67,7 @@ const PostPage = ({
     url: postUrl,
     title,
     identifier: slug,
-    language: "en-US"
+    language: "en-US",
   };
 
   const renderOption: any = {
@@ -138,6 +139,12 @@ const PostPage = ({
   // };
 
   // console.log("body: ", body)
+  const containersHeight: SxProps = {
+    xs: "calc(60vh)",
+    sm: "calc(75vh)",
+    md: "calc(46vh)",
+    lg: "calc(42vh)",
+  };
 
   return (
     <AppTheme>
@@ -148,7 +155,9 @@ const PostPage = ({
           direction="column"
           alignItems="center"
           justifyContent="center"
-          sx={{ width: "100%" }}
+          sx={{
+            width: "100%",
+          }}
         >
           <Grid
             item
@@ -156,12 +165,31 @@ const PostPage = ({
             spacing={0}
             sx={{
               // width: "100%",
-              height: { sm: "calc(64vh)", md: "calc(46vh)", lg: "calc(42vh)" },
-              backgroundColor: "secondary.main",
+              height: containersHeight,
+              backgroundColor: { xs: "transparent",sm: "secondary.main" },
+              backgroundImage: {
+                xs: `url('https:${featuredImage?.fields.file?.url}')`,
+                sm: "none",
+              },
+              backgroundRepeat: { xs: "no-repeat" },
+              backgroundSize: { xs: "cover" },
+              "& .MuiGrid-root": { xs:{backdropFilter: "contrast(30%)"}, sm:{backdropFilter: "none"}},
               p: 0,
             }}
           >
-            <Grid item xs={9} sm={8} md={7} lg={6} sx={{ p: 2 }}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={7}
+              lg={6}
+              sx={{
+                p: 2,
+                alignSelf: { xs: "center", sm: "flex-start" },
+            
+              }}
+              justifyContent="center"
+            >
               <h1>{title}</h1>
               {/* <Divider/> */}
               <Grid
@@ -216,7 +244,19 @@ const PostPage = ({
                 <ShareList postUrl={postUrl} />
               </Grid>
             </Grid>
-            <Grid item xs={3} sm={4} md={5} lg={6} sx={{ margin: 0, p: 0 }}>
+            <Grid
+              item
+              xs={0}
+              sm={6}
+              md={5}
+              lg={6}
+              sx={{
+                margin: 0,
+                p: 0,
+                height: containersHeight,
+                display: { xs: "none", sm: "flex" },
+              }}
+            >
               <div className={styles.imageContainer}>
                 <Image
                   src={`https:${featuredImage?.fields.file?.url}`}
@@ -244,12 +284,8 @@ const PostPage = ({
           </Grid> */}
           <Box sx={{ p: 3, height: "100%" }}>
             {documentToReactComponents(body, renderOption)}
-            <DiscussionEmbed
-              shortname={disqusSiteName}
-              config={disqusConfig}
-            />
+            <DiscussionEmbed shortname={disqusSiteName} config={disqusConfig} />
           </Box>
-          
         </Grid>
       </PostLayout>
     </AppTheme>
