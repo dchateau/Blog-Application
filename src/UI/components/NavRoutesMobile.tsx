@@ -21,13 +21,9 @@ const NavRoutesMobile = ({ onHandleClick, routes }: Props) => {
 
   const onRouteClicked = (route: string): void => {
     console.log(route);
-    const toRoute: string = route !== "blog" ? route : "/";
-    router.replace(
-      {
-        pathname: toRoute,
-      },
-      toRoute
-    );
+    const toRoute: string = route !== "blog" ? `/${route}` : "/";
+    console.log("To route: ", toRoute);
+    router.push({ pathname: toRoute  });
     onHandleClick();
   };
 
