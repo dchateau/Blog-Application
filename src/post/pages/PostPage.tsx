@@ -22,9 +22,11 @@ import PostLayout from "../layout/PostLayout";
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 
-import { getFormattedDate } from "@post/helpers";
+import { contentfulRenderOptions, getFormattedDate } from "@post/helpers";
 import { PostFields } from "@typings/contentful";
 import type { NextRouter } from "next/router";
+import YouTubePlayer from "../components/YouTubePlayer";
+
 
 // interface EntryProps {
 //   title: string;
@@ -70,62 +72,75 @@ const PostPage = ({
     language: "en-US",
   };
 
-  const renderOption: any = {
-    renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: (node: any, children: any) => {
-        return (
-          <div className={styles.entryImageContainer}>
-            <Image
-              src={`https:${node.data.target.fields.file.url}`}
-              alt={node.data.target.fields.title}
-              fill
-            />
-          </div>
-        );
-      },
-      [INLINES.HYPERLINK]: (node: any) => {
-        const label = node.content[0].value;
-        console.log("Hyperlink", node.data.uri, label);
-        return (
-          <NavLink fontColor="black" to={node.data.uri} title={label} />
-          // <Link
-          //   underline="hover"
-          //   sx={{
-          //     color: "black",
-          //     textDecoration: "none",
-          //     ":hover": { color: "#8C0303", cursor: "pointer" },
-          //   }}
-          //   href={node.data.uri}
-          // >
-          //   {label}
-          // </Link>
-        );
-      },
-      [BLOCKS.QUOTE]: (node: any) => {
-        // console.log("Quote: ", node, node.content[0].content[0].value);
-        const quote: string = node.content[0].content[0].value;
-        return (
-          <Card>
-            <CardContent>
-              <blockquote>
-                <Typography color="GrayText" variant="h5">
-                  {quote}
-                </Typography>
-              </blockquote>
-              <Divider sx={{ marginBottom: 2 }} />
-              <Typography
-                variant="h6"
-                textAlign="right"
-                sx={{ marginRight: 2 }}
-              >
-                Author
-              </Typography>
-            </CardContent>
-          </Card>
-        );
-      },
-    },
-  };
+  // const renderOption: any = {
+  //   renderNode: {
+  //     [BLOCKS.EMBEDDED_ASSET]: (node: any, children: any) => {
+  //       return (
+  //         <Grid
+  //           container
+  //           sx={{
+  //             position: "relative",
+  //             width: "60%",
+  //             height: { xs: "calc(30vmax)", sm: "calc(40vmax)", md: "calc(50vh)", lg: "calc(60vh)" },
+  //           }}
+  //         >
+  //           <Image
+  //             src={`https:${node.data.target.fields.file.url}`}
+  //             alt={node.data.target.fields.title}
+  //             fill
+  //             sizes="(max-width: 768px) 190vw, (max-width: 1200px) 80vw"
+  //           />
+  //         </Grid>
+  //       );
+  //     },
+  //     [INLINES.HYPERLINK]: (node: any) => {
+  //       const label = node.content[0].value;
+  //       let url: any = node.data.uri;
+  //       url = url.split("/");
+  //       console.log("Hyperlink", url, url[3], label);
+  //       return (
+  //         <>
+  //           <NavLink fontColor="black" to={node.data.uri} title={label} />
+  //           <YouTubePlayer title={label} videoId={url[3]} />
+  //         </>
+  //         // <Link
+  //         //   underline="hover"
+  //         //   sx={{
+  //         //     color: "black",
+  //         //     textDecoration: "none",
+  //         //     ":hover": { color: "#8C0303", cursor: "pointer" },
+  //         //   }}
+  //         //   href={node.data.uri}
+  //         // >
+  //         //   {label}
+  //         // </Link>
+  //       );
+  //     },
+  //     [BLOCKS.QUOTE]: (node: any) => {
+  //       // console.log("Quote: ", node, node.content[0].content[0].value);
+  //       const quote: string = node.content[0].content[0].value;
+  //       return (
+  //         <Card>
+  //           <CardContent>
+  //             <blockquote>
+  //               <Typography color="GrayText" variant="h5">
+  //                 {quote}
+  //               </Typography>
+  //             </blockquote>
+  //             <Divider sx={{ marginBottom: 2 }} />
+  //             <Typography
+  //               variant="h6"
+  //               textAlign="right"
+  //               sx={{ marginRight: 2 }}
+  //             >
+  //               Author
+  //             </Typography>
+  //           </CardContent>
+  //         </Card>
+  //       );
+  //     },
+  //   },
+  // };
 
   // const formatDate = (date: Date): string => {
   //   const day =
@@ -140,10 +155,10 @@ const PostPage = ({
 
   // console.log("body: ", body)
   const containersHeight: SxProps = {
-    xs: "calc(60vh)",
-    sm: "calc(75vh)",
-    md: "calc(46vh)",
-    lg: "calc(42vh)",
+    xs: "calc(80vmax)",
+    sm: "calc(60vmin)",
+    md: "calc(48vh)",
+    lg: "calc(46vh)",
   };
 
   return (
@@ -166,14 +181,17 @@ const PostPage = ({
             sx={{
               // width: "100%",
               height: containersHeight,
-              backgroundColor: { xs: "transparent",sm: "secondary.main" },
+              backgroundColor: { xs: "transparent", sm: "secondary.main" },
               backgroundImage: {
                 xs: `url('https:${featuredImage?.fields.file?.url}')`,
                 sm: "none",
               },
               backgroundRepeat: { xs: "no-repeat" },
               backgroundSize: { xs: "cover" },
-              "& .MuiGrid-root": { xs:{backdropFilter: "contrast(30%)"}, sm:{backdropFilter: "none"}},
+              "& .MuiGrid-root": {
+                xs: { backdropFilter: "contrast(20%)" },
+                sm: { backdropFilter: "none" },
+              },
               p: 0,
             }}
           >
@@ -186,11 +204,10 @@ const PostPage = ({
               sx={{
                 p: 2,
                 alignSelf: { xs: "center", sm: "flex-start" },
-            
               }}
               justifyContent="center"
             >
-              <h1>{title}</h1>
+              <h1 style={{ color: "white" }}>{title}</h1>
               {/* <Divider/> */}
               <Grid
                 container
@@ -283,7 +300,7 @@ const PostPage = ({
             
           </Grid> */}
           <Box sx={{ p: 3, height: "100%" }}>
-            {documentToReactComponents(body, renderOption)}
+            {documentToReactComponents(body, contentfulRenderOptions)}
             <DiscussionEmbed shortname={disqusSiteName} config={disqusConfig} />
           </Box>
         </Grid>
