@@ -49,28 +49,41 @@ const EntryItem = ({
   return (
     <Grid
       item
+      container
       xs={12}
       sm={12}
       md={6}
       lg={4}
-      columnSpacing={{ xs:2,sm: 7 }}
+      // spacing={1 }
+      // columnSpacing={{md:0}}
       sx={{
         height: {
-          xs: "calc(54vh - 4px)",
-          sm: "calc(56vh - 4px)",
-          md: "calc(68vh - 4px)",
+          xs: "calc(20rem)",
+          sm: "calc(21rem)",
+          md: "calc(26rem)",
           lg: "calc(64vh - 4px)",
         },
+        // flexGrow: 1,
+        flexWrap: "nowrap"
       }}
     >
-      <Card
-        sx={{
-          height: {
-            xs: "calc(50vh)",
+      {/* {
+            xs: "calc(54vh)",
             sm: "calc(52vh)",
             md: "calc(60vh)",
             lg: "calc(58vh)",
+          } */}
+      <Card
+        sx={{
+          flexGrow: 1,
+          height: {
+            xs: "calc(19rem)",
+            sm: "calc(20rem)",
+            md: "calc(24rem)",
+            lg: "calc(60vh)",
           },
+          // minHeight: "90%",
+          // maxHeight: "50%"
         }}
       >
         <CardActionArea sx={{ height: "100%" }} onClick={onClickCard}>
@@ -81,10 +94,10 @@ const EntryItem = ({
           />
 
           <CardContent sx={{ height: "100%" }}>
-            <Typography variant="h5" component="div" gutterBottom>
+            <Typography variant="h5" component="div" sx={{fontSize: {xs: "1rem", sm: "1.1rem", md: "1.3rem"}}} gutterBottom>
               {title}
             </Typography>
-            <Typography variant="body2" gutterBottom>
+            <Typography variant="body2" sx={{fontSize: {xs: "0.78rem", sm: "0.87rem", md: "1rem"}}} gutterBottom>
               {excerpt}
             </Typography>
             <Grid
@@ -93,19 +106,19 @@ const EntryItem = ({
               alignItems="center"
               columnSpacing={{ xs: 1, sm: 2, md: 2 }}
             >
-              <Grid item xs={10}>
-                <Typography variant="subtitle1">
+              <Grid item xs={7} sm={6} md={10}>
+                <Typography variant="subtitle1" sx={{fontSize: {xs: "0.68rem", sm: ".82rem", md: "0.9rem"}}}>
                   <strong>Entry by</strong> {authors.join(", ")}
                 </Typography>
               </Grid>
-              <Grid item xs={8}>
-                <Typography variant="subtitle1">
-                  <strong>Published</strong> {getFormattedDate(date)}
+              <Grid item xs={3} sm={4} md={4} sx={{display: {xs: "none", sm: "flex"}}}>
+                <Typography variant="subtitle1" sx={{fontSize: {xs: "0.68rem", sm: ".82rem", md: "0.9rem"}}}>
+                  {getFormattedDate(date)}
                 </Typography>
               </Grid>
-              <Grid item xs={10}>
-                <Typography variant="subtitle1">
-                  <strong>Reading time</strong> {readingTime} minutes
+              <Grid item xs={3} sm={4} md={4}>
+                <Typography variant="subtitle1" sx={{fontSize: {xs: "0.68rem", sm: ".82rem", md: "0.9rem"}}}>
+                  {readingTime} minutes
                 </Typography>
               </Grid>
             </Grid>
