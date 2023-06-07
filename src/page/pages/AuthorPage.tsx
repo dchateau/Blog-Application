@@ -14,6 +14,7 @@ import styles from "../../../styles/Home.module.css";
 
 import { AuthorFields } from "@typings/contentful";
 import type { NextRouter } from "next/router";
+import { contentfulRenderOptions } from "@post/helpers";
 
 type Props = {
   author: AuthorFields;
@@ -48,8 +49,14 @@ const AuthorPage = ({
             spacing={0}
             sx={{
               // width: "100%",
-              height: { sm: "calc(55vh)", md: "calc(40vh)", lg: "calc(38vh)" },
+              height: {
+                xs: "calc(28rem)",
+                sm: "calc(20rem)",
+                md: "calc(24rem)",
+                lg: "calc(38vh)",
+              },
               backgroundColor: "secondary.main",
+              alignSelf: "center",
               p: 0,
             }}
           >
@@ -58,6 +65,7 @@ const AuthorPage = ({
               xs={4}
               md={3}
               lg={3}
+              container
               direction="column"
               sx={{
                 margin: 0,
@@ -89,7 +97,7 @@ const AuthorPage = ({
           </Grid>
         </Grid>
         <Box sx={{ p: 3, maxheight: "calc(100%)" }}>
-          {documentToReactComponents(biography)}
+          {documentToReactComponents(biography, contentfulRenderOptions)}
         </Box>
       </PageLayout>
     </AppTheme>
