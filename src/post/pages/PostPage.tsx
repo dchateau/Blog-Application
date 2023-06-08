@@ -174,7 +174,10 @@ const PostPage = ({
             </Grid>
           </Grid>
           <Box sx={{ p: 3, height: "100%" }}>
-            {documentToReactComponents(body, contentfulRenderOptions)}
+            {
+              //@ts-ignore
+              documentToReactComponents(body, contentfulRenderOptions)
+            }
             <DiscussionEmbed shortname={disqusSiteName} config={disqusConfig} />
           </Box>
         </Grid>

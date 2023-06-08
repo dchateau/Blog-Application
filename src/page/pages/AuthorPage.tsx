@@ -95,7 +95,10 @@ const AuthorPage = ({
           </Grid>
         </Grid>
         <Box sx={{ p: 3, maxHeight: "calc(100%)" }}>
-          {documentToReactComponents(biography, contentfulRenderOptions)}
+          {
+            //@ts-ignore
+            documentToReactComponents(biography, contentfulRenderOptions)
+          }
         </Box>
       </PageLayout>
     </AppTheme>
