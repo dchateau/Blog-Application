@@ -1,4 +1,4 @@
-import { Author, Category, PostFields } from "@typings/contentful";
+import type { Author, Category, PostFields } from "@typings/contentful";
 import data from "../../../public/data.json";
 
 const getPosts = (): PostFields[] => {
@@ -23,17 +23,16 @@ const getPosts = (): PostFields[] => {
     const entryId: string = item.sys.id;
     const authorContent: Author[] = author.map((author: any) => {
       const filteredFields: Author = { ...author };
-      // console.log("Author", fields);
       return filteredFields;
     });
-    // delete authorContent.metadata;
-    // console.log("Author: ", authorContent);
+
     const thumbnailAsAsset: any = { ...thumbnail };
     delete thumbnailAsAsset.metadata;
 
-    const categoriesWithType: Category[] = categories.map((category:any) => ({ ...category }));
+    const categoriesWithType: Category[] = categories.map((category: any) => ({
+      ...category,
+    }));
 
-    // console.log("thumb", thumbnailAsAsset);
     const entryProps: PostFields = {
       author: authorContent,
       categories: categoriesWithType,
@@ -49,7 +48,6 @@ const getPosts = (): PostFields[] => {
     };
     return entryProps;
   });
-  //   console.log("FormattedPosts: ", formattedPosts);
 
   return formattedPosts;
 };

@@ -7,8 +7,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 
+import { NavLink } from "@ui/components";
 import YouTubePlayer from "../components/YouTubePlayer";
-import NavLink from "../../UI/components/NavLink";
 
 const renderOptions: any = {
   renderNode: {
@@ -37,35 +37,23 @@ const renderOptions: any = {
       );
     },
     [INLINES.HYPERLINK]: (node: any) => {
-      const label = node.content[0].value;
-      const isYouTubeVideo = node.data.uri.includes("youtu" || "youtube");
+      const label: string = node.content[0].value;
+      const isYouTubeVideo: boolean = node.data.uri.includes(
+        "youtu" || "youtube"
+      );
       let url: string[] = [""];
 
       if (isYouTubeVideo) {
         url = node.data.uri.split("/");
-        console.log("Hyperlink", url, url[3], label);
       }
-      // url = url.split("/");
       return (
         <>
           <NavLink fontColor="black" to={node.data.uri} title={label} />
           {isYouTubeVideo && <YouTubePlayer title={label} videoId={url[3]} />}
         </>
-        // <Link
-        //   underline="hover"
-        //   sx={{
-        //     color: "black",
-        //     textDecoration: "none",
-        //     ":hover": { color: "#8C0303", cursor: "pointer" },
-        //   }}
-        //   href={node.data.uri}
-        // >
-        //   {label}
-        // </Link>
       );
     },
     [BLOCKS.QUOTE]: (node: any) => {
-      // console.log("Quote: ", node, node.content[0].content[0].value);
       const quote: string = node.content[0].content[0].value;
       return (
         <Card>

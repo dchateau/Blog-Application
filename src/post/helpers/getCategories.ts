@@ -1,11 +1,11 @@
 import data from "../../../public/data.json";
-import { Category, CategoryFields } from "@typings/contentful";
+import type { Category, CategoryFields } from "@typings/contentful";
 
 const getCategories = (): CategoryFields[] => {
   const filteredCategories: Category[] = data.filter(
-    (item) => item.sys.contentType.sys.id === "category"
+    (item: any) => item.sys.contentType.sys.id === "category"
   );
-//   console.log("Categories: ", filteredCategories)
+
   const categories: CategoryFields[] = filteredCategories.map(
     (category: Category) => {
       const formattedCategory: CategoryFields = {
@@ -16,7 +16,7 @@ const getCategories = (): CategoryFields[] => {
       return formattedCategory;
     }
   );
-    // console.log("Formatted categories: ", categories);
+
   return categories;
 };
 

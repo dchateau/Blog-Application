@@ -9,7 +9,7 @@ const getAuthorPages = () => {
   paths = paths.map((page: string) => ({
     params: { slug: page },
   }));
-//   console.log("Defined author pages: ", paths);
+
   return paths;
 };
 

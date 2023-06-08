@@ -9,7 +9,7 @@ const getDefinedPages = () => {
   paths = paths.map((page: string) => ({
     params: { slug: page },
   }));
-  // console.log("Defined pages: ", paths);
+
   return paths;
 };
 
