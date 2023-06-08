@@ -12,6 +12,13 @@ export interface Route {
   title: string;
 }
 
+export interface DrawerWidths {
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+}
+
 export interface EntryProps {
   title: string;
   creationDate: string;
