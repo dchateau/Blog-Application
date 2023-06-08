@@ -9,9 +9,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import type { SxProps } from "@mui/material";
 import NavLink from "./NavLink";
 import { CategoryFields } from "@typings/contentful";
-import { Route } from "@typings/globals";
+import { DrawerWidths, Route } from "@typings/globals";
 import CategoriesList from "../../post/components/CategoriesList";
 import NavRoutes from "./NavRoutes";
 import NavRoutesMobile from "./NavRoutesMobile";
@@ -33,7 +34,7 @@ const ROUTES: Route[] = [
 type Props = {
   categories?: CategoryFields[];
   needsSidebar: boolean;
-  drawerWidth?: { xs: number; sm: number; md: number; lg: number };
+  drawerWidth?: DrawerWidths;
 };
 
 const NavBar = ({ categories, drawerWidth, needsSidebar }: Props) => {
