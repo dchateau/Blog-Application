@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
       "@typings/*" : ["src/typings/*"],
       "@post/helpers" : ["src/post/helpers"],
