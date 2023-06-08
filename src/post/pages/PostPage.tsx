@@ -105,6 +105,7 @@ const PostPage = ({
               sx={{
                 p: 2,
                 alignSelf: { xs: "center", sm: "flex-start" },
+                backgroundColor: "transparent",
               }}
               justifyContent="center"
             >
