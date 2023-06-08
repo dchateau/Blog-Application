@@ -114,7 +114,11 @@ const PostPage = ({
               <Grid
                 container
                 // spacing={0}
-                sx={{ p: 0, maxWidth: "100%" }}
+                sx={{
+                  p: 0,
+                  maxWidth: "100%",
+                  backgroundColor: { xs: "transparent" },
+                }}
                 direction="row"
                 alignItems="center"
                 justifyContent="space-between"
