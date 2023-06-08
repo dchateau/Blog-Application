@@ -1,12 +1,12 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+
 import { Footer, NavBar, Sidebar } from "@ui/components";
-// import NavBar from "../../UI/components/NavBar";
-// import Sidebar from "../../UI/components/Sidebar";
-import { CategoryFields } from "@typings/contentful";
+
 import { DRAWER_WIDTH, MEDIUM_DRAWER_WIDTH, SMALL_DRAWER_WIDTH } from "../../../constants";
-// const DRAWER_WIDTH: number = 250;
+
+import type { CategoryFields } from "@typings/contentful";
 
 type Props = {
   categories: CategoryFields[];
