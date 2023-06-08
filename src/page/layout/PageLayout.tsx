@@ -9,12 +9,13 @@ import {
 } from "../../../constants";
 
 import type { ReactElement } from "react";
+import type { DrawerWidths } from "@typings/globals";
 
 interface Props {
   children: React.ReactNode;
-};
+}
 
-const DRAWER_WIDTH_PROPS = {
+const DRAWER_WIDTH_PROPS: DrawerWidths = {
   xs: SMALL_DRAWER_WIDTH,
   sm: MEDIUM_DRAWER_WIDTH,
   md: DRAWER_WIDTH,

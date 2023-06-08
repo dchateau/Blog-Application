@@ -7,13 +7,14 @@ import { Footer, NavBar, Sidebar } from "@ui/components";
 import { DRAWER_WIDTH, MEDIUM_DRAWER_WIDTH, SMALL_DRAWER_WIDTH } from "../../../constants";
 
 import type { CategoryFields } from "@typings/contentful";
+import type { DrawerWidths } from "@typings/globals";
 
 type Props = {
   categories: CategoryFields[];
   children: React.ReactNode;
 };
 
-const DRAWER_WIDTH_PROPS = {
+const DRAWER_WIDTH_PROPS: DrawerWidths = {
   xs: SMALL_DRAWER_WIDTH,
   sm: MEDIUM_DRAWER_WIDTH,
   md: DRAWER_WIDTH,
