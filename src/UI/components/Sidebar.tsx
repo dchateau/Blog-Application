@@ -26,15 +26,15 @@ const Sidebar = ({ categories, drawerWidth }: Props): ReactElement => {
     <Box
       component="nav"
       sx={{
-        widthProperties,
+        ...widthProperties,
         display: { xs: "none", sm: "block" },
       }}
     >
       <Drawer
         sx={{
-          width: widthProperties,
+          ...widthProperties,
           display: { xs: "block" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", widthProperties },
+          "& .MuiDrawer-paper": { boxSizing: "border-box", ...widthProperties },
         }}
         PaperProps={{
           sx: {
