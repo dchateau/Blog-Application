@@ -12,6 +12,13 @@ export interface Route {
   title: string;
 }
 
+export interface DisqusConfig {
+  url: string;
+  identifier: string;
+  title: string;
+  language?: string;
+}
+
 export interface DrawerWidths {
   xs: number;
   sm: number;
