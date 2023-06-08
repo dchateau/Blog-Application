@@ -38,13 +38,18 @@ const renderOptions: any = {
     },
     [INLINES.HYPERLINK]: (node: any) => {
       const label = node.content[0].value;
-      let url: any = node.data.uri;
-      url = url.split("/");
-      console.log("Hyperlink", url, url[3], label);
+      const isYouTubeVideo = node.data.uri.includes("youtu" || "youtube");
+      let url: string[] = [""];
+
+      if (isYouTubeVideo) {
+        url = node.data.uri.split("/");
+        console.log("Hyperlink", url, url[3], label);
+      }
+      // url = url.split("/");
       return (
         <>
           <NavLink fontColor="black" to={node.data.uri} title={label} />
-          <YouTubePlayer title={label} videoId={url[3]} />
+          {isYouTubeVideo && <YouTubePlayer title={label} videoId={url[3]} />}
         </>
         // <Link
         //   underline="hover"
