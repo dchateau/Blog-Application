@@ -106,6 +106,7 @@ const PostPage = ({
                 p: 2,
                 alignSelf: { xs: "center", sm: "flex-start" },
                 backgroundColor: "transparent",
+                "& .MuiGrid-root": { backgroundColor: "transparent" },
               }}
               justifyContent="center"
             >
@@ -117,7 +118,7 @@ const PostPage = ({
                 sx={{
                   p: 0,
                   maxWidth: "100%",
-                  backgroundColor: { xs: "transparent" },
+                  backgroundColor: { xs: "red" },
                 }}
                 direction="row"
                 alignItems="center"
