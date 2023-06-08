@@ -1,26 +1,17 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { useRouter } from "next/router";
-import type { NextRouter } from "next/router";
 
 import { getFormattedDate } from "@post/helpers";
-import type { EntryItemProps } from "@typings/globals";
 
-// type Props = {
-//   authors: Array<string>;
-//   date: Date;
-//   entryId: string;
-//   excerpt: string;
-//   imageUrl: string;
-//   readingTime: number;
-//   slug: string;
-//   title: string;
-// };
+import type { ReactElement } from "react";
+import type { NextRouter } from "next/router";
+import type { EntryItemProps } from "@typings/globals";
 
 const EntryItem = ({
   date,
@@ -31,12 +22,11 @@ const EntryItem = ({
   readingTime,
   slug,
   title,
-}: EntryItemProps) => {
+}: EntryItemProps): ReactElement => {
   const router: NextRouter = useRouter();
 
   const onClickCard = (): void => {
-    console.log("Card clicked, navigate to: ", slug);
-    const route = `/${slug}`;
+    const route: string = `/${slug}`;
     router.push(
       {
         pathname: route,
@@ -54,8 +44,6 @@ const EntryItem = ({
       sm={12}
       md={6}
       lg={4}
-      // spacing={1 }
-      // columnSpacing={{md:0}}
       sx={{
         height: {
           xs: "calc(20rem)",
@@ -63,16 +51,9 @@ const EntryItem = ({
           md: "calc(26rem)",
           lg: "calc(64vh - 4px)",
         },
-        // flexGrow: 1,
-        flexWrap: "nowrap"
+        flexWrap: "nowrap",
       }}
     >
-      {/* {
-            xs: "calc(54vh)",
-            sm: "calc(52vh)",
-            md: "calc(60vh)",
-            lg: "calc(58vh)",
-          } */}
       <Card
         sx={{
           flexGrow: 1,
@@ -82,8 +63,6 @@ const EntryItem = ({
             md: "calc(24rem)",
             lg: "calc(60vh)",
           },
-          // minHeight: "90%",
-          // maxHeight: "50%"
         }}
       >
         <CardActionArea sx={{ height: "100%" }} onClick={onClickCard}>
@@ -94,10 +73,19 @@ const EntryItem = ({
           />
 
           <CardContent sx={{ height: "100%" }}>
-            <Typography variant="h5" component="div" sx={{fontSize: {xs: "1rem", sm: "1.1rem", md: "1.3rem"}}} gutterBottom>
+            <Typography
+              variant="h5"
+              component="div"
+              sx={{ fontSize: { xs: "1rem", sm: "1.1rem", md: "1.3rem" } }}
+              gutterBottom
+            >
               {title}
             </Typography>
-            <Typography variant="body2" sx={{fontSize: {xs: "0.78rem", sm: "0.87rem", md: "1rem"}}} gutterBottom>
+            <Typography
+              variant="body2"
+              sx={{ fontSize: { xs: "0.78rem", sm: "0.87rem", md: "1rem" } }}
+              gutterBottom
+            >
               {excerpt}
             </Typography>
             <Grid
@@ -107,17 +95,38 @@ const EntryItem = ({
               columnSpacing={{ xs: 1, sm: 2, md: 2 }}
             >
               <Grid item xs={7} sm={6} md={10}>
-                <Typography variant="subtitle1" sx={{fontSize: {xs: "0.68rem", sm: ".82rem", md: "0.9rem"}}}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontSize: { xs: "0.68rem", sm: ".82rem", md: "0.9rem" },
+                  }}
+                >
                   <strong>Entry by</strong> {authors.join(", ")}
                 </Typography>
               </Grid>
-              <Grid item xs={3} sm={4} md={4} sx={{display: {xs: "none", sm: "flex"}}}>
-                <Typography variant="subtitle1" sx={{fontSize: {xs: "0.68rem", sm: ".82rem", md: "0.9rem"}}}>
+              <Grid
+                item
+                xs={3}
+                sm={4}
+                md={4}
+                sx={{ display: { xs: "none", sm: "flex" } }}
+              >
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontSize: { xs: "0.68rem", sm: ".82rem", md: "0.9rem" },
+                  }}
+                >
                   {getFormattedDate(date)}
                 </Typography>
               </Grid>
               <Grid item xs={3} sm={4} md={4}>
-                <Typography variant="subtitle1" sx={{fontSize: {xs: "0.68rem", sm: ".82rem", md: "0.9rem"}}}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    fontSize: { xs: "0.68rem", sm: ".82rem", md: "0.9rem" },
+                  }}
+                >
                   {readingTime} minutes
                 </Typography>
               </Grid>

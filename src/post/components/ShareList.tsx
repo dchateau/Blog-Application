@@ -1,27 +1,28 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import type { ReactElement } from "react";
 import type { SxProps } from "@mui/system";
 
-type Props = {
+interface Props {
   postUrl: string;
-};
+}
 
 const chipConfig: SxProps = {
   marginTop: { xs: 2, md: 0, lg: 0 },
   backgroundColor: "white",
 };
 
-const ShareList = ({ postUrl }: Props) => {
-  const encodedUrl = encodeURI(postUrl);
-  const twitterURL = `https://twitter.com/share?url="${encodedUrl}"`;
-  const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
-  const linkedInURL = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+const ShareList = ({ postUrl }: Props): ReactElement => {
+  const encodedURL: string = encodeURI(postUrl);
+  const twitterURL: string = `https://twitter.com/share?url="${encodedURL}"`;
+  const facebookURL: string = `https://www.facebook.com/sharer/sharer.php?u=${encodedURL}`;
+  const linkedInURL: string = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedURL}`;
 
   return (
     <>
@@ -34,7 +35,6 @@ const ShareList = ({ postUrl }: Props) => {
           display: { xs: "flex", md: "none" },
           justifyContent: "space-evenly",
           alignItems: "center",
-          // margin: "0 1rem"
         }}
       >
         <IconButton href={twitterURL} target="_blank">

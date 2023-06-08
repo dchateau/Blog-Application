@@ -1,13 +1,15 @@
 import React from "react";
 import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
-import { Category } from "@typings/contentful";
 
-type Props = {
+import type { ReactElement } from "react";
+import type { Category } from "@typings/contentful";
+
+interface Props {
   categories: Category[];
-};
+}
 
-const CategoriesInlineList = ({ categories }: Props) => {
+const CategoriesInlineList = ({ categories }: Props): ReactElement => {
   return (
     <Grid
       item
@@ -18,7 +20,11 @@ const CategoriesInlineList = ({ categories }: Props) => {
       justifyContent="space-around"
     >
       {categories.map((category) => (
-        <Chip label={category.fields.title} key={category.fields.slug}   sx={{fontSize: "0.9rem", backgroundColor: "#f2f1f1"}} />
+        <Chip
+          label={category.fields.title}
+          key={category.fields.slug}
+          sx={{ fontSize: "0.9rem", backgroundColor: "#f2f1f1" }}
+        />
       ))}
     </Grid>
   );

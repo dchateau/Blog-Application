@@ -6,13 +6,14 @@ import React, {
   useState,
 } from "react";
 
-type Props = {
+import type { ReactElement } from "react";
+
+interface Props {
   videoId: string;
   title: string;
-};
+}
 
-const YouTubePlayer = ({ title, videoId }: Props) => {
-  console.log("video id: ", videoId)
+const YouTubePlayer = ({ title, videoId }: Props): ReactElement => {
   const videoUrl: string = `https://www.youtube.com/embed/${videoId}`;
   const iframeRef: RefObject<HTMLIFrameElement> =
     useRef<HTMLIFrameElement>(null);
@@ -68,7 +69,7 @@ const YouTubePlayer = ({ title, videoId }: Props) => {
       src={videoUrl}
       allow="accelerometer; encrypted-media; picture-in-picture"
       allowFullScreen
-      style={{marginTop: "2rem"}}
+      style={{ marginTop: "2rem" }}
     />
   );
 };

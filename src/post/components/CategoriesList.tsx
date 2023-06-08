@@ -1,27 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import type { NextRouter } from "next/router";
+
+import FeedIcon from "@mui/icons-material/Feed";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import FeedIcon from "@mui/icons-material/Feed";
-import { CategoryFields } from "@typings/contentful";
 
-type Props = {
+import type { ReactElement } from "react";
+import type { NextRouter } from "next/router";
+import type { CategoryFields } from "@typings/contentful";
+
+interface Props {
   categories: CategoryFields[];
   onHandleClick?: () => void;
-};
+}
 
-const CategoriesList = ({ categories, onHandleClick }: Props) => {
+const CategoriesList = ({ categories, onHandleClick }: Props): ReactElement => {
   const router: NextRouter = useRouter();
   const [activeCategory, setActiveCategory] = useState<string>("");
 
   useEffect(() => {
     const onRouteChange = (url: string): void => {
-      // console.log("Category selected: ", url);
       let category: string[] | string = url.split("?");
 
       if (category.length === 1) {
@@ -37,7 +38,6 @@ const CategoriesList = ({ categories, onHandleClick }: Props) => {
   }, [router.events]);
 
   const onClickCategory = (slug: string): void => {
-    // console.log("Clicked category", slug);
     if (slug !== "") {
       router.push({
         pathname: "/",
@@ -64,8 +64,6 @@ const CategoriesList = ({ categories, onHandleClick }: Props) => {
       </ListItem>
       {categories.map((category: CategoryFields) => {
         const { slug, title } = category;
-        // console.log("CategoryItem: ", slug, activeCategory);
-        // console.log(slug, title);
         return (
           <ListItem
             key={slug}
