@@ -1,12 +1,13 @@
-import type { ReactElement } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import type { NextRouter } from "next/router";
-import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import { useEffect, useState } from "react";
 
 import { getCategories, getPosts } from "@post/helpers";
 import PostsPage from "../src/post/pages/PostsPage";
+
+import type { ReactElement } from "react";
+import type { NextRouter } from "next/router";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import type { Category, CategoryFields, PostFields } from "@typings/contentful";
 
 const Home = ({

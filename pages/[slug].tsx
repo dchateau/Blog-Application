@@ -1,11 +1,12 @@
-import type { ReactElement } from "react";
 import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
-import type { GetStaticProps, GetStaticPaths } from "next";
 
 import PostPage from "../src/post/pages/PostPage";
-import { PostFields } from "@typings/contentful";
 import { getDefinedPages, getPostBySlug } from "@post/helpers";
+
+import type { ReactElement } from "react";
+import type { GetStaticProps, GetStaticPaths } from "next";
+import type { PostFields } from "@typings/contentful";
 
 const EntryPage = ({
   disqusSiteName,
