@@ -1,5 +1,5 @@
+import type { ReactElement } from "react";
 import Head from "next/head";
-import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import type { NextRouter } from "next/router";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
@@ -9,19 +9,12 @@ import { getCategories, getPosts } from "@post/helpers";
 import PostsPage from "../src/post/pages/PostsPage";
 import type { Category, CategoryFields, PostFields } from "@typings/contentful";
 
-// const posts = data.filter((item) => item.sys.contentType.sys.id === "post");
-// const definedPages = posts.map((post) => post.fields.slug);
-// let filteredPosts:PostFields[];
 const Home = ({
   categories,
   posts: postsProps,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+}: InferGetStaticPropsType<typeof getStaticProps>): ReactElement => {
   const router: NextRouter = useRouter();
-
   const [posts, setPosts] = useState<PostFields[]>(postsProps);
-
-  // console.log("Posts: ", posts)
-  // console.log("Defined pages: ", definedPages);
 
   useEffect(() => {
     router.replace("/", undefined, { shallow: false });
@@ -37,17 +30,12 @@ const Home = ({
       }
       category = category[1].split("=");
       category = category[1];
-      // console.log("Route changed to: ", url);
-      console.log("Filter category: ", category);
-      // console.log(posts)
 
-      const filtered: PostFields[] = posts.filter((post: PostFields) => {
+      const filtered: PostFields[] = postsProps.filter((post: PostFields) => {
         const postCategories: Category[] | undefined = post.categories;
-        // console.log(postCategories);
         const postHasCategory: number | undefined = postCategories?.findIndex(
           (postCategory: Category) => postCategory.fields.slug === category
         );
-        // console.log("Is in? ", isIn, post.slug);
         if (postHasCategory !== -1) return post;
       });
 
@@ -65,15 +53,6 @@ const Home = ({
         <link rel="icon" href="/gluo.ico" />
       </Head>
       <PostsPage posts={posts} categories={categories} />
-
-      {/* <main >
-        <h1>Main application</h1>
-      </main>
-
-      <footer >
-        
-          Powered by{' '}
-      </footer> */}
     </div>
   );
 };
@@ -84,13 +63,8 @@ export const getStaticProps: GetStaticProps<{
   categories: CategoryFields[];
   posts: PostFields[];
 }> = async (props) => {
-  // const {locale} = props;
-  // const { slug } = params;
-  // console.log({ slug });
   const posts: PostFields[] = getPosts();
   const categories: CategoryFields[] = getCategories();
-
-  console.log("index props: ", props);
 
   return {
     props: {
