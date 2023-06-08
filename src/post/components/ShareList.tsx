@@ -32,8 +32,7 @@ const ShareList = ({ postUrl }: Props): ReactElement => {
         justifyContent="space-evenly"
         mt={3}
         sx={{
-          backgroundColor: "#ffffff",
-          opacity: "0.4",
+          backgroundColor: "transparent",
           display: { xs: "flex", md: "none" },
           justifyContent: "space-evenly",
           alignItems: "center",
