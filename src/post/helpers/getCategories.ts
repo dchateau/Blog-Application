@@ -2,6 +2,7 @@ import data from "../../../public/data.json";
 import type { Category, CategoryFields } from "@typings/contentful";
 
 const getCategories = (): CategoryFields[] => {
+  //@ts-ignore
   const filteredCategories: Category[] = data.filter(
     (item: any) => item.sys.contentType.sys.id === "category"
   );
