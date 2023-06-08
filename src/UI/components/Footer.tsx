@@ -1,26 +1,28 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import { SxProps } from "@mui/material";
 
 import styles from "../../../styles/Home.module.css";
 
-type Props = {
-  hasSidebar: boolean;
-  drawerWidth?: { xs: number; sm: number; md: number; lg: number };
-};
+import type { ReactElement } from "react";
+import type { DrawerWidths } from "@typings/globals";
 
-const Footer = ({ hasSidebar, drawerWidth }: Props) => {
-  let widthProperties: {} = {};
+interface Props {
+  hasSidebar: boolean;
+  drawerWidth?: DrawerWidths;
+}
+
+const Footer = ({ hasSidebar, drawerWidth }: Props): ReactElement => {
+  let widthProperties: SxProps = {};
+
   if (hasSidebar) {
     widthProperties = {
       width: {
-        // xs: `calc(100% - ${drawerWidth?.xs}px)`,
         sm: `calc(100% - ${drawerWidth?.sm}px)`,
         md: `calc(100% - ${drawerWidth?.md}px)`,
         lg: `calc(100% - ${drawerWidth?.lg}px)`,
       },
       mr: {
-        // xs: `${drawerWidth?.xs}px`,
         sm: `${drawerWidth?.sm}px`,
         md: `${drawerWidth?.md}px`,
         lg: `${drawerWidth?.lg}px`,
@@ -46,7 +48,6 @@ const Footer = ({ hasSidebar, drawerWidth }: Props) => {
           padding: "0 2rem",
         }}
       >
-        {/* style={widthProperties} */}
         <p>Gluo blogging</p>
         <p>All rights reserved ({new Date().getFullYear()})</p>
         <p>Mexico</p>

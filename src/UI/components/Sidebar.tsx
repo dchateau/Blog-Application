@@ -1,48 +1,48 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import Toolbar from "@mui/material/Toolbar";
-import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 
-import data from "../../../public/data.json";
 import CategoriesList from "../../post/components/CategoriesList";
-import { CategoryFields } from "@typings/contentful";
 
-type Props = {
+import type { ReactElement } from "react";
+import type { SxProps } from "@mui/material";
+import type { CategoryFields } from "@typings/contentful";
+import type { DrawerWidths } from "@typings/globals";
+
+interface Props {
   categories: CategoryFields[];
-  drawerWidth: { xs: number; sm: number; md: number; lg: number };
-};
+  drawerWidth: DrawerWidths;
+}
 
-const Sidebar = ({ categories, drawerWidth }: Props) => {
-  // const categories = data.filter(
-  //   (item) => item.sys.contentType.sys.id === "category"
-  // );
-  // item.sys.contentType.sys.id
-  // console.log("Categories: ", categories);
+const Sidebar = ({ categories, drawerWidth }: Props): ReactElement => {
+  let widthProperties: SxProps = {
+    width: { ...drawerWidth },
+  };
 
   return (
     <Box
       component="nav"
       sx={{
-        width: drawerWidth, 
-        display: {xs:"none", sm: "block"}
+        widthProperties,
+        display: { xs: "none", sm: "block" },
       }}
     >
       <Drawer
         sx={{
-          width: drawerWidth,
+          width: widthProperties,
           display: { xs: "block" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+          "& .MuiDrawer-paper": { boxSizing: "border-box", widthProperties },
         }}
         PaperProps={{
           sx: {
             backgroundColor: "secondary.main",
             alignItems: "center",
-            padding: 0, 
-            margin: 0
+            padding: 0,
+            margin: 0,
           },
-          
         }}
         variant="permanent"
         anchor="right"

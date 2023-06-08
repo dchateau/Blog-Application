@@ -9,13 +9,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import type { SxProps } from "@mui/material";
-import NavLink from "./NavLink";
-import { CategoryFields } from "@typings/contentful";
-import { DrawerWidths, Route } from "@typings/globals";
-import CategoriesList from "../../post/components/CategoriesList";
 import NavRoutes from "./NavRoutes";
 import NavRoutesMobile from "./NavRoutesMobile";
+import CategoriesList from "../../post/components/CategoriesList";
+
+import type { ReactElement } from "react";
+import type { SxProps } from "@mui/material";
+import type { CategoryFields } from "@typings/contentful";
+import type { DrawerWidths, Route } from "@typings/globals";
+
 const ROUTES: Route[] = [
   {
     id: "blog",
@@ -37,9 +39,13 @@ type Props = {
   drawerWidth?: DrawerWidths;
 };
 
-const NavBar = ({ categories, drawerWidth, needsSidebar }: Props) => {
+const NavBar = ({
+  categories,
+  drawerWidth,
+  needsSidebar,
+}: Props): ReactElement => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
-  // console.log(drawerWidth);
+  let widthProperties: SxProps;
 
   useEffect(() => {
     setMobileOpen(false);
@@ -49,17 +55,14 @@ const NavBar = ({ categories, drawerWidth, needsSidebar }: Props) => {
     setMobileOpen(!mobileOpen);
   };
 
-  let widthProperties: {};
   if (needsSidebar) {
     widthProperties = {
       width: {
-        // xs: `calc(100% - ${drawerWidth?.xs}px)`,
         sm: `calc(100% - ${drawerWidth?.sm}px)`,
         md: `calc(100% - ${drawerWidth?.md}px)`,
         lg: `calc(100% - ${drawerWidth?.lg}px)`,
       },
       mr: {
-        // xs: `${drawerWidth?.xs}px`,
         sm: `${drawerWidth?.sm}px`,
         md: `${drawerWidth?.md}px`,
         lg: `${drawerWidth?.lg}px`,
@@ -111,7 +114,7 @@ const NavBar = ({ categories, drawerWidth, needsSidebar }: Props) => {
               display: { xs: "block", md: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
-                width: drawerWidth?.md,      
+                width: drawerWidth?.md,
               },
             }}
           >
@@ -129,7 +132,10 @@ const NavBar = ({ categories, drawerWidth, needsSidebar }: Props) => {
                   {"Categories"}
                 </Typography>
                 <Divider />
-                <CategoriesList categories={categories} onHandleClick={handleDrawerToggle}/>
+                <CategoriesList
+                  categories={categories}
+                  onHandleClick={handleDrawerToggle}
+                />
               </>
             )}
           </Drawer>

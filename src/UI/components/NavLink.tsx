@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "@mui/material/Link";
 
-type Props = {
+import type { ReactElement } from "react";
+
+interface Props {
   fontColor: string;
   to: string;
   title: string;
-};
+}
 
-const NavLink = ({ fontColor, to, title }: Props) => {
+const NavLink = ({ fontColor, to, title }: Props): ReactElement => {
   return (
     <Link
       href={to}
