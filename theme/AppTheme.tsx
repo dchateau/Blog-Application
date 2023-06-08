@@ -3,10 +3,12 @@ import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { mainTheme } from "./mainTheme";
 
-type Props = {
-  children?: React.ReactNode;
-};
-const AppTheme= ({ children }: Props) => {
+import type { ReactElement, ReactNode } from "react";
+
+interface Props {
+  children?: ReactNode;
+}
+const AppTheme = ({ children }: Props): ReactElement => {
   return (
     <ThemeProvider theme={mainTheme}>
       <CssBaseline />

@@ -1,13 +1,14 @@
 import { createTheme } from "@mui/material";
+import type { Theme } from "@mui/material";
 
-export const mainTheme = createTheme({
+export const mainTheme: Theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
       sm: 600,
       md: 950,
       lg: 1200,
-      xl: 1536
+      xl: 1536,
     },
   },
   palette: {
