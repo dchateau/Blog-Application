@@ -1,8 +1,9 @@
 import React from "react";
-import type { ReactElement } from "react";
 import Grid from "@mui/material/Grid";
 import PageLayout from "../layout/PageLayout";
 import AppTheme from "../../../theme/AppTheme";
+
+import type { ReactElement } from "react";
 
 const ContactPage = (): ReactElement => {
   return (

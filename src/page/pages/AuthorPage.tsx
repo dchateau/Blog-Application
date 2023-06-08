@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import type { ReactElement } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Box from "@mui/material/Box";
@@ -14,6 +13,7 @@ import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
 import { contentfulRenderOptions } from "@post/helpers";
 
+import type { ReactElement } from "react";
 import type { NextRouter } from "next/router";
 import type { AuthorFields } from "@typings/contentful";
 

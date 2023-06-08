@@ -1,5 +1,4 @@
 import React from "react";
-import type { ReactElement } from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import { NavBar, Footer } from "@ui/components";
@@ -8,6 +7,8 @@ import {
   MEDIUM_DRAWER_WIDTH,
   SMALL_DRAWER_WIDTH,
 } from "../../../constants";
+
+import type { ReactElement } from "react";
 
 interface Props {
   children: React.ReactNode;
