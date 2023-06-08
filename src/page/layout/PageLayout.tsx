@@ -1,13 +1,15 @@
 import React from "react";
+import type { ReactElement } from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-// import NavBar from "../../UI/components/NavBar";
 import { NavBar, Footer } from "@ui/components";
-// import { DRAWER_WIDTH } from "../../../constants/index";
-import { DRAWER_WIDTH, MEDIUM_DRAWER_WIDTH, SMALL_DRAWER_WIDTH } from "../../../constants";
-// const DRAWER_WIDTH: number = 250;
+import {
+  DRAWER_WIDTH,
+  MEDIUM_DRAWER_WIDTH,
+  SMALL_DRAWER_WIDTH,
+} from "../../../constants";
 
-type Props = {
+interface Props {
   children: React.ReactNode;
 };
 
@@ -18,7 +20,7 @@ const DRAWER_WIDTH_PROPS = {
   lg: DRAWER_WIDTH,
 };
 
-const PageLayout = ({ children }: Props) => {
+const PageLayout = ({ children }: Props): ReactElement => {
   return (
     <>
       <Box sx={{ display: "flex" }}>
@@ -31,7 +33,7 @@ const PageLayout = ({ children }: Props) => {
           {children}
         </Box>
       </Box>
-      <Footer hasSidebar={false}/>
+      <Footer hasSidebar={false} />
     </>
   );
 };

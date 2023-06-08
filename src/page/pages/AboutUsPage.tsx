@@ -1,9 +1,10 @@
 import React from "react";
+import type { ReactElement } from "react";
 import Grid from "@mui/material/Grid";
 import PageLayout from "../layout/PageLayout";
 import AppTheme from "../../../theme/AppTheme";
 
-const AboutUsPage = () => {
+const AboutUsPage = (): ReactElement => {
   return (
     <AppTheme>
       <PageLayout>

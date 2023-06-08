@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from "react";
+import type { ReactElement } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-import ShareList from "../../post/components/ShareList";
 import PageLayout from "../layout/PageLayout";
+import ShareList from "../../post/components/ShareList";
+
 import AppTheme from "../../../theme/AppTheme";
 import styles from "../../../styles/Home.module.css";
-
-import { AuthorFields } from "@typings/contentful";
-import type { NextRouter } from "next/router";
 import { contentfulRenderOptions } from "@post/helpers";
 
-type Props = {
+import type { NextRouter } from "next/router";
+import type { AuthorFields } from "@typings/contentful";
+
+interface Props {
   author: AuthorFields;
-};
+}
 
 const AuthorPage = ({
   author: { biography, fullName, resume, photo },
-}: Props) => {
+}: Props): ReactElement => {
   const [postUrl, setPostUrl] = useState<string>("");
   const router: NextRouter = useRouter();
   const altPhoto: string = photo?.fields.title?.toString() || "";
@@ -36,7 +37,6 @@ const AuthorPage = ({
       <PageLayout>
         <Grid
           container
-          // spacing={2}
           direction="column"
           alignItems="center"
           justifyContent="center"
@@ -48,7 +48,6 @@ const AuthorPage = ({
             columnSpacing={3}
             spacing={0}
             sx={{
-              // width: "100%",
               height: {
                 xs: "calc(28rem)",
                 sm: "calc(20rem)",
@@ -70,7 +69,6 @@ const AuthorPage = ({
               sx={{
                 margin: 0,
                 p: 0,
-                // height: { xs: "calc(15vh)", md: "calc(20vh)", lg: "calc(24vh)" },
               }}
             >
               <div className={styles.imageContainer}>
@@ -96,7 +94,7 @@ const AuthorPage = ({
             </Grid>
           </Grid>
         </Grid>
-        <Box sx={{ p: 3, maxheight: "calc(100%)" }}>
+        <Box sx={{ p: 3, maxHeight: "calc(100%)" }}>
           {documentToReactComponents(biography, contentfulRenderOptions)}
         </Box>
       </PageLayout>
