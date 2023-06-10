@@ -49,7 +49,7 @@ const Footer = ({ hasSidebar, drawerWidth }: Props): ReactElement => {
         }}
       >
         <p>Gluo blogging</p>
-        <p>All rights reserved ({new Date().getFullYear()})</p>
+        <p>All rights reserved ({new Date().getFullYear().toString()})</p>
         <p>Mexico</p>
       </Grid>
     </footer>
