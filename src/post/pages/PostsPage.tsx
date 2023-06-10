@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 import PostsLayout from "../layout/PostsLayout";
 import EntriesGrid from "../components/EntriesGrid";
@@ -50,13 +51,16 @@ const getTotalPages = (
   return totalPages;
 };
 
-const PostsPage = ({ activeCategory, categories, posts }: Props): ReactElement => {
-  const mediaQueryMobile: boolean = useMediaQuery((theme: Theme) =>
+const PostsPage = ({
+  activeCategory,
+  categories,
+  posts,
+}: Props): ReactElement => {
+  const theme: Theme = useTheme();
+  const mediaQueryMobile: boolean = useMediaQuery(
     theme.breakpoints.between("xs", "md")
   );
-  const mediaQueryLarge: boolean = useMediaQuery((theme: Theme) =>
-    theme.breakpoints.up("lg")
-  );
+  const mediaQueryLarge: boolean = useMediaQuery(theme.breakpoints.up("lg"));
 
   const [isMobileView, setIsMobileView] = useState<boolean>(mediaQueryMobile);
   const [isLargeView, setIsLargeView] = useState<boolean>(mediaQueryLarge);
@@ -67,7 +71,7 @@ const PostsPage = ({ activeCategory, categories, posts }: Props): ReactElement =
 
   useEffect(() => {
     setActivePosts(posts);
-  }, [])
+  }, []);
 
   useEffect(() => {
     setIsMobileView(mediaQueryMobile);
