@@ -17,6 +17,7 @@ const Home = ({
 }: InferGetStaticPropsType<typeof getStaticProps>): ReactElement => {
   const router: NextRouter = useRouter();
   const [posts, setPosts] = useState<PostFields[]>(postsProps);
+  const [activeCategory, setActiveCategory] = useState<string>("");
 
   useEffect(() => {
     router.replace("/", undefined, { shallow: false });
@@ -25,13 +26,21 @@ const Home = ({
   useEffect(() => {
     const onRouteChange = (url: string): void => {
       let category: string[] | string = url.split("?");
+      let categoryAsString: CategoryFields[];
 
       if (category.length === 1) {
         setPosts(postsProps);
+        setActiveCategory("");
         return;
       }
       category = category[1].split("=");
       category = category[1];
+
+      categoryAsString = categories.filter(
+        (cat: CategoryFields) => cat.slug === category
+      );
+      setActiveCategory(categoryAsString[0].title);
+      // console.log(categoryAsString[0].title);
 
       const filtered: PostFields[] = postsProps.filter((post: PostFields) => {
         const postCategories: Category[] | undefined = post.categories;
@@ -55,7 +64,11 @@ const Home = ({
         <link rel="icon" href="/gluo.ico" />
       </Head>
       <AppTheme>
-        <PostsPage posts={posts} categories={categories} />
+        <PostsPage
+          posts={posts}
+          categories={categories}
+          activeCategory={activeCategory}
+        />
       </AppTheme>
     </div>
   );
