@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
+import { useTheme } from "@mui/material/styles";
+import type { Theme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import PostsLayout from "../layout/PostsLayout";
 import EntriesGrid from "../components/EntriesGrid";
-import AppTheme from "../../../theme/AppTheme";
+
+import {
+  ENTRIES_IF_SMALL,
+  ENTRIES_IF_MEDIUM,
+  ENTRIES_IF_LARGE,
+} from "../../../constants";
 
 import type { ReactElement } from "react";
 import type { CategoryFields, PostFields } from "@typings/contentful";
@@ -13,22 +24,142 @@ interface Props {
   categories: CategoryFields[];
 }
 
+const checkIfNeedsPagination = (
+  mediaQueryMobile: boolean,
+  mediaQueryLarge: boolean,
+  postsLength: number
+): boolean => {
+  if (mediaQueryMobile && postsLength > ENTRIES_IF_SMALL) return true;
+  else if (mediaQueryLarge && postsLength > ENTRIES_IF_LARGE) return true;
+  else if (!mediaQueryLarge && postsLength > ENTRIES_IF_MEDIUM) return true;
+  return false;
+};
+
+const getTotalPages = (
+  mediaQueryMobile: boolean,
+  mediaQueryLarge: boolean,
+  postsLength: number
+): number => {
+  let totalPages: number = 1;
+
+  if (mediaQueryMobile) totalPages = Math.ceil(postsLength / ENTRIES_IF_SMALL);
+  else if (!mediaQueryLarge)
+    totalPages = Math.ceil(postsLength / ENTRIES_IF_MEDIUM);
+  else totalPages = Math.ceil(postsLength / ENTRIES_IF_LARGE);
+
+  return totalPages;
+};
+
 const PostsPage = ({ categories, posts }: Props): ReactElement => {
+  const theme: Theme = useTheme();
+  const mediaQueryMobile: boolean = useMediaQuery(
+    theme.breakpoints.between("xs", "md")
+  );
+  const mediaQueryLarge: boolean = useMediaQuery(theme.breakpoints.up("lg"));
+
+  const [isMobileView, setIsMobileView] = useState<boolean>(mediaQueryMobile);
+  const [isLargeView, setIsLargeView] = useState<boolean>(mediaQueryLarge);
+  const [needsPagination, setNeedsPagination] = useState<boolean>(false);
+  const [totalPages, setTotalPages] = useState<number>(1);
+  const [pageNumber, setPageNumber] = useState<number>(0);
+  const [activePosts, setActivePosts] = useState<PostFields[]>(posts);
+
+  useEffect(() => {
+    setIsMobileView(mediaQueryMobile);
+  }, [mediaQueryMobile]);
+
+  useEffect(() => {
+    setIsLargeView(mediaQueryLarge);
+  }, [mediaQueryLarge]);
+
+  useEffect(() => {
+    if (checkIfNeedsPagination(isMobileView, isLargeView, posts.length)) {
+      console.log("Needs pagination ", isMobileView, isLargeView);
+      console.log(
+        "Pages: ",
+        getTotalPages(isMobileView, isLargeView, posts.length)
+      );
+      setNeedsPagination(true);
+      setPageNumber(1);
+      setTotalPages(getTotalPages(isMobileView, isLargeView, posts.length));
+
+      if (isMobileView) {
+        setActivePosts(posts.slice(0, ENTRIES_IF_SMALL));
+      } else if (!isLargeView) {
+        setActivePosts(posts.slice(0, ENTRIES_IF_MEDIUM));
+      } else {
+        setActivePosts(posts.slice(0, ENTRIES_IF_LARGE));
+      }
+    } else {
+      setActivePosts(posts);
+      setNeedsPagination(false);
+      setTotalPages(1);
+    }
+  }, [posts, isMobileView, isLargeView]);
+
+  useEffect(() => {
+    console.log("Page set to: ", pageNumber);
+    let initIndex: number, lastIndex: number;
+    if (isMobileView) {
+      initIndex = (pageNumber - 1) * ENTRIES_IF_SMALL;
+      lastIndex = initIndex + ENTRIES_IF_SMALL;
+    } else if (!isLargeView) {
+      initIndex = (pageNumber - 1) * ENTRIES_IF_MEDIUM;
+      lastIndex = initIndex + ENTRIES_IF_MEDIUM;
+    } else {
+      initIndex = (pageNumber - 1) * ENTRIES_IF_LARGE;
+      lastIndex = initIndex + ENTRIES_IF_LARGE;
+    }
+    setActivePosts(posts.slice(initIndex, lastIndex));
+  }, [pageNumber]);
+
+  const pageClicked = (evt: React.ChangeEvent<unknown>, page: number): void => {
+    setPageNumber(page);
+  };
+
   return (
-    <AppTheme>
-      <PostsLayout categories={categories}>
-        <Grid
-          container
-          spacing={0}
-          direction="column"
-          alignItems="center"
-          justifyContent="center"
-          sx={{ minHeight: "calc(100vh - 110px)" }}
-        >
-          <EntriesGrid posts={posts} />
-        </Grid>
-      </PostsLayout>
-    </AppTheme>
+    <PostsLayout categories={categories}>
+      <Grid
+        container
+        spacing={0}
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        sx={{ minHeight: "calc(100vh - 110px)" }}
+      >
+        <EntriesGrid posts={activePosts} />
+      </Grid>
+      {needsPagination && (
+        <>
+          <Stack
+            spacing={2}
+            sx={{ display: { sm: "block", md: "none" } }}
+            mt={2}
+          >
+            <Pagination
+              defaultPage={1}
+              page={pageNumber}
+              count={totalPages}
+              onChange={pageClicked}
+              size="large"
+            />
+          </Stack>
+          <Stack
+            spacing={2}
+            sx={{ display: { sm: "none", md: "block" } }}
+            mt={1}
+          >
+            <Pagination
+              defaultPage={1}
+              page={pageNumber}
+              count={totalPages}
+              onChange={pageClicked}
+              size="medium"
+            />
+          </Stack>
+        </>
+      )}
+    </PostsLayout>
   );
 };
 
