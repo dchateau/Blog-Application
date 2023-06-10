@@ -66,20 +66,33 @@ const PostsPage = ({
   const [isLargeView, setIsLargeView] = useState<boolean>(mediaQueryLarge);
   const [needsPagination, setNeedsPagination] = useState<boolean>(false);
   const [totalPages, setTotalPages] = useState<number>(1);
-  const [pageNumber, setPageNumber] = useState<number>(0);
+  const [pageNumber, setPageNumber] = useState<number>(1);
   const [activePosts, setActivePosts] = useState<PostFields[]>(posts);
 
   useEffect(() => {
-    setActivePosts(posts);
-  }, []);
-
-  useEffect(() => {
+    console.log("Is mobile view? ", mediaQueryMobile);
     setIsMobileView(mediaQueryMobile);
   }, [mediaQueryMobile]);
 
   useEffect(() => {
+    console.log("Is large view? ", mediaQueryLarge);
     setIsLargeView(mediaQueryLarge);
   }, [mediaQueryLarge]);
+
+  useEffect(() => {
+    let initIndex: number, lastIndex: number;
+    if (isMobileView) {
+      initIndex = (pageNumber - 1) * ENTRIES_IF_SMALL;
+      lastIndex = initIndex + ENTRIES_IF_SMALL;
+    } else if (!isLargeView) {
+      initIndex = (pageNumber - 1) * ENTRIES_IF_MEDIUM;
+      lastIndex = initIndex + ENTRIES_IF_MEDIUM;
+    } else {
+      initIndex = (pageNumber - 1) * ENTRIES_IF_LARGE;
+      lastIndex = initIndex + ENTRIES_IF_LARGE;
+    }
+    setActivePosts(posts.slice(initIndex, lastIndex));
+  }, [pageNumber]);
 
   useEffect(() => {
     if (checkIfNeedsPagination(isMobileView, isLargeView, posts.length)) {
@@ -101,30 +114,17 @@ const PostsPage = ({
     }
   }, [posts, isMobileView, isLargeView]);
 
-  useEffect(() => {
-    let initIndex: number, lastIndex: number;
-    if (isMobileView) {
-      initIndex = (pageNumber - 1) * ENTRIES_IF_SMALL;
-      lastIndex = initIndex + ENTRIES_IF_SMALL;
-    } else if (!isLargeView) {
-      initIndex = (pageNumber - 1) * ENTRIES_IF_MEDIUM;
-      lastIndex = initIndex + ENTRIES_IF_MEDIUM;
-    } else {
-      initIndex = (pageNumber - 1) * ENTRIES_IF_LARGE;
-      lastIndex = initIndex + ENTRIES_IF_LARGE;
-    }
-    setActivePosts(posts.slice(initIndex, lastIndex));
-  }, [pageNumber]);
-
   const pageClicked = (evt: React.ChangeEvent<unknown>, page: number): void => {
     setPageNumber(page);
   };
 
   return (
     <PostsLayout categories={categories}>
-      <Typography variant="h4" mb={2}>
-        {activeCategory.length !== 0 && activeCategory}
-      </Typography>
+      {activeCategory.length !== 0 && (
+        <Typography variant="h4" mb={2}>
+          {activeCategory}
+        </Typography>
+      )}
       <Grid
         container
         spacing={0}
