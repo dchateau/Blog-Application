@@ -74,11 +74,6 @@ const PostsPage = ({ categories, posts }: Props): ReactElement => {
 
   useEffect(() => {
     if (checkIfNeedsPagination(isMobileView, isLargeView, posts.length)) {
-      console.log("Needs pagination ", isMobileView, isLargeView);
-      console.log(
-        "Pages: ",
-        getTotalPages(isMobileView, isLargeView, posts.length)
-      );
       setNeedsPagination(true);
       setPageNumber(1);
       setTotalPages(getTotalPages(isMobileView, isLargeView, posts.length));
@@ -98,7 +93,6 @@ const PostsPage = ({ categories, posts }: Props): ReactElement => {
   }, [posts, isMobileView, isLargeView]);
 
   useEffect(() => {
-    console.log("Page set to: ", pageNumber);
     let initIndex: number, lastIndex: number;
     if (isMobileView) {
       initIndex = (pageNumber - 1) * ENTRIES_IF_SMALL;
