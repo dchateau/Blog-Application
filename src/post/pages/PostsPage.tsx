@@ -66,6 +66,10 @@ const PostsPage = ({ activeCategory, categories, posts }: Props): ReactElement =
   const [activePosts, setActivePosts] = useState<PostFields[]>(posts);
 
   useEffect(() => {
+    setActivePosts(posts);
+  }, [])
+
+  useEffect(() => {
     setIsMobileView(mediaQueryMobile);
   }, [mediaQueryMobile]);
 
