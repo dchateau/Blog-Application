@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-
-import { useTheme } from "@mui/material/styles";
-import type { Theme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import PostsLayout from "../layout/PostsLayout";
@@ -17,11 +14,14 @@ import {
 } from "../../../constants";
 
 import type { ReactElement } from "react";
+import type { Theme } from "@mui/material/styles";
 import type { CategoryFields, PostFields } from "@typings/contentful";
+import { Typography } from "@mui/material";
 
 interface Props {
   posts: PostFields[];
   categories: CategoryFields[];
+  activeCategory: string;
 }
 
 const checkIfNeedsPagination = (
@@ -50,12 +50,13 @@ const getTotalPages = (
   return totalPages;
 };
 
-const PostsPage = ({ categories, posts }: Props): ReactElement => {
-  const theme: Theme = useTheme();
-  const mediaQueryMobile: boolean = useMediaQuery(
+const PostsPage = ({ activeCategory, categories, posts }: Props): ReactElement => {
+  const mediaQueryMobile: boolean = useMediaQuery((theme: Theme) =>
     theme.breakpoints.between("xs", "md")
   );
-  const mediaQueryLarge: boolean = useMediaQuery(theme.breakpoints.up("lg"));
+  const mediaQueryLarge: boolean = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.up("lg")
+  );
 
   const [isMobileView, setIsMobileView] = useState<boolean>(mediaQueryMobile);
   const [isLargeView, setIsLargeView] = useState<boolean>(mediaQueryLarge);
@@ -113,6 +114,9 @@ const PostsPage = ({ categories, posts }: Props): ReactElement => {
 
   return (
     <PostsLayout categories={categories}>
+      <Typography variant="h4" mb={2}>
+        {activeCategory.length !== 0 && activeCategory}
+      </Typography>
       <Grid
         container
         spacing={0}
@@ -127,7 +131,7 @@ const PostsPage = ({ categories, posts }: Props): ReactElement => {
         <>
           <Stack
             spacing={2}
-            sx={{ display: { sm: "block", md: "none" } }}
+            sx={{ display: { xs: "block", md: "none" } }}
             mt={2}
           >
             <Pagination
@@ -140,7 +144,7 @@ const PostsPage = ({ categories, posts }: Props): ReactElement => {
           </Stack>
           <Stack
             spacing={2}
-            sx={{ display: { sm: "none", md: "block" } }}
+            sx={{ display: { xs: "none", md: "block" } }}
             mt={1}
           >
             <Pagination
