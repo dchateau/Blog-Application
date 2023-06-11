@@ -93,6 +93,9 @@ const PostPage = ({
                 xs: { backdropFilter: "contrast(20%)" },
                 sm: { backdropFilter: "none" },
               },
+              "& .MuiGrid-container": {
+                backgroundColor: "transparent",
+              },
               p: 0,
             }}
           >
@@ -120,8 +123,8 @@ const PostPage = ({
                   maxWidth: "100%",
                   backgroundColor: "transparent",
                   "& .MuiGrid-root": {
-                    backgroundColor: "transparent"
-                  }
+                    backgroundColor: "transparent",
+                  },
                 }}
                 direction="row"
                 alignItems="center"
