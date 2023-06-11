@@ -153,6 +153,7 @@ const PostsPage = ({
               page={pageNumber}
               count={totalPages}
               onChange={pageClicked}
+              siblingCount={0}
               size="large"
             />
           </Stack>
@@ -166,6 +167,7 @@ const PostsPage = ({
               page={pageNumber}
               count={totalPages}
               onChange={pageClicked}
+              siblingCount={0}
               size="medium"
             />
           </Stack>
