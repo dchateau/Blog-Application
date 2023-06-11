@@ -133,7 +133,13 @@ const PostsPage = ({
         justifyContent="center"
         sx={{ minHeight: "calc(100vh - 110px)" }}
       >
-        <EntriesGrid posts={activePosts} />
+        {activePosts.length !== 0 ? (
+          <EntriesGrid posts={activePosts} />
+        ) : (
+          <Typography variant="h4" mb={2}>
+            We're sorry there are not entries related to this category :(
+          </Typography>
+        )}
       </Grid>
       {needsPagination && (
         <>
