@@ -82,7 +82,7 @@ const PostPage = ({
             spacing={0}
             sx={{
               height: containersHeight,
-              backgroundColor: { xs: "transparent", sm: "secondary.main" },
+              backgroundColor: { sm: "secondary.main" },
               backgroundImage: {
                 xs: `url('https:${featuredImage?.fields.file?.url}')`,
                 sm: "none",
@@ -105,8 +105,8 @@ const PostPage = ({
               sx={{
                 p: 2,
                 alignSelf: { xs: "center", sm: "flex-start" },
-                backgroundColor: "transparent",
-                "& .MuiGrid-root": { backgroundColor: "transparent" },
+                // backgroundColor: {xs: "blue", sm: "red"},
+                // "& .MuiGrid-root": { backgroundColor: "transparent" },
               }}
               justifyContent="center"
             >
@@ -118,7 +118,7 @@ const PostPage = ({
                 sx={{
                   p: 0,
                   maxWidth: "100%",
-                  backgroundColor: { xs: "red" },
+                  backgroundColor: "transparent",
                 }}
                 direction="row"
                 alignItems="center"
