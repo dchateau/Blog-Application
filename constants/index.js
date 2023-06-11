@@ -10,7 +10,7 @@ const MEDIUM_DRAWER_WIDTH = 200;
 const DRAWER_WIDTH = 250;
 
 const ENTRIES_IF_SMALL = 2;
-const ENTRIES_IF_MEDIUM = 3;
+const ENTRIES_IF_MEDIUM = 4;
 const ENTRIES_IF_LARGE = 6;
 
 module.exports = {
