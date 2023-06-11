@@ -119,6 +119,9 @@ const PostPage = ({
                   p: 0,
                   maxWidth: "100%",
                   backgroundColor: "transparent",
+                  "& .MuiGrid-root": {
+                    backgroundColor: "transparent"
+                  }
                 }}
                 direction="row"
                 alignItems="center"
