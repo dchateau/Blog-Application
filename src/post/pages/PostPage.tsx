@@ -90,12 +90,12 @@ const PostPage = ({
               backgroundRepeat: { xs: "no-repeat" },
               backgroundSize: { xs: "cover" },
               "& .MuiGrid-root": {
-                xs: { backdropFilter: "contrast(20%)" },
+                xs: { backdropFilter: "contrast(25%)" },
                 sm: { backdropFilter: "none" },
               },
               "& .MuiGrid-container": {
-                // backgroundColor: "transparent",
-                bgcolor: "transparent"
+                xs: { backdropFilter: "contrast(1)" },
+                sm: { backdropFilter: "none" },
               },
               p: 0,
             }}
@@ -109,8 +109,6 @@ const PostPage = ({
               sx={{
                 p: 2,
                 alignSelf: { xs: "center", sm: "flex-start" },
-                // backgroundColor: {xs: "blue", sm: "red"},
-                // "& .MuiGrid-root": { backgroundColor: "transparent" },
               }}
               justifyContent="center"
             >
@@ -122,11 +120,9 @@ const PostPage = ({
                 sx={{
                   p: 0,
                   maxWidth: "100%",
-                  // backgroundColor: "transparent",
-                  bgcolor: "transparent",
                   "& .MuiGrid-root": {
-                    // backgroundColor: "transparent",
-                    bgcolor: "transparent"
+                    xs: { backdropFilter: "contrast(1)" },
+                    sm: { backdropFilter: "none" },
                   },
                 }}
                 direction="row"
